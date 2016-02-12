@@ -1,6 +1,6 @@
 405
 Karosszeria
-16
+18
 BMPSEQ	0	16777215	0	-1	0	0	Cella 1: Futószalag	50	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I3
 BMPSEQ	0	16777215	0	-1	0	0	Cella 2: Futószalag	425	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I3
 DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	144	300	144	400	I1	5	5	0
@@ -16,7 +16,9 @@ NUMBER	0	16777215	1	-1	0	0	kiválasztott robot kijelzése	70	104	10	ARIAL	%4.0f	I9
 LABEL	0	16777215	1	-1	0	0	kiválasztott robot felirat	106	103	10	ARIAL	Kiválasztott robot	0	1
 SEPARATOR	255	16777215	1	-1	0	0	===============================
 HYDCYL	0	12615680	1	-1	0	0	Cella 3: Daru	925	362	30	80	50	8421504	3	0	30
-SHADRECT	0	8421376	1	-1	0	0	mozgatandó tárgy 1	I6	380	100	60	0
+BITMAP	0	16777215	1	-1	0	0		633	157	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0		427	271	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_02.bmp
+BITMAP	0	16777215	1	-1	0	0		445	166	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_03.bmp
 0
 11
 szenz_heg_1
