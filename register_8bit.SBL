@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42412
+42413
 ! 
 ! 
 ! 
@@ -21,7 +21,7 @@ OUTPUT
 [Export Parameter Count]
 0
 [Block Count]
-12
+11
 [Block #0]
 447   DECODER
 INPUT
@@ -105,23 +105,16 @@ OUTPUT
 8   0
 0
 [Block #10]
-355   LOGIC2
+344   FCT1
 SET
 25 450 96 501  100
-2
+1
 1
 0 0 0   0
-0
-[Block #11]
-306   CONST
-CONST
-25 525 96 576  100
-0
-1
-0 0 0   0
- 5.00000000000000E+0000  0
+8
+x
 [Connection Count]
-25
+24
 [Connection #0]
 5   1   9   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
@@ -155,22 +148,20 @@ CONST
 [Connection #15]
 0   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #16]
-11   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #17]
 10   1   8   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #18]
+[Connection #17]
 10   1   7   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #19]
+[Connection #18]
 10   1   6   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #20]
+[Connection #19]
 10   1   5   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #21]
+[Connection #20]
 10   1   4   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #22]
+[Connection #21]
 10   1   3   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #23]
+[Connection #22]
 10   1   2   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #24]
+[Connection #23]
 10   1   1   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0

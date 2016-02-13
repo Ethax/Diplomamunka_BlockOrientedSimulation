@@ -1,25 +1,29 @@
 405
 Karosszéria gyártósor
-18
+22
 BMPSEQ	0	16777215	0	-1	0	0	Cella 1: Futószalag	50	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I1
 BMPSEQ	0	16777215	0	-1	0	0	Cella 2: Futószalag	425	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I1
 DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	120	300	120	400	1	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	1	5	5	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
+RECT	0	0	1	-1	0	0		120	190	200	40	0
 HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1	120 + I2	240	30	80	I3 * 2	8421504	2	0	0
-LABEL	0	16777215	1	-1	0	0	robot 1 felirat	253	111	10	ARIAL	Hegesztõ robot 1	0	1
-HYDCYL	0	65535	1	-1	0	0	hegesztõ robot2	120	540	30	80	0	8421504	0	0	0
-LABEL	0	16777215	1	-1	0	0	robot 2 felirat	126	587	10	ARIAL	Hegesztõ robot 2	0	1
-NUMBER	0	16777215	1	-1	0	0	robot pozíció kijelzése	70	135	10	ARIAL	%4.0f	I10	1	1	0
-LABEL	0	16777215	1	-1	0	0	robot pozíció felirat	106	134	10	ARIAL	Robot pozíció	0	1
-NUMBER	0	16777215	1	-1	0	0	kiválasztott robot kijelzése	70	104	10	ARIAL	%4.0f	I9	1	1	0
-LABEL	0	16777215	1	-1	0	0	kiválasztott robot felirat	106	103	10	ARIAL	Kiválasztott robot	0	1
+LABEL	0	16777215	1	-1	0	0	robot 1 felirat	120	106	10	ARIAL	Hegesztõ robot 1	0	1
+RECT	0	0	1	-1	0	0		120	550	200	40	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2	120 + I4	540	30	80	I5 * 2	8421504	0	0	0
+LABEL	0	16777215	1	-1	0	0	robot 2 felirat	118	620	10	ARIAL	Hegesztõ robot 2	0	1
+NUMBER	0	16777215	1	-1	0	0	robot pozíció kijelzése	31	76	10	ARIAL	%4.0f	I10	1	1	0
+LABEL	0	16777215	1	-1	0	0	robot pozíció felirat	67	75	10	ARIAL	Robot pozíció	0	1
+NUMBER	0	16777215	1	-1	0	0	kiválasztott robot kijelzése	31	45	10	ARIAL	%4.0f	I9	1	1	0
+LABEL	0	16777215	1	-1	0	0	kiválasztott robot felirat	67	44	10	ARIAL	Kiválasztott robot	0	1
 SEPARATOR	255	16777215	1	-1	0	0	===============================
 HYDCYL	0	12615680	1	-1	0	0	Cella 3: Daru	925	362	30	80	50	8421504	3	0	30
 BITMAP	0	16777215	1	-1	0	0		691	158	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_01.bmp
 BITMAP	0	16777215	1	-1	0	0		141	389	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_02.bmp
 BITMAP	0	16777215	1	-1	0	0		423	144	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_03.bmp
-0
+HSCALE	0	16777215	1	-1	0	0		120	139	200	6	0	3	4	4	8	1
+HSCALE	0	16777215	1	-1	0	0		120	570	200	6	0	3	4	4	8	0
+1
 11
 BELT_SPEED
  1.00000000000000E+0000
@@ -36,16 +40,16 @@ R1_POS_Y
  0.00000000000000E+0000
  0.00000000000000E+0000
  1.00000000000000E+0002
-robot_poz2
+R2_POS_X
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 1.00000000000000E+0000
-robot_poz3
+ 1.50000000000000E+0002
+R2_POS_Y
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 1.00000000000000E+0000
+ 1.00000000000000E+0002
 targy_1_poz
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -83,9 +87,9 @@ I11
 1
 1
 1
-2
-1025
-641
+1
+1026
+669
 0
 1
 0
