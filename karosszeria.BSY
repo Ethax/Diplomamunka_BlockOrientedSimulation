@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42412
+42413
 ! 
 ! 
 ! 
@@ -12,11 +12,11 @@
 ! Miklós Árpád
 ! SZTE
 [Block Count]
-77
+40
 [Block #0]
 385   USER1
-SYSTEM
-875 175 946 385  100
+ANIMATION
+950 200 1021 410  100
 11
 0
 0 0 0   0
@@ -24,48 +24,48 @@ C:\Program Files (x86)\Kahlert\WinFACT 7\UserDLLs\FAB.dll
 *.*
 0 0 0   0
 405
-Karosszeria
+Karosszéria gyártósor
 18
-BMPSEQ	0	16777215	0	-1	0	0	Cella 1: Futószalag	50	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I3
-BMPSEQ	0	16777215	0	-1	0	0	Cella 2: Futószalag	425	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I3
-DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	144	300	144	400	I1	5	5	0
-DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	I2	5	5	0
-SEPARATOR	255	16777215	1	-1	0	0	===============hegesztés================
-HYDCYL	0	65535	1	-1	0	0	hegesztõ robot1	300	258	30	80	0	8421504	2	0	0
-LABEL	0	16777215	1	-1	0	0	robot 1 felirat	270	169	10	ARIAL	Hegesztõ robot 1	0	1
-HYDCYL	0	65535	1	-1	0	0	hegesztõ robot2	300	521	30	80	I4	8421504	0	0	0
-LABEL	0	16777215	1	-1	0	0	robot 2 felirat	266	546	10	ARIAL	Hegesztõ robot 2	0	1
+BMPSEQ	0	16777215	0	-1	0	0	Cella 1: Futószalag	50	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I1
+BMPSEQ	0	16777215	0	-1	0	0	Cella 2: Futószalag	425	390	375	80	0	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I1
+DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	120	300	120	400	1	5	5	0
+DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	1	5	5	0
+SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1	120 + I2	240	30	80	I3 * 2	8421504	2	0	0
+LABEL	0	16777215	1	-1	0	0	robot 1 felirat	253	111	10	ARIAL	Hegesztõ robot 1	0	1
+HYDCYL	0	65535	1	-1	0	0	hegesztõ robot2	120	540	30	80	0	8421504	0	0	0
+LABEL	0	16777215	1	-1	0	0	robot 2 felirat	126	587	10	ARIAL	Hegesztõ robot 2	0	1
 NUMBER	0	16777215	1	-1	0	0	robot pozíció kijelzése	70	135	10	ARIAL	%4.0f	I10	1	1	0
 LABEL	0	16777215	1	-1	0	0	robot pozíció felirat	106	134	10	ARIAL	Robot pozíció	0	1
 NUMBER	0	16777215	1	-1	0	0	kiválasztott robot kijelzése	70	104	10	ARIAL	%4.0f	I9	1	1	0
 LABEL	0	16777215	1	-1	0	0	kiválasztott robot felirat	106	103	10	ARIAL	Kiválasztott robot	0	1
 SEPARATOR	255	16777215	1	-1	0	0	===============================
 HYDCYL	0	12615680	1	-1	0	0	Cella 3: Daru	925	362	30	80	50	8421504	3	0	30
-BITMAP	0	16777215	1	-1	0	0		633	157	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_01.bmp
-BITMAP	0	16777215	1	-1	0	0		427	271	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_02.bmp
-BITMAP	0	16777215	1	-1	0	0		445	166	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_03.bmp
-845
-115
+BITMAP	0	16777215	1	-1	0	0		691	158	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0		141	389	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_02.bmp
+BITMAP	0	16777215	1	-1	0	0		423	144	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\type_03.bmp
+771
+209
 1025
 641
 1
 2
 11
-szenz_heg_1
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
-szenz_heg_2
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
-robot_poz1
+BELT_SPEED
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
  8.64000000000000E+0007
+R1_POS_X
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 1.50000000000000E+0002
+R1_POS_Y
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 1.00000000000000E+0002
 robot_poz2
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -119,10 +119,8 @@ I11
 0
 
 0
+1
 0
-0
- 0.00000000000000E+0000
- 0.00000000000000E+0000
  8.64000000000000E+0007
  0.00000000000000E+0000
  0.00000000000000E+0000
@@ -133,45 +131,47 @@ I11
  0.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
-    
  0.00000000000000E+0000
-    
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
  0.00000000000000E+0000
-    
+        
+ 0.00000000000000E+0000
+        
+ 0.00000000000000E+0000
+        
 1
 0
 1
@@ -211,33 +211,6 @@ ROBOT_LSB
 0
 0
 [Block #3]
-430   BLOCKBUTTON
-ROBOT_POS_1
-125 700 196 739  100
-0
-1
-0 0 0   0
-0
-0
-[Block #4]
-430   BLOCKBUTTON
-ROBOT_POS_2
-125 750 196 789  100
-0
-1
-0 0 0   0
-0
-0
-[Block #5]
-430   BLOCKBUTTON
-ROBOT_POS_3
-125 800 196 839  100
-0
-1
-0 0 0   0
-0
-0
-[Block #6]
 0   Text
 Text
 67 319 239 360  100
@@ -247,17 +220,7 @@ Text
 Robot kiválasztó 2-bit
 12   0   0   0   16777215   1   0
 ARIAL
-[Block #7]
-0   Text
-Text
-84 599 245 640  100
-0
-0
-0 0 0   0
-Robot pozíciók 3-bit
-12   0   0   0   16777215   1   0
-ARIAL
-[Block #8]
+[Block #4]
 430   BLOCKBUTTON
 TARGY1_INDIT
 100 75 171 114  100
@@ -266,7 +229,7 @@ TARGY1_INDIT
 0 0 0   0
 0
 0
-[Block #9]
+[Block #5]
 318   I
 INTEGRATOR
 275 100 346 151  100
@@ -275,16 +238,16 @@ INTEGRATOR
 0 0 0   0
  0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000  
  1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000    5.00000000000000E+0001   0
-[Block #10]
+[Block #6]
 430   BLOCKBUTTON
-ROBOT_EN
-100 525 171 564  100
+BELT
+75 1575 146 1614  100
 0
 1
 0 0 0   0
 0
 0
-[Block #11]
+[Block #7]
 430   BLOCKBUTTON
 SZALAG_1
 100 150 171 189  100
@@ -293,7 +256,7 @@ SZALAG_1
 0 0 0   0
 0
 0
-[Block #12]
+[Block #8]
 361   DISCRIMINATOR
 SZENZOR_1
 475 25 546 76  100
@@ -301,7 +264,7 @@ SZENZOR_1
 1
 0 0 0   0
 0    3.75000000000000E+0001    8.25000000000000E+0001    0.00000000000000E+0000
-[Block #13]
+[Block #9]
 361   DISCRIMINATOR
 SZENZOR_2
 600 25 671 76  100
@@ -309,7 +272,7 @@ SZENZOR_2
 1
 0 0 0   0
 0    2.30850000000000E+0002    2.75850000000000E+0002    0.00000000000000E+0000
-[Block #14]
+[Block #10]
 343   JUNCTION
 JUNCTION
 375 175 446 226  100
@@ -318,7 +281,7 @@ JUNCTION
 0 0 0   0
 0
 0   0   
-[Block #15]
+[Block #11]
 318   I
 INTEGRATOR
 275 175 346 226  100
@@ -327,7 +290,7 @@ INTEGRATOR
 0 0 0   0
  0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000   0.00000000000000E+0000  
  1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000    4.00000000000000E+0002   0
-[Block #16]
+[Block #12]
 456   DAC
 DAC
 325 400 396 451  100
@@ -336,672 +299,334 @@ DAC
 0 0 0   0
  0.00000000000000E+0000    3.00000000000000E+0000
 2
-[Block #17]
-360   COUNTER
-COUNTER
-600 2025 671 2101  100
-3
-1
-0 0 0   0
-0   1
-[Block #18]
-301   GENERATOR
-GENERATOR
-225 2175 296 2226  100
-0
-1
-0 0 0   0
-1   0
- 5.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
- 1.00000000000000E+0000    0.00000000000000E+0000
- 1.00000000000000E+0000    2.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
-1.0
-[Block #19]
-430   BLOCKBUTTON
-SPEED
-125 2050 196 2089  100
-0
-1
-0 0 0   0
-0
-0
-[Block #20]
-301   GENERATOR
-GENERATOR
-225 2250 296 2301  100
-0
-1
-0 0 0   0
-1   0
- 5.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
- 1.00000000000000E+0000    0.00000000000000E+0000
- 2.00000000000000E+0000    4.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
-1.0
-[Block #21]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-625 2200 724 2239  100
-1
-0
-0 0 0   0
-%8.3f
-8388608
-[Block #22]
-404   LOGCHANGE
-LOGCHANGE
-500 2050 571 2101  100
-1
-1
-0 0 0   0
-1   0
-[Block #23]
+[Block #13]
 353   ANASWITCH2
 ANASWITCH2
-225 2025 296 2101  100
-3
-1
-0 0 0   0
-1
-[Block #24]
-355   LOGIC2
-LOGIC2
-375 2050 446 2101  100
-2
-1
-0 0 0   0
-0
-[Block #25]
-430   BLOCKBUTTON
-ENABLE
-125 2100 196 2139  100
-0
-1
-0 0 0   0
-0
-0
-[Block #26]
-430   BLOCKBUTTON
-RESET
-25 2150 96 2189  100
-0
-1
-0 0 0   0
-0
-1
-[Block #27]
-456   DAC
-DAC
-325 725 396 791  100
-3
-1
-0 0 0   0
- 0.00000000000000E+0000    7.00000000000000E+0000
-3
-[Block #28]
-353   ANASWITCH2
-ANASWITCH2
-650 300 721 376  100
+375 1550 446 1626  100
 3
 1
 0 0 0   0
 0
-[Block #29]
+[Block #14]
 306   CONST
 CONST
-450 300 521 351  100
+175 1550 246 1601  100
 0
 1
 0 0 0   0
  8.64000000000000E+0007  0
-[Block #30]
+[Block #15]
 306   CONST
 CONST
-450 375 521 426  100
+175 1625 246 1676  100
 0
 1
 0 0 0   0
  7.50000000000000E+0001  0
-[Block #31]
+[Block #16]
 357   DFLIPFLOP
-DFLIPFLOP
-300 850 371 901  100
+R1_POS_B0
+100 900 171 951  100
 2
 1
 0 0 0   0
 0   0   1
-[Block #32]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-475 675 574 714  100
+[Block #17]
+357   DFLIPFLOP
+R1_POS_B2
+100 1050 171 1101  100
+2
 1
+0 0 0   0
+0   0   1
+[Block #18]
+357   DFLIPFLOP
+R1_POS_B1
+100 975 171 1026  100
+2
+1
+0 0 0   0
+0   0   1
+[Block #19]
+383   SUPERBLOCK
+R1_MOVE_X
+750 575 821 641  100
+3
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_move.SBL
 0
-0 0 0   0
-%8.3f
-8388608
-[Block #33]
-357   DFLIPFLOP
-DFLIPFLOP
-300 1000 371 1051  100
-2
-1
-0 0 0   0
-0   0   1
-[Block #34]
-357   DFLIPFLOP
-DFLIPFLOP
-300 925 371 976  100
-2
-1
-0 0 0   0
-0   0   1
-[Block #35]
-456   DAC
-DAC
-450 925 521 991  100
-3
-1
-0 0 0   0
- 0.00000000000000E+0000    7.00000000000000E+0000
-3
-[Block #36]
+[Block #20]
 430   BLOCKBUTTON
-BLOCKBUTTON
-200 375 271 414  100
-1
+POSITION_B0
+100 725 171 764  100
+0
 1
 0 0 0   0
 0
 0
+[Block #21]
+430   BLOCKBUTTON
+POSITION_B1
+100 775 171 814  100
+0
+1
+0 0 0   0
+0
+0
+[Block #22]
+430   BLOCKBUTTON
+POSITION_B2
+100 825 171 864  100
+0
+1
+0 0 0   0
+0
+0
+[Block #23]
+383   SUPERBLOCK
+R_VALID
+550 900 621 1020  100
+6
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_position_validator.SBL
+0
+[Block #24]
+432   BLOCKSTATUS
+BLOCKSTATUS
+1075 625 1146 664  100
+1
+0
+0 0 0   0
+255 8421504
+[Block #25]
+430   BLOCKBUTTON
+VALIDATE
+100 1125 171 1164  100
+0
+1
+0 0 0   0
+0
+1
+[Block #26]
+432   BLOCKSTATUS
+BLOCKSTATUS
+775 1050 846 1089  100
+1
+0
+0 0 0   0
+255 8421504
+[Block #27]
+356   RSFLIPFLOP
+RSFLIPFLOP
+250 1200 321 1251  100
+2
+1
+0 0 0   0
+0   0   1
+0
+[Block #28]
+413   ONDELAY
+ONDELAY
+250 1125 321 1176  100
+1
+1
+0 0 0   0
+ 5.00000000000000E+0000  0
+[Block #29]
+430   BLOCKBUTTON
+FAST_MOVE
+100 550 171 589  100
+0
+1
+0 0 0   0
+0
+0
+[Block #30]
+306   CONST
+CONST
+950 100 1021 151  100
+0
+1
+0 0 0   0
+ 8.64000000000000E+0007  0
+[Block #31]
+383   SUPERBLOCK
+R1_MOVE_Y
+750 675 821 741  100
+3
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_move.SBL
+0
+[Block #32]
+383   SUPERBLOCK
+POS_SELECT
+625 625 696 691  100
+3
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_positions.SBL
+0
+[Block #33]
+355   LOGIC2
+AND
+550 1050 621 1101  100
+2
+1
+0 0 0   0
+0
+[Block #34]
+396   LOGIC
+AND
+950 625 1021 691  100
+3
+1
+0 0 0   0
+0
+[Block #35]
+432   BLOCKSTATUS
+BLOCKSTATUS
+650 900 721 939  100
+1
+0
+0 0 0   0
+255 8421504
+[Block #36]
+413   ONDELAY
+ONDELAY
+250 1275 321 1326  100
+1
+1
+0 0 0   0
+ 1.00000000000000E+0000  0
 [Block #37]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-500 1075 599 1114  100
+432   BLOCKSTATUS
+BLOCKSTATUS
+225 900 296 939  100
 1
 0
 0 0 0   0
-%8.3f
-8388608
+32768 128
 [Block #38]
-362   COMPARATOR
-I1 == I2
-1275 600 1346 651  100
-2
+432   BLOCKSTATUS
+BLOCKSTATUS
+225 975 296 1014  100
 1
+0
 0 0 0   0
-2
+32768 128
 [Block #39]
-306   CONST
-Konstans: 0
-1275 675 1346 726  100
-0
-1
-0 0 0   0
- 0.00000000000000E+0000  0
-[Block #40]
-384   LABEL
-LABEL
-200 525 271 558  100
-1
-1
-0 0 0   0
-[Block #41]
-384   LABEL
-LABEL
-250 575 321 608  100
-1
-1
-0 0 0   0
-[Block #42]
-0   Text
-Text
-1275 564 1490 581  100
-0
-0
-0 0 0   0
-Bemenet == 0 &&&& Jelenlegi > 3
-12   0   0   0   16777215   0   0
-ARIAL
-[Block #43]
-306   CONST
-Konstans: 3
-1275 825 1346 876  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #44]
-362   COMPARATOR
-I1 > I2
-1275 750 1346 801  100
-2
-1
-0 0 0   0
-4
-[Block #45]
-355   LOGIC2
-LOGIC2
-1400 700 1471 751  100
-2
-1
-0 0 0   0
-0
-[Block #46]
-362   COMPARATOR
-I1 == I2
-1275 1125 1346 1176  100
-2
-1
-0 0 0   0
-2
-[Block #47]
-306   CONST
-Konstans: 0
-1275 1200 1346 1251  100
-0
-1
-0 0 0   0
- 0.00000000000000E+0000  0
-[Block #48]
-306   CONST
-Konstans: 3
-1275 1050 1346 1101  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #49]
-362   COMPARATOR
-I1 > I2
-1275 975 1346 1026  100
-2
-1
-0 0 0   0
-4
-[Block #50]
-355   LOGIC2
-LOGIC2
-1400 1075 1471 1126  100
-2
-1
-0 0 0   0
-0
-[Block #51]
-0   Text
-Text
-1267 951 1482 968  100
-0
-0
-0 0 0   0
-Bemenet > 3 &&&& Jelenlegi == 0
-12   0   0   0   16777215   0   0
-ARIAL
-[Block #52]
-306   CONST
-Konstans: 3
-1275 1400 1346 1451  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #53]
-362   COMPARATOR
-I1 > I2
-1275 1325 1346 1376  100
-2
-1
-0 0 0   0
-4
-[Block #54]
-306   CONST
-Konstans: 3
-1275 1550 1346 1601  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #55]
-362   COMPARATOR
-I1 > I2
-1275 1475 1346 1526  100
-2
-1
-0 0 0   0
-4
-[Block #56]
-355   LOGIC2
-LOGIC2
-1400 1425 1471 1476  100
-2
-1
-0 0 0   0
-0
-[Block #57]
-0   Text
-Text
-1271 1302 1477 1319  100
-0
-0
-0 0 0   0
-Bemenet > 3 &&&& Jelenlegi > 3
-12   0   0   0   16777215   0   0
-ARIAL
-[Block #58]
-0   Text
-Text
-726 998 1030 1015  100
-0
-0
-0 0 0   0
-Jelenlegi < 4 &&&& (Bemenet == Jelenlegi + 3)
-12   0   0   0   16777215   0   0
-ARIAL
-[Block #59]
-362   COMPARATOR
-I1 < I2
-725 1025 796 1076  100
-2
-1
-0 0 0   0
-0
-[Block #60]
-306   CONST
-Konstans: 4
-725 1100 796 1151  100
-0
-1
-0 0 0   0
- 4.00000000000000E+0000  0
-[Block #61]
-345   FCT2
-I1 + I2
-725 1250 796 1301  100
-2
-1
-0 0 0   0
-0
-x+y
-[Block #62]
-306   CONST
-Konstans: 3
-725 1325 796 1376  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #63]
-362   COMPARATOR
-I1 == I2
-725 1175 796 1226  100
-2
-1
-0 0 0   0
-2
-[Block #64]
-355   LOGIC2
-LOGIC2
-850 1125 921 1176  100
-2
-1
-0 0 0   0
-0
-[Block #65]
-362   COMPARATOR
-I1 > I2
-725 1450 796 1501  100
-2
-1
-0 0 0   0
-4
-[Block #66]
-306   CONST
-Konstans: 3
-725 1525 796 1576  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #67]
-345   FCT2
-I1 + I2
-725 1675 796 1726  100
-2
-1
-0 0 0   0
-0
-x+y
-[Block #68]
-306   CONST
-Konstans: 3
-725 1750 796 1801  100
-0
-1
-0 0 0   0
- 3.00000000000000E+0000  0
-[Block #69]
-362   COMPARATOR
-I1 == I2
-725 1600 796 1651  100
-2
-1
-0 0 0   0
-2
-[Block #70]
-355   LOGIC2
-LOGIC2
-850 1550 921 1601  100
-2
-1
-0 0 0   0
-0
-[Block #71]
-0   Text
-Text
-727 1428 1031 1445  100
-0
-0
-0 0 0   0
-Jelenlegi > 3 &&&& (Bemenet + 3 == Jelenlegi)
-12   0   0   0   16777215   0   0
-ARIAL
-[Block #72]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-975 1125 1074 1164  100
+432   BLOCKSTATUS
+BLOCKSTATUS
+225 1050 296 1089  100
 1
 0
 0 0 0   0
-%8.3f
-8388608
-[Block #73]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-975 1550 1074 1589  100
-1
-0
-0 0 0   0
-%8.3f
-8388608
-[Block #74]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-1575 700 1674 739  100
-1
-0
-0 0 0   0
-%8.3f
-8388608
-[Block #75]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-1525 1075 1624 1114  100
-1
-0
-0 0 0   0
-%8.3f
-8388608
-[Block #76]
-431   BLOCKDIGOUT
-BLOCKDIGOUT
-1525 1450 1624 1489  100
-1
-0
-0 0 0   0
-%8.3f
-8388608
+32768 128
 [Connection Count]
-76
+50
 [Connection #0]
-35   1   37   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
-19   1   23   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+23   1   35   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #2]
-15   1   14   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   10   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
-22   1   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-9   1   14   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   37   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-14   1   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+18   1   38   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
-17   1   21   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   1   39   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-24   1   22   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+34   1   24   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-64   1   72   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+32   2   31   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #9]
-70   1   73   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+32   1   19   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #10]
-50   1   75   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+28   1   27   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #11]
-44   1   45   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+36   1   27   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #12]
-46   1   50   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+30   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #13]
-55   1   56   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+23   1   33   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #14]
-63   1   64   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+20   1   16   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #15]
-69   1   70   2   16711680   -1   -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 
+21   1   18   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #16]
-53   1   56   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+22   1   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #17]
-49   1   50   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+25   1   28   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #18]
-38   1   45   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4   1   5   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #19]
-59   1   64   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   11   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-65   1   70   1   16711680   -1   -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 
-[Connection #21]
-43   1   44   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #22]
-47   1   46   2   16711680   -1   -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 
-[Connection #23]
-54   1   55   2   16711680   -1   -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 
-[Connection #24]
-52   1   53   2   16711680   -1   -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 -1750 -1575 
-[Connection #25]
-48   1   49   2   16711680   -1   -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 -875 -600 
-[Connection #26]
-39   1   38   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #27]
-60   1   59   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #28]
-62   1   61   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #29]
-61   1   63   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #30]
-66   1   65   2   16711680   -1   -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 
-[Connection #31]
-68   1   67   2   16711680   -1   -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 
-[Connection #32]
-67   1   69   2   16711680   -1   -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 -725 -1025 
-[Connection #33]
-18   1   23   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #34]
-20   1   23   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #35]
-23   1   24   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #36]
-34   1   35   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #37]
-33   1   35   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #38]
-27   1   32   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #39]
-31   1   35   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #40]
-45   1   74   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #41]
-8   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #42]
-11   1   15   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #43]
-3   1   31   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #44]
-4   1   34   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #45]
-5   1   33   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #46]
-29   1   28   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #47]
-4   1   27   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #48]
-3   1   27   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #49]
-30   1   28   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #50]
-5   1   27   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #51]
-1   1   16   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #52]
-2   1   16   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #53]
-28   1   0   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #54]
 14   1   13   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #55]
-25   1   24   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #56]
-35   1   59   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #57]
-13   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #58]
-35   1   61   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #59]
-35   1   65   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #60]
-35   1   69   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #61]
-12   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #62]
-27   1   63   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #63]
-27   1   67   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #64]
-14   1   0   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #65]
-16   1   0   9   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #66]
-10   1   28   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #67]
-26   1   17   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #68]
-11   1   0   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #69]
-35   1   46   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #70]
-35   1   44   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #71]
-35   1   55   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #72]
-27   1   38   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #73]
-27   1   49   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #74]
-27   1   53   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #75]
-56   1   76   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+19   2   34   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+15   1   13   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+31   2   34   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #24]
+33   1   31   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+19   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
+31   1   0   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+33   1   19   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #28]
+33   1   26   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #29]
+1   1   12   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+2   1   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+10   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+6   1   13   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+27   1   33   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+18   1   23   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+16   1   23   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+17   1   23   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #37]
+22   1   23   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+21   1   23   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #39]
+20   1   23   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+20   1   32   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #41]
+21   1   32   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #42]
+22   1   32   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #43]
+29   1   19   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #44]
+29   1   31   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #45]
+27   1   34   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #46]
+34   1   36   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #47]
+34   1   16   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #48]
+34   1   18   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #49]
+34   1   17   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  2   1   1   2   0   4   0
 [Logical Levels]
