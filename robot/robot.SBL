@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42413
+42414
 ! 
 ! 
 ! 
@@ -41,7 +41,7 @@ ANIMATE_X
 3
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_move.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_animator.SBL
 0
 [Block #1]
 383   SUPERBLOCK
@@ -50,7 +50,7 @@ IS_VALID
 6
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_position_validator.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_position_validator.SBL
 0
 [Block #2]
 383   SUPERBLOCK
@@ -59,7 +59,7 @@ ANIMATE_Y
 3
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_move.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_animator.SBL
 0
 [Block #3]
 383   SUPERBLOCK
@@ -68,7 +68,7 @@ TO_XY_COORD
 3
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot_positions.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_position_to_xy.SBL
 0
 [Block #4]
 447   DECODER
@@ -86,7 +86,7 @@ CURRENT_POS
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\register_4bit.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\register_4bit.SBL
 0
 [Block #6]
 447   DECODER

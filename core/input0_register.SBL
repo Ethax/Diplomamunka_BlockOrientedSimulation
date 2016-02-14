@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42413
+42414
 ! 
 ! 
 ! 
@@ -73,7 +73,7 @@ READ
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\register_8bit.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\register_8bit.SBL
 0
 [Block #3]
 448   ENCODER
