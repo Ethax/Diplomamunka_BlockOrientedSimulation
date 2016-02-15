@@ -1,0 +1,8 @@
+Az alkalmazás megkeresi az összes BORIS fájlt az alkalmazás abszolút útvonalán (rekurzívan bejárva az almappákat is), és felülírja a bennük található hivatkozásokat, ha azok olyan fájlokra mutatnak, amiket a korábbi felderítés során is megtalált.
+
+Használati útmutató:
+1. Helyezd át a BORIS projekted arra az útvonalra, amelyikre csak akarod.
+2. Másold a fájlt a BORIS projektkönyvtárba és futtasd az alkalmazást.
+3. Ha használtál FAB-ot is a projektben, akkor annak a külsõ hivatkozásait kézzel kell átírnod.
+
+Ez az alkalmazás nem tér ki a projektben használt DLL-ekre mutató hivatkozásokra, illetve a FAB hivatkozásaira. Ez utóbbi viszont támogatja a relatív útvonalak használatát is. (Ha a FAB az áthelyezés után mégsem találná - a relatív útvonal ellenére - a külsõ hivatkozásokat, akkor elég csak az egyiket újra megkeresni, a többi automatikusan frissül.)
