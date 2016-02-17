@@ -1,8 +1,8 @@
 405
-Key code: 18
-26
+Karosszéria gyártósor
+54
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
-BMPSEQ	0	16777215	0	-1	0	0	Cella 1: Futószalag	50	390	375	80	0	5	belt_01.bmp	belt_02.bmp	belt_03.bmp	belt_04.bmp	belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I1
+BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	images\belt_01.bmp	images\belt_02.bmp	images\belt_03.bmp	images\belt_04.bmp	images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	120	300	120	400	I6	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	I7	5	5	0
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 1 (Pozíció)	120	139	180	6	0	3	4	4	8	1
@@ -12,7 +12,7 @@ HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 2 (Pozíció)	120	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 1: Robot 2 (Test)	115	550	190	40	0
 HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + I4	540	30	80	I5 * 2	8421504	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 2 ]
-BMPSEQ	0	16777215	0	-1	0	0	Cella 2: Futószalag	425	390	375	80	0	5	belt_01.bmp	belt_02.bmp	belt_03.bmp	belt_04.bmp	belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	1	I8
+BMPSEQ	0	16777215	8	-1	0	0	Cella 2: Futószalag	425	390	375	80	8	5	images\belt_01.bmp	images\belt_02.bmp	images\belt_03.bmp	images\belt_04.bmp	images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 2: Érkezés	495	300	495	400	I11	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 2: Szenzor	690	300	690	400	I12	5	5	0
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 1 (Pozíció)	495	139	180	6	0	3	4	4	8	1
@@ -23,17 +23,45 @@ RECT	0	0	1	-1	0	0	Cella 2: Robot 2 (Test)	490	550	190	40	0
 HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + I9	540	30	80	I10 * 2	8421504	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 3 ]
 HYDCYL	0	12615680	1	-1	0	0	Cella 3: Daru (Kar)	925	362	30	80	50	8421504	3	0	30
-SEPARATOR	255	16777215	1	-1	0	0	[ Egyéb ]
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	829	103	164	65	0	type_01.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	141	388	161	76	0	type_02.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	831	190	160	65	0	type_03.bmp
+SEPARATOR	255	16777215	1	-1	0	0	[ Tárgyak]
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	829	103	164	65	0	images\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	141	388	161	76	0	images\type_02.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	831	190	160	65	0	images\type_03.bmp
+SEPARATOR	255	16777215	1	-1	0	0	[ Fénykapuk ]
+LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Felsõ)	425	95	50	95	0	0
+LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Bal-felsõ)	50	95	50	295	0	0
+LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Jobb-felsõ)	425	95	425	295	0	0
+LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Alsó)	425	605	50	605	0	0
+LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Bal-alsó)	50	405	50	605	0	0
+LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Jobb-alsó)	425	405	425	605	0	0
+LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Felsõ)	800	75	425	75	0	0
+LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Bal-felsõ)	425	75	425	95	0	0
+LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Jobb-felsõ)	800	75	800	295	0	0
+LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Alsó)	800	625	425	625	0	0
+LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Bal-alsó)	425	605	425	625	0	0
+LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Jobb-alsó)	800	405	800	625	0	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-felsõ)	45	100	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-felsõ)	420	100	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-középsõ)	45	300	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-középsõ)	420	300	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-középsõ)	45	410	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-középsõ)	420	410	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-alsó)	45	610	10	10	0
+RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-alsó)	420	610	10	10	0
+RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Bal-felsõ)	420	80	10	10	0
+RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-felsõ)	795	80	10	10	0
+RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-középsõ)	795	300	10	10	0
+RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Bal-alsó)	420	630	10	10	0
+RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-középsõ)	795	410	10	10	0
+RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-alsó)	795	630	10	10	0
+BUTTON	0	12632256	1	-1	0	0		Tárgy 1	200	700	80	25	5.0	1	0	2	0	8	1
 1
 12
-BELT1_SPEED
+BELT_1
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 8.64000000000000E+0007
+ 5.00000000000000E+0000
 R1_POS_X
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -64,11 +92,11 @@ SENSOR_12
  0.00000000000000E+0000
  0.00000000000000E+0000
  5.00000000000000E+0000
-BELT2_SPEED
+BELT_2
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 8.64000000000000E+0007
+ 5.00000000000000E+0000
 R3_POS_X
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -97,9 +125,10 @@ SENSOR_22
 1
 1
 1
-1026
-669
-0
+1030
+797
+1
+O1
 1
 0
 0

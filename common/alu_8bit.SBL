@@ -1,0 +1,298 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42416
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+4   2
+OPERAND_A
+1   1
+OPERAND_B
+2   1
+CARRY_IN
+3   1
+OPERATION
+4   1
+CARRY_OUT
+5   1
+OUT
+6   1
+[Export Parameter Count]
+0
+[Block Count]
+18
+[Block #0]
+383   SUPERBLOCK
+ALU_B0
+175 25 246 109  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #1]
+447   DECODER
+OPERAND_A
+25 300 96 456  100
+1
+8
+0 0 0   0
+8   0
+0
+[Block #2]
+447   DECODER
+OPERAND_B
+25 475 96 631  100
+1
+8
+0 0 0   0
+8   0
+0
+[Block #3]
+344   FCT1
+CARRY_IN
+25 25 96 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #4]
+344   FCT1
+OPERATION
+25 100 96 151  100
+1
+1
+0 0 0   0
+8
+x
+[Block #5]
+344   FCT1
+CARRY_OUT
+325 925 396 976  100
+1
+1
+0 0 0   0
+8
+x
+[Block #6]
+448   ENCODER
+OUT
+325 375 396 531  100
+8
+1
+0 0 0   0
+8   0
+0
+[Block #7]
+383   SUPERBLOCK
+ALU_B1
+175 150 246 234  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #8]
+383   SUPERBLOCK
+ALU_B2
+175 275 246 359  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #9]
+383   SUPERBLOCK
+ALU_B3
+175 400 246 484  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #10]
+383   SUPERBLOCK
+ALU_B4
+175 525 246 609  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #11]
+383   SUPERBLOCK
+ALU_B5
+175 650 246 734  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #12]
+383   SUPERBLOCK
+ALU_B6
+175 775 246 859  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #13]
+383   SUPERBLOCK
+ALU_B7
+175 900 246 984  100
+4
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+0
+[Block #14]
+0   Text
+Text
+450 200 598 221  100
+0
+0
+0 0 0   0
+Ekvivalens C kód:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #15]
+0   Text
+Text
+450 225 1001 384  100
+0
+0
+0 0 0   0
+/* A kiválasztott mûvelet végrehajtása bitenként. */carry_out = carry_in;out.B0 = alu_1bit(operand_a.B0, operand_b.B0, &&carry_out, operation);out.B1 = alu_1bit(operand_a.B1, operand_b.B1, &&carry_out, operation);out.B2 = alu_1bit(operand_a.B2, operand_b.B2, &&carry_out, operation);out.B3 = alu_1bit(operand_a.B3, operand_b.B3, &&carry_out, operation);out.B4 = alu_1bit(operand_a.B4, operand_b.B4, &&carry_out, operation);out.B5 = alu_1bit(operand_a.B5, operand_b.B5, &&carry_out, operation);out.B6 = alu_1bit(operand_a.B6, operand_b.B6, &&carry_out, operation);out.B7 = alu_1bit(operand_a.B7, operand_b.B7, &&carry_out, operation);
+10   0   0   0   16777215   0   0
+Courier New
+[Block #16]
+0   Text
+Text
+450 25 508 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #17]
+0   Text
+Text
+450 50 993 168  100
+0
+0
+0 0 0   0
+Egy egyszerû 8-bites ALU (aritmetikai-logikai egység), ami a XOR, AND, OR és azösszeadás mûveleteket tudja.A mûveletek között a mûveletválasztó bemenettel lehet váltani, a következõk alapján:1 - XOR (kizáró vagy)2 - AND (és)3 - OR (vagy)4 - teljes összeadás
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+41
+[Connection #0]
+0   2   7   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+7   2   8   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+8   2   9   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+10   2   11   3   32768   -1   -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 
+[Connection #4]
+11   2   12   3   32768   -1   -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 
+[Connection #5]
+12   2   13   3   32768   -1   -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 -875 -1175 
+[Connection #6]
+9   2   10   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+2   5   10   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+13   2   5   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+9   1   6   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+3   1   0   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+4   1   0   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+1   4   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+1   3   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+10   1   6   5   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+4   1   7   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+2   6   11   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+2   4   9   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+8   1   6   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+1   5   10   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+1   2   7   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+11   1   6   6   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+2   7   12   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+4   1   8   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #24]
+2   3   8   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+7   1   6   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
+1   6   11   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+1   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #28]
+12   1   6   7   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #29]
+2   8   13   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+2   2   7   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+0   1   6   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+4   1   9   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+1   7   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+13   1   6   8   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+2   1   0   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+4   1   10   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #37]
+1   8   13   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+4   1   11   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #39]
+4   1   12   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+4   1   13   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42413
+42417
 ! 
 ! 
 ! 
@@ -21,7 +21,7 @@ OUTPUT
 [Export Parameter Count]
 0
 [Block Count]
-11
+15
 [Block #0]
 447   DECODER
 INPUT
@@ -33,7 +33,7 @@ INPUT
 0
 [Block #1]
 357   DFLIPFLOP
-DFLIPFLOP
+B0
 175 25 246 76  100
 2
 1
@@ -41,7 +41,7 @@ DFLIPFLOP
 0   0   1
 [Block #2]
 357   DFLIPFLOP
-DFLIPFLOP
+B1
 175 100 246 151  100
 2
 1
@@ -49,7 +49,7 @@ DFLIPFLOP
 0   0   1
 [Block #3]
 357   DFLIPFLOP
-DFLIPFLOP
+B2
 175 175 246 226  100
 2
 1
@@ -57,7 +57,7 @@ DFLIPFLOP
 0   0   1
 [Block #4]
 357   DFLIPFLOP
-DFLIPFLOP
+B3
 175 250 246 301  100
 2
 1
@@ -65,7 +65,7 @@ DFLIPFLOP
 0   0   1
 [Block #5]
 357   DFLIPFLOP
-DFLIPFLOP
+B4
 175 325 246 376  100
 2
 1
@@ -73,7 +73,7 @@ DFLIPFLOP
 0   0   1
 [Block #6]
 357   DFLIPFLOP
-DFLIPFLOP
+B5
 175 400 246 451  100
 2
 1
@@ -81,7 +81,7 @@ DFLIPFLOP
 0   0   1
 [Block #7]
 357   DFLIPFLOP
-DFLIPFLOP
+B6
 175 475 246 526  100
 2
 1
@@ -89,7 +89,7 @@ DFLIPFLOP
 0   0   1
 [Block #8]
 357   DFLIPFLOP
-DFLIPFLOP
+B7
 175 550 246 601  100
 2
 1
@@ -98,7 +98,7 @@ DFLIPFLOP
 [Block #9]
 448   ENCODER
 OUTPUT
-300 250 371 406  100
+325 250 396 406  100
 8
 1
 0 0 0   0
@@ -107,62 +107,102 @@ OUTPUT
 [Block #10]
 344   FCT1
 SET
-25 450 96 501  100
+25 550 96 601  100
 1
 1
 0 0 0   0
 8
 x
+[Block #11]
+0   Text
+Text
+450 125 598 146  100
+0
+0
+0 0 0   0
+Ekvivalens C kód:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #12]
+0   Text
+Text
+450 150 985 261  100
+0
+0
+0 0 0   0
+/* A bemenet átmásolása a kimenetre a SET alacsony logikai szintrõlmagas logikai szintre váltásakor. */if(set_current &&&& !set_previous)  output = input;/* A SET jelenlegi állapotának megjegyzése. */set_previous = set_current;
+10   0   0   0   16777215   0   0
+Courier New
+[Block #13]
+0   Text
+Text
+450 25 508 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #14]
+0   Text
+Text
+450 50 980 100  100
+0
+0
+0 0 0   0
+Általános célú, 8-bites regiszter, amelyik a SET bemenet felfútó élére átmásolja azINPUT bemenet bitjeit az OUTPUT kimenetre és a SET újabb felfútó éléig megõrziazt az INPUT változásától függetlenül.
+11   0   0   0   16777215   0   0
+Arial
 [Connection Count]
 24
 [Connection #0]
-5   1   9   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #1]
-4   1   9   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #2]
-6   1   9   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #3]
-3   1   9   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #4]
-7   1   9   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #5]
-2   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #6]
-8   1   9   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #7]
-1   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #8]
 0   5   5   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #9]
+[Connection #1]
+10   1   8   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+5   1   9   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+4   1   9   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
 0   4   4   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #10]
+[Connection #5]
 0   6   6   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #11]
+[Connection #6]
+10   1   7   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+6   1   9   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+3   1   9   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
 0   3   3   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #12]
+[Connection #10]
 0   7   7   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+7   1   9   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+10   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #13]
-0   2   2   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #14]
-0   8   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   2   2   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #15]
-0   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   8   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #16]
-10   1   8   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+8   1   9   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #17]
-10   1   7   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #18]
-10   1   6   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   5   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #19]
-10   1   5   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-10   1   4   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   4   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #21]
-10   1   3   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   3   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #22]
-10   1   2   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   2   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #23]
-10   1   1   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   1   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]
