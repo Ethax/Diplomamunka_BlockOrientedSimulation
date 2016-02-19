@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42417
+42418
 ! 
 ! 
 ! 
@@ -21,7 +21,7 @@ OUTPUT
 [Export Parameter Count]
 0
 [Block Count]
-23
+25
 [Block #0]
 447   DECODER
 INPUT
@@ -126,11 +126,11 @@ ARIAL
 [Block #12]
 0   Text
 Text
-525 150 1060 261  100
+525 150 1276 341  100
 0
 0
 0 0 0   0
-/* A bemenet átmásolása a kimenetre a SET alacsony logikai szintrõlmagas logikai szintre váltásakor. */if(set_current &&&& !set_previous)  output = input;/* A SET jelenlegi állapotának megjegyzése. */set_previous = set_current;
+unsigned short int register_16bit(unsigned short int input, bool set) {  static bool set_prev = false;  static unsigned short int output = 0;    /* A bemenet elmentése, ha a set alacsony logikai szintrõl magas logikai szintre váltott. */  if(set &&&& !set_prev)    output = input;    /* A set jelenlegi szintjének elmentése és a tárolt érték visszaadása. */  set_previous = set_current;  return output;}
 10   0   0   0   16777215   0   0
 Courier New
 [Block #13]
@@ -217,6 +217,26 @@ B15
 1
 0 0 0   0
 0   0   1
+[Block #23]
+0   Text
+Text
+525 375 631 396  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #24]
+0   Text
+Text
+525 400 1020 433  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
+11   0   0   0   16777215   0   0
+Arial
 [Connection Count]
 48
 [Connection #0]

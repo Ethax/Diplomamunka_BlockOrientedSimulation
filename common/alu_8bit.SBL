@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42416
+42419
 ! 
 ! 
 ! 
@@ -27,7 +27,7 @@ OUT
 [Export Parameter Count]
 0
 [Block Count]
-18
+20
 [Block #0]
 383   SUPERBLOCK
 ALU_B0
@@ -167,11 +167,11 @@ ARIAL
 [Block #15]
 0   Text
 Text
-450 225 1001 384  100
+450 225 1497 432  100
 0
 0
 0 0 0   0
-/* A kiválasztott mûvelet végrehajtása bitenként. */carry_out = carry_in;out.B0 = alu_1bit(operand_a.B0, operand_b.B0, &&carry_out, operation);out.B1 = alu_1bit(operand_a.B1, operand_b.B1, &&carry_out, operation);out.B2 = alu_1bit(operand_a.B2, operand_b.B2, &&carry_out, operation);out.B3 = alu_1bit(operand_a.B3, operand_b.B3, &&carry_out, operation);out.B4 = alu_1bit(operand_a.B4, operand_b.B4, &&carry_out, operation);out.B5 = alu_1bit(operand_a.B5, operand_b.B5, &&carry_out, operation);out.B6 = alu_1bit(operand_a.B6, operand_b.B6, &&carry_out, operation);out.B7 = alu_1bit(operand_a.B7, operand_b.B7, &&carry_out, operation);
+#define get_bit(var, bit) ((var >> bit) && 1)unsigned char alu_8bit(unsigned char operand_a, unsigned char operand_b, unsigned char operation, bool carry_in, bool* carry_out) {  unsigned char out = 0, i;    /* A kiválasztott mûvelet elvégzése minden bitre. */  *carry_out = carry_in;  for(i = 0; i < 8; i++)    out |= alu_1bit(get_bit(operand_a, i), get_bit(operand_b, i), operation, carry_out, &&carry_out) << i;    /* Az eredmény visszaadása. */  return out;}
 10   0   0   0   16777215   0   0
 Courier New
 [Block #16]
@@ -192,6 +192,26 @@ Text
 0
 0 0 0   0
 Egy egyszerû 8-bites ALU (aritmetikai-logikai egység), ami a XOR, AND, OR és azösszeadás mûveleteket tudja.A mûveletek között a mûveletválasztó bemenettel lehet váltani, a következõk alapján:1 - XOR (kizáró vagy)2 - AND (és)3 - OR (vagy)4 - teljes összeadás
+11   0   0   0   16777215   0   0
+Arial
+[Block #18]
+0   Text
+Text
+450 475 556 496  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #19]
+0   Text
+Text
+450 500 945 533  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
 11   0   0   0   16777215   0   0
 Arial
 [Connection Count]

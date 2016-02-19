@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42416
+42419
 ! 
 ! 
 ! 
@@ -27,7 +27,7 @@ CARRY_OUT
 [Export Parameter Count]
 0
 [Block Count]
-23
+25
 [Block #0]
 405   MULTISWITCH
 SWITCH
@@ -200,11 +200,11 @@ ARIAL
 [Block #20]
 0   Text
 Text
-675 225 1274 592  100
+675 225 1506 624  100
 0
 0
 0 0 0   0
-#define MIN(a, b) (((a) < (b)) ? (a) : (b))#define MAX(a, b) (((a) > (b)) ? (a) : (b))/* A mûveletválasztó értékének az [1, 4] értéktartományra kényszerítése. */operation = MAX(operation, 1);operation = MIN(operation, 4);/* A kiválasztott mûvelet elvégzése. */switch(operation) {case 1:  out = operand_a ^ operand_b;  break;case 2:  out = operand_a && operand_b;  break;case 3:  out = operand_a | operand_b;  break;case 4:  out = (operand_a ^ operand_b) ^ carry_in;  break;}carry_out = (operand_a && operand_b) | (carry_in && (operand_a ^ operand_b));
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))#define MAX(a, b) (((a) > (b)) ? (a) : (b))bool alu_1bit(bool operand_a, bool operand_b, unsigned char operation, bool carry_in, bool* carry_out) {  /* A mûveletválasztó értékének az [1, 4] értéktartományra kényszerítése. */  operation = MAX(operation, 1);  operation = MIN(operation, 4);    /* Az átvitel kiszámítása. */  *carry_out = (operand_a && operand_b) | (carry_in && (operand_a ^ operand_b));    /* A kiválasztott mûvelet elvégzése. */  switch(operation) {  case 1:    return operand_a ^ operand_b;  case 2:    return operand_a && operand_b;  case 3:    return operand_a | operand_b;  case 4:    return (operand_a ^ operand_b) ^ carry_in;  default:    return false;  }}
 10   0   0   0   16777215   0   0
 Courier New
 [Block #21]
@@ -225,6 +225,26 @@ Text
 0
 0 0 0   0
 Egy egyszerû 1-bites ALU (aritmetikai-logikai egység), ami a XOR, AND, OR és azösszeadás mûveleteket tudja.A mûveletek között a mûveletválasztó bemenettel lehet váltani, a következõk alapján:1 - XOR (kizáró vagy)2 - AND (és)3 - OR (vagy)4 - teljes összeadás
+11   0   0   0   16777215   0   0
+Arial
+[Block #23]
+0   Text
+Text
+675 650 781 671  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #24]
+0   Text
+Text
+675 675 1170 708  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
 11   0   0   0   16777215   0   0
 Arial
 [Connection Count]

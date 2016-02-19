@@ -1,0 +1,253 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42418
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+2   1
+INPUT
+1   1
+BIT_NUM
+7   1
+OUTPUT
+6   1
+[Export Parameter Count]
+0
+[Block Count]
+19
+[Block #0]
+447   DECODER
+INPUT
+400 50 471 206  100
+1
+8
+0 0 0   0
+8   0
+0
+[Block #1]
+344   FCT1
+INPUT
+25 50 96 101  100
+1
+1
+0 0 0   0
+8
+x
+[Block #2]
+306   CONST
+CONST: 0
+150 125 221 176  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #3]
+306   CONST
+CONST: 255
+275 125 346 176  100
+0
+1
+0 0 0   0
+ 2.55000000000000E+0002  0
+[Block #4]
+345   FCT2
+MAX(X, Y)
+150 50 221 101  100
+2
+1
+0 0 0   0
+9
+x+y
+[Block #5]
+345   FCT2
+MIN(X, Y)
+275 50 346 101  100
+2
+1
+0 0 0   0
+10
+x+y
+[Block #6]
+405   MULTISWITCH
+OUTPUT
+525 25 596 199  100
+9
+1
+0 0 0   0
+[Block #7]
+344   FCT1
+BIT_NUM
+25 225 96 276  100
+1
+1
+0 0 0   0
+8
+x
+[Block #8]
+306   CONST
+CONST: 0
+150 300 221 351  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #9]
+306   CONST
+CONST: 7
+275 300 346 351  100
+0
+1
+0 0 0   0
+ 7.00000000000000E+0000  0
+[Block #10]
+345   FCT2
+MAX(X, Y)
+150 225 221 276  100
+2
+1
+0 0 0   0
+9
+x+y
+[Block #11]
+345   FCT2
+MIN(X, Y)
+275 225 346 276  100
+2
+1
+0 0 0   0
+10
+x+y
+[Block #12]
+344   FCT1
+BIT_NUM++
+400 225 471 276  100
+1
+1
+0 0 0   0
+8
+x + 1
+[Block #13]
+0   Text
+Text
+650 100 798 121  100
+0
+0
+0 0 0   0
+Ekvivalens C kód:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #14]
+0   Text
+Text
+650 125 1337 364  100
+0
+0
+0 0 0   0
+#define MIN(a, b) (((a) < (b)) ? (a) : (b))#define MAX(a, b) (((a) > (b)) ? (a) : (b))bool get_bit_8bit(unsigned char input, unsigned char bit_num) {  /* A bemenet értékének az elõjel nélküli, 8-bites értéktartományra kényszerítése. */  input = MAX(operation, 0);  input = MIN(operation, 255);    /* A bitválasztó értékének az [0, 7] értéktartományra kényszerítése. */  bit_num = MAX(operation, 0);  bit_num = MIN(operation, 7);    /* Az kiválasztott bit visszaadása. */  return (input >> bit_num) && 1;}
+10   0   0   0   16777215   0   0
+Courier New
+[Block #15]
+0   Text
+Text
+650 25 708 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #16]
+0   Text
+Text
+650 50 934 66  100
+0
+0
+0 0 0   0
+Visszaadja a bemenet egy kiválasztott bitjét.
+11   0   0   0   16777215   0   0
+Arial
+[Block #17]
+0   Text
+Text
+650 400 756 421  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #18]
+0   Text
+Text
+650 425 1145 458  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+19
+[Connection #0]
+11   1   12   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+0   1   6   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+0   3   6   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+0   4   6   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+0   5   6   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+0   7   6   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+0   8   6   9   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+0   2   6   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+0   6   6   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+4   1   5   1   16711680   -1   -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 
+[Connection #10]
+1   1   4   1   16711680   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #11]
+10   1   11   1   33023   -1   -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 
+[Connection #12]
+7   1   10   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+5   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+12   1   6   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+3   1   5   2   0   -1   -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 
+[Connection #16]
+2   1   4   2   0   -1   -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 -50 
+[Connection #17]
+9   1   11   2   0   -1   -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 
+[Connection #18]
+8   1   10   2   0   -1   -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 -925 -1075 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

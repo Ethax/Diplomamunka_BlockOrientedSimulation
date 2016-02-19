@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42417
+42418
 ! 
 ! 
 ! 
@@ -21,7 +21,7 @@ OUTPUT
 [Export Parameter Count]
 0
 [Block Count]
-15
+17
 [Block #0]
 447   DECODER
 INPUT
@@ -126,11 +126,11 @@ ARIAL
 [Block #12]
 0   Text
 Text
-450 150 985 261  100
+450 150 1201 341  100
 0
 0
 0 0 0   0
-/* A bemenet átmásolása a kimenetre a SET alacsony logikai szintrõlmagas logikai szintre váltásakor. */if(set_current &&&& !set_previous)  output = input;/* A SET jelenlegi állapotának megjegyzése. */set_previous = set_current;
+unsigned char register_8bit(unsigned char input, bool set) {  static bool set_prev = false;  static unsigned char output = 0;    /* A bemenet elmentése, ha a set alacsony logikai szintrõl magas logikai szintre váltott. */  if(set &&&& !set_prev)    output = input;    /* A set jelenlegi szintjének elmentése és a tárolt érték visszaadása. */  set_previous = set_current;  return output;}
 10   0   0   0   16777215   0   0
 Courier New
 [Block #13]
@@ -151,6 +151,26 @@ Text
 0
 0 0 0   0
 Általános célú, 8-bites regiszter, amelyik a SET bemenet felfútó élére átmásolja azINPUT bemenet bitjeit az OUTPUT kimenetre és a SET újabb felfútó éléig megõrziazt az INPUT változásától függetlenül.
+11   0   0   0   16777215   0   0
+Arial
+[Block #15]
+0   Text
+Text
+450 375 556 396  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #16]
+0   Text
+Text
+450 400 945 433  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
 11   0   0   0   16777215   0   0
 Arial
 [Connection Count]
