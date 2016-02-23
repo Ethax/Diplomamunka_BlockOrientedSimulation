@@ -1,0 +1,247 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42423
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+2   2
+OPEN_CLOSE
+9   1
+IS_ENABLED
+18   2
+FRAME
+10   1
+IS_DONE
+11   1
+[Export Parameter Count]
+0
+[Block Count]
+19
+[Block #0]
+383   SUPERBLOCK
+COUNTER
+350 25 421 91  100
+3
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
+0
+[Block #1]
+362   COMPARATOR
+OUTPUT == POS
+450 125 521 176  100
+2
+1
+0 0 0   0
+2
+[Block #2]
+301   GENERATOR
+CLOCK
+25 175 96 226  100
+0
+1
+0 0 0   0
+1   0
+ 5.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+ 1.00000000000000E+0000    0.00000000000000E+0000
+ 1.00000000000000E-0001    2.00000000000000E-0001    0.00000000000000E+0000    0.00000000000000E+0000
+1.0
+[Block #3]
+344   FCT1
+OUTPUT + 1
+450 25 521 76  100
+1
+1
+0 0 0   0
+8
+x+1
+[Block #4]
+353   ANASWITCH2
+POSITION
+225 50 296 126  100
+3
+1
+0 0 0   0
+1
+[Block #5]
+306   CONST
+CONST: 7
+125 100 196 151  100
+0
+1
+0 0 0   0
+ 7.00000000000000E+0000  0
+[Block #6]
+306   CONST
+CONST: 0
+125 25 196 76  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #7]
+354   LOGIC1
+FALSE
+350 125 421 176  100
+0
+1
+1 0 0   0
+2
+[Block #8]
+354   LOGIC1
+OUTPUT != POS
+25 350 96 401  100
+1
+1
+1 0 0   0
+0
+[Block #9]
+344   FCT1
+OPEN_CLOSE
+25 25 96 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #10]
+344   FCT1
+FRAME
+575 25 646 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #11]
+344   FCT1
+IS_DONE
+575 125 646 176  100
+1
+1
+0 0 0   0
+8
+x
+[Block #12]
+0   Text
+Text
+700 125 848 146  100
+0
+0
+0 0 0   0
+Ekvivalens C kód:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #13]
+0   Text
+Text
+700 150 1435 389  100
+0
+0
+0 0 0   0
+extern bool clock();bool crane_gripper_controller(bool open_close, bool is_enabled, unsigned short int* frame) {  static bool is_done = false;  unsigned short int counter_output = 0;  int setpoint = open_close ? 7 : 0;    /* A soron következõ képkocka meghatározása. */  counter_output = counter(setpoint, false, (clock() && !is_done && is_enabled));  *frame = counter_output + 1;    /* Az animáció állapotának megállapítása és az eredmény visszaadása. */  is_done = (counter_output == setpoint) ? true : false;  return is_done;}
+10   0   0   0   16777215   0   0
+Courier New
+[Block #14]
+0   Text
+Text
+700 25 758 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #15]
+0   Text
+Text
+700 50 1165 83  100
+0
+0
+0 0 0   0
+Mûködteti a daru megfogóját az animációban, és jelez, ha az animáció avégére ért.
+11   0   0   0   16777215   0   0
+Arial
+[Block #16]
+0   Text
+Text
+700 425 806 446  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #17]
+0   Text
+Text
+700 450 1195 483  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
+11   0   0   0   16777215   0   0
+Arial
+[Block #18]
+396   LOGIC
+IS_ENABLED
+25 250 96 316  100
+3
+1
+0 0 0   0
+0
+[Connection Count]
+14
+[Connection #0]
+8   1   18   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+7   1   0   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+0   1   3   1   255   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
+[Connection #3]
+5   1   4   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+6   1   4   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+0   1   1   2   255   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
+[Connection #6]
+1   1   11   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+3   1   10   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+4   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+2   1   18   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+9   1   4   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+4   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+18   1   0   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+1   1   8   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

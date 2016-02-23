@@ -1,0 +1,289 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42423
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+2   4
+POSITION
+2   1
+OPEN_CLOSE
+3   1
+POSITION_Y
+12   1
+POSITION_X
+13   1
+GRIPPER
+15   1
+ERR_INVALID
+18   1
+[Export Parameter Count]
+0
+[Block Count]
+20
+[Block #0]
+383   SUPERBLOCK
+TO_XY_COORD
+325 25 396 76  100
+1
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_to_xy.SBL
+0
+[Block #1]
+383   SUPERBLOCK
+CURRENT_POS
+25 100 96 151  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\register_8bit.SBL
+0
+[Block #2]
+344   FCT1
+POSITION
+25 25 96 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #3]
+344   FCT1
+OPEN_CLOSE
+25 200 96 251  100
+1
+1
+0 0 0   0
+8
+x
+[Block #4]
+396   LOGIC
+ANIM_END
+625 350 696 416  100
+3
+1
+0 0 0   0
+0
+[Block #5]
+383   SUPERBLOCK
+ANIMATE_Y
+500 25 571 91  100
+3
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
+0
+[Block #6]
+355   LOGIC2
+CLK_ENABLE
+325 175 396 226  100
+2
+1
+0 0 0   0
+0
+[Block #7]
+301   GENERATOR
+FAST
+325 250 396 301  100
+0
+1
+1 0 0   0
+1   0
+ 5.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+ 1.00000000000000E+0000    0.00000000000000E+0000
+ 5.00000000000000E-0002    1.00000000000000E-0001    0.00000000000000E+0000    0.00000000000000E+0000
+1.0
+[Block #8]
+383   SUPERBLOCK
+ANIMATE_X
+500 175 571 241  100
+3
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
+0
+[Block #9]
+362   COMPARATOR
+SETP == OUTP
+625 100 696 151  100
+2
+1
+0 0 0   0
+2
+[Block #10]
+362   COMPARATOR
+SETP == OUTP
+625 250 696 301  100
+2
+1
+0 0 0   0
+2
+[Block #11]
+354   LOGIC1
+FALSE
+500 300 571 351  100
+0
+1
+1 0 0   0
+2
+[Block #12]
+344   FCT1
+POSITION_Y
+625 25 696 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #13]
+344   FCT1
+POSITION_X
+625 175 696 226  100
+1
+1
+0 0 0   0
+8
+x
+[Block #14]
+383   SUPERBLOCK
+GRIP_ANIM
+500 475 571 526  100
+2
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_gripper_controller.SBL
+0
+[Block #15]
+344   FCT1
+GRIPPER
+625 475 696 526  100
+1
+1
+0 0 0   0
+8
+x
+[Block #16]
+357   DFLIPFLOP
+CUR_STATE
+25 275 96 326  100
+2
+1
+0 0 0   0
+0   0   1
+[Block #17]
+383   SUPERBLOCK
+IS_VALID
+175 125 246 227  100
+5
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_validator.SBL
+0
+[Block #18]
+354   LOGIC1
+ERR_INVALID
+625 550 696 601  100
+1
+1
+0 0 0   0
+0
+[Block #19]
+414   OFFDELAY
+OFFDELAY
+325 400 396 451  100
+1
+1
+1 0 0   0
+ 1.00000000000000E-0001  0
+[Connection Count]
+32
+[Connection #0]
+7   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+11   1   8   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+11   1   5   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+5   1   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+8   1   13   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+14   1   15   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+5   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+8   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+14   2   4   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+2   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+3   1   16   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+10   1   4   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+9   1   4   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+17   1   6   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+3   1   17   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+1   1   17   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+16   1   17   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+2   1   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+0   1   5   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+6   1   8   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+6   1   5   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+0   2   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+19   1   17   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+2   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #24]
+0   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+0   2   10   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
+17   1   14   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+4   1   19   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #28]
+6   1   1   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #29]
+6   1   16   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+17   1   18   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+3   1   14   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

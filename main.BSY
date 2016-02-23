@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42422
+42423
 ! 
 ! 
 ! 
@@ -12,12 +12,12 @@
 ! Miklós Árpád
 ! SZTE
 [Block Count]
-49
+51
 [Block #0]
 385   USER1
 ANIMATION
-975 200 1046 446  100
-13
+975 200 1046 482  100
+15
 1
 0 0 0   0
 C:\Program Files (x86)\Kahlert\WinFACT 7\UserDLLs\FAB.dll
@@ -25,7 +25,7 @@ C:\Program Files (x86)\Kahlert\WinFACT 7\UserDLLs\FAB.dll
 0 0 0   0
 405
 Karosszéria gyártósor
-84
+90
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
 BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	120	300	120	400	I6	5	5	0
@@ -51,7 +51,7 @@ BMPSEQ	0	16777215	8	-1	0	0	Cella 3: Futószalag	800	390	375	80	8	5	D:\Current Stu
 DYNLINE	65535	8421504	5	-1	0	0	Cella 2: Érkezés	870	300	870	400	I11	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 2: Szenzor	1065	300	1065	400	I12	5	5	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Tárgyak]
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	829	277	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	832	109	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
 BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	141	388	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_02.bmp
 BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	831	191	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_03.bmp
 SEPARATOR	255	16777215	1	-1	0	0	[ Fénykapuk ]
@@ -104,19 +104,25 @@ RECTLED	0	65280	1	-1	0	0		695	215	5.0	1
 LABEL	0	16777215	1	-1	0	0		720	215	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0		435	190	22	Arial Black	R3	0	1
 LABEL	0	65535	1	-1	0	0		435	550	22	Arial Black	R3	0	1
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	575	64	500	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_bridge.bmp
-BMPSEQ	0	16777215	13	-1	0	0	Cella 3: Daru (Megfogó-villa)	952	553	60	117	13	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_08.bmp	*.BMP	*.BMP	1	0	8	0
+RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	189	190	40	0
+RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	660	190	40	0
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	654	64	500	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_bridge.bmp
+BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-villa)	I13 * 5 + 933	I14 * 5 + 298	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_08.bmp	*.BMP	*.BMP	1	0	8	0
 BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	895	527	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
-BMPSEQ	0	16777215	13	-1	0	0	Cella 3: Daru (Megfogó-kar)	952	553	60	117	13	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	*.BMP	*.BMP	1	0	8	0
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	521	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	959	515	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
-624
-72
+BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-kar)	I13 * 5 + 933	I14 * 5 + 298	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	*.BMP	*.BMP	1	0	8	0
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I14 * 5 + 265	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I13 * 5 + 940	I14 * 5 + 260	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
+LABEL	0	65535	1	-1	0	0		1242	252	14	Arial Black	7	0	1
+LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
+LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
+LABEL	0	65535	1	-1	0	0		1242	582	14	Arial Black	5	0	1
+521
+99
 1286
 797
 1
 1
-13
+15
 BELT_1
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -177,7 +183,17 @@ SENSOR_22
  0.00000000000000E+0000
  0.00000000000000E+0000
  5.00000000000000E+0000
-I13
+CRANE_X
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 1.70000000000000E+0001
+CRANE_Y
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 6.60000000000000E+0001
+CRANE_GRIPPER
  1.00000000000000E+0000
  0.00000000000000E+0000
  1.00000000000000E+0000
@@ -210,47 +226,49 @@ O1
  0.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 6.00000000000000E+0000
  0.00000000000000E+0000
-            
+ 4.40000000000000E+0001
+ 8.00000000000000E+0000
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
  0.00000000000000E+0000
-            
+              
+ 0.00000000000000E+0000
+              
 1
 0
 1
@@ -558,7 +576,7 @@ SENSOR_32
 [Block #34]
 383   SUPERBLOCK
 COUNTER
-850 575 921 641  100
+825 1050 896 1116  100
 3
 1
 0 0 0   0
@@ -567,18 +585,18 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counte
 [Block #35]
 362   COMPARATOR
 OUTPUT == 4
-850 675 921 726  100
+825 1150 896 1201  100
 2
 1
-0 0 0   0
+1 0 0   0
 2
 [Block #36]
 301   GENERATOR
 CLOCK
-725 725 796 776  100
+700 1200 771 1251  100
 0
 1
-0 0 0   0
+1 0 0   0
 1   0
  5.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
  1.00000000000000E+0000    0.00000000000000E+0000
@@ -587,7 +605,7 @@ CLOCK
 [Block #37]
 344   FCT1
 OUTPUT + 1
-975 575 1046 626  100
+950 1050 1021 1101  100
 1
 1
 0 0 0   0
@@ -596,7 +614,7 @@ x+1
 [Block #38]
 306   CONST
 CONST: 4
-725 575 796 626  100
+700 1050 771 1101  100
 0
 1
 0 0 0   0
@@ -604,7 +622,7 @@ CONST: 4
 [Block #39]
 355   LOGIC2
 ENABLE
-725 650 796 701  100
+700 1125 771 1176  100
 2
 1
 0 0 0   0
@@ -612,7 +630,7 @@ ENABLE
 [Block #40]
 430   BLOCKBUTTON
 SWTICH
-575 650 646 689  100
+550 1125 621 1164  100
 0
 1
 0 0 0   0
@@ -620,185 +638,206 @@ SWTICH
 0
 [Block #41]
 383   SUPERBLOCK
-COUNTER
-575 900 646 966  100
+CRANE
+650 675 721 759  100
+2
+4
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane.SBL
+0
+[Block #42]
+432   BLOCKSTATUS
+ERR_INVALID
+300 950 371 989  100
+1
+0
+0 0 0   0
+32768 128
+[Block #43]
+430   BLOCKBUTTON
+POSITION_B0
+200 725 271 764  100
+0
+1
+0 0 0   0
+0
+0
+[Block #44]
+430   BLOCKBUTTON
+POSITION_B1
+200 775 271 814  100
+0
+1
+0 0 0   0
+0
+0
+[Block #45]
+430   BLOCKBUTTON
+POSITION_B2
+200 825 271 864  100
+0
+1
+0 0 0   0
+0
+0
+[Block #46]
+383   SUPERBLOCK
+SUPERBLOCK
+475 675 546 726  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\register_8bit.SBL
+0
+[Block #47]
+448   ENCODER
+ENCODER
+300 775 371 841  100
 3
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
-0
-[Block #42]
-362   COMPARATOR
-OUTPUT == 4
-575 1000 646 1051  100
-2
-1
-0 0 0   0
-2
-[Block #43]
-301   GENERATOR
-CLOCK
-450 1050 521 1101  100
-0
-1
-0 0 0   0
-1   0
- 5.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
- 1.00000000000000E+0000    0.00000000000000E+0000
- 1.00000000000000E-0001    2.00000000000000E-0001    0.00000000000000E+0000    0.00000000000000E+0000
-1.0
-[Block #44]
-344   FCT1
-OUTPUT + 1
-700 900 771 951  100
-1
-1
-0 0 0   0
-8
-x+1
-[Block #45]
-306   CONST
-CONST: 7
-450 900 521 951  100
-0
-1
-0 0 0   0
- 7.00000000000000E+0000  0
-[Block #46]
-355   LOGIC2
-ENABLE
-450 975 521 1026  100
-2
-1
-0 0 0   0
-0
-[Block #47]
-430   BLOCKBUTTON
-SWTICH
-300 975 371 1014  100
-0
-1
-0 0 0   0
-0
+3   0
 0
 [Block #48]
+430   BLOCKBUTTON
+GRIPPER
+200 900 271 939  100
+0
+1
+0 0 0   0
+0
+0
+[Block #49]
+430   BLOCKBUTTON
+START
+350 700 421 739  100
+0
+1
+0 0 0   0
+0
+1
+[Block #50]
 431   BLOCKDIGOUT
 BLOCKDIGOUT
-300 1050 399 1089  100
+400 850 499 889  100
 1
 0
 0 0 0   0
 %8.3f
 8388608
 [Connection Count]
-54
+56
 [Connection #0]
-18   2   25   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #1]
-20   2   24   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #2]
-34   1   37   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #3]
-41   1   44   1   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #4]
-38   1   34   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #5]
-45   1   41   1   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #6]
-7   1   16   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #7]
-3   1   17   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #8]
-10   1   17   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #9]
-4   1   17   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #10]
-8   1   17   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #11]
-39   1   34   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #12]
-46   1   41   3   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #13]
-5   1   17   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #14]
-1   1   17   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #15]
-38   1   35   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #16]
-45   1   42   1   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #17]
-11   1   17   9   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #18]
-2   1   17   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #19]
 36   1   39   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #20]
-43   1   46   2   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #21]
+[Connection #1]
 35   1   34   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #22]
-42   1   41   2   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #23]
+[Connection #2]
 34   1   35   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #24]
-41   1   42   2   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #25]
-17   2   19   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #26]
-17   7   16   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #27]
-17   6   16   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #28]
+[Connection #3]
+44   1   47   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+45   1   47   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+43   1   47   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+47   1   50   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+18   2   25   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+20   2   24   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
 37   1   0   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #29]
+[Connection #10]
+34   1   37   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+38   1   34   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+49   1   46   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+7   1   16   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+3   1   17   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+10   1   17   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+4   1   17   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+8   1   17   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+39   1   34   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+5   1   17   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+1   1   17   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+11   1   17   9   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+2   1   17   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+17   2   19   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #24]
+17   7   16   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+17   6   16   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
 16   3   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #30]
+[Connection #27]
 16   1   22   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #31]
+[Connection #28]
 40   1   39   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #32]
-47   1   46   1   16711680   -1   -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 -575 
-[Connection #33]
+[Connection #29]
 16   2   23   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #34]
+[Connection #30]
 0   1   6   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #35]
+[Connection #31]
+46   1   41   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+47   1   46   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+38   1   35   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
 18   3   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #36]
+[Connection #35]
 18   4   0   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #37]
+[Connection #36]
 20   3   0   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #38]
+[Connection #37]
 20   4   0   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #39]
+[Connection #38]
 20   1   21   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #40]
+[Connection #39]
 18   1   21   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+41   1   0   14   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #41]
-44   1   0   13   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+41   3   0   15   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #42]
-44   1   48   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+41   2   0   13   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #43]
-17   3   18   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+48   1   41   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #44]
-17   4   18   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+41   4   42   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #45]
-17   1   18   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   3   18   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #46]
-16   3   20   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   4   18   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #47]
-17   3   20   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   1   18   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #48]
-17   4   20   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   3   20   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #49]
-19   1   18   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   3   20   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #50]
-17   1   20   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   4   20   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #51]
-16   3   18   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+19   1   18   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #52]
-19   2   20   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   1   20   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #53]
+16   3   18   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #54]
+19   2   20   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #55]
 21   1   16   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  2   1   1   2   0   4   0
