@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42421
+42425
 ! 
 ! 
 ! 
@@ -35,7 +35,7 @@ POSITION_Y
 [Export Parameter Count]
 0
 [Block Count]
-32
+33
 [Block #0]
 383   SUPERBLOCK
 IS_VALID
@@ -57,11 +57,11 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_p
 [Block #2]
 383   SUPERBLOCK
 CURRENT_POS
-25 100 96 151  100
-2
+25 100 96 166  100
+3
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\register_8bit.SBL
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
 0
 [Block #3]
 344   FCT1
@@ -75,7 +75,7 @@ x
 [Block #4]
 354   LOGIC1
 NOT_STOP
-175 275 246 326  100
+175 350 246 401  100
 1
 1
 0 0 0   0
@@ -83,7 +83,7 @@ NOT_STOP
 [Block #5]
 344   FCT1
 SLOW_FAST
-25 525 96 576  100
+25 600 96 651  100
 1
 1
 0 0 0   0
@@ -92,7 +92,7 @@ x
 [Block #6]
 344   FCT1
 IS_SELECTED
-25 350 96 401  100
+25 425 96 476  100
 1
 1
 0 0 0   0
@@ -101,7 +101,7 @@ x
 [Block #7]
 344   FCT1
 STOP
-25 275 96 326  100
+25 350 96 401  100
 1
 1
 0 0 0   0
@@ -110,7 +110,7 @@ x
 [Block #8]
 396   LOGIC
 ANIM_ENABLE
-325 200 396 284  100
+325 250 396 334  100
 4
 1
 0 0 0   0
@@ -118,7 +118,7 @@ ANIM_ENABLE
 [Block #9]
 344   FCT1
 IS_ONLINE
-25 425 96 476  100
+25 500 96 551  100
 1
 1
 0 0 0   0
@@ -144,7 +144,7 @@ ANIM_END
 [Block #12]
 396   LOGIC
 ERR_INVALID
-175 400 246 466  100
+175 475 246 541  100
 3
 1
 0 0 0   0
@@ -152,7 +152,7 @@ ERR_INVALID
 [Block #13]
 354   LOGIC1
 NOT_VALID
-175 200 246 251  100
+175 250 246 301  100
 1
 1
 1 0 0   0
@@ -169,7 +169,7 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counte
 [Block #15]
 355   LOGIC2
 CLK_ENABLE
-325 300 396 351  100
+325 350 396 401  100
 2
 1
 0 0 0   0
@@ -177,7 +177,7 @@ CLK_ENABLE
 [Block #16]
 353   ANASWITCH2
 CLOCK
-175 525 246 601  100
+175 600 246 676  100
 3
 1
 0 0 0   0
@@ -185,7 +185,7 @@ CLOCK
 [Block #17]
 301   GENERATOR
 FAST
-25 600 96 651  100
+25 675 96 726  100
 0
 1
 0 0 0   0
@@ -197,7 +197,7 @@ FAST
 [Block #18]
 301   GENERATOR
 SLOW
-25 675 96 726  100
+25 750 96 801  100
 0
 1
 0 0 0   0
@@ -300,7 +300,7 @@ Arial
 [Block #29]
 344   FCT1
 TYPE
-25 175 96 226  100
+25 225 96 276  100
 1
 1
 0 0 0   0
@@ -326,12 +326,20 @@ Text
 A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
 11   0   0   0   16777215   0   0
 Arial
+[Block #32]
+354   LOGIC1
+UNSIGNED
+175 175 246 226  100
+0
+1
+1 0 0   0
+2
 [Connection Count]
-36
+37
 [Connection #0]
-0   1   13   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #1]
 22   1   19   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+0   1   13   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #2]
 13   1   12   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
@@ -345,11 +353,11 @@ Arial
 [Connection #7]
 19   1   21   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-3   1   2   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #9]
 8   1   15   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #10]
+[Connection #9]
 11   1   10   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+3   1   2   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #11]
 21   1   11   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #12]
@@ -365,41 +373,43 @@ Arial
 [Connection #17]
 3   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #18]
-4   1   8   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #19]
 6   1   12   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+4   1   8   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-29   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #21]
 17   1   16   1   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
-[Connection #22]
-0   1   8   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #23]
+[Connection #21]
 18   1   16   3   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+[Connection #22]
+29   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+0   1   8   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #24]
 16   1   15   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #25]
 1   1   14   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #26]
-15   1   19   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #27]
 1   2   19   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+15   1   19   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #28]
 15   1   14   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #29]
-3   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+32   1   2   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #30]
-1   1   20   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+3   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #31]
-6   1   8   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   1   20   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #32]
-9   1   8   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   8   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #33]
 1   2   21   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #34]
-6   1   11   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   1   8   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #35]
-11   1   2   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   11   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+11   1   2   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]
