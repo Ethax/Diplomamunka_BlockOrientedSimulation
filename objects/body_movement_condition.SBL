@@ -1,0 +1,195 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42427
+! 
+! 
+! 
+! 
+! 
+! 
+! 
+! 
+5   2
+BODY_X_POS
+3   1
+BODY_WIDTH
+4   1
+BELT_X_POS
+5   1
+BELT_WIDTH
+6   1
+BELT_STATE
+11   1
+CAN_MOVE
+10   1
+START_POS
+12   1
+[Export Parameter Count]
+0
+[Block Count]
+13
+[Block #0]
+345   FCT2
+BODY_CENTER
+175 100 246 151  100
+2
+1
+0 0 0   0
+8
+x + (y / 2)
+[Block #1]
+362   COMPARATOR
+CENT >= BEG
+300 100 371 151  100
+2
+1
+0 0 0   0
+3
+[Block #2]
+344   FCT1
+BELT_BEGIN
+175 175 246 226  100
+1
+1
+0 0 0   0
+8
+x - 5
+[Block #3]
+344   FCT1
+BODY_X_POS
+25 25 96 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #4]
+344   FCT1
+BODY_WIDTH
+25 100 96 151  100
+1
+1
+0 0 0   0
+8
+x
+[Block #5]
+344   FCT1
+BELT_X_POS
+25 275 96 326  100
+1
+1
+0 0 0   0
+8
+x
+[Block #6]
+344   FCT1
+BELT_WIDTH
+25 350 96 401  100
+1
+1
+0 0 0   0
+8
+x
+[Block #7]
+345   FCT2
+BELT_END
+175 275 246 326  100
+2
+1
+0 0 0   0
+8
+x + y + 5
+[Block #8]
+362   COMPARATOR
+CENT <= END
+300 275 371 326  100
+2
+1
+0 0 0   0
+1
+[Block #9]
+355   LOGIC2
+BODY_ON_BELT
+425 175 496 226  100
+2
+1
+0 0 0   0
+1
+[Block #10]
+355   LOGIC2
+CAN_MOVE
+425 425 496 476  100
+2
+1
+0 0 0   0
+0
+[Block #11]
+344   FCT1
+BELT_STATE
+25 425 96 476  100
+1
+1
+0 0 0   0
+8
+x
+[Block #12]
+345   FCT2
+START_POS
+425 500 496 551  100
+2
+1
+0 0 0   0
+8
+y - (x / 2)
+[Connection Count]
+15
+[Connection #0]
+0   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+7   1   8   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+2   1   1   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+1   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+8   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+0   1   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+9   1   10   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+4   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+5   1   7   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+3   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+6   1   7   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+5   1   2   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+11   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+5   1   12   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+4   1   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG
