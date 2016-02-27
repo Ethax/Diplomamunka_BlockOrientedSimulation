@@ -22,16 +22,16 @@ HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 2 (Pozíció)	495	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 2: Robot 2 (Test)	490	550	190	40	0
 HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + I9	540	30	80	I10 * 2	6979733	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 3 ]
-BMPSEQ	0	16777215	8	-1	0	0	Cella 3: Futószalag	800	390	375	80	8	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
+BMPSEQ	0	16777215	16	-1	0	0	Cella 3: Futószalag	800	390	375	80	16	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 3: Érkezés	850	300	850	400	I11	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 3: Szenzor	1015	300	1015	400	I12	5	5	0
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	189	190	40	0
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	660	190	40	0
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	654	64	500	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_bridge.bmp
 BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-villa)	I13 * 5 + 933	I14 * 5 + 407	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_08.bmp	*.BMP	*.BMP	1	0	8	0
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	833	128	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	345	388	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_02.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	830	213	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_03.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	I19	I20	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	I21	I22	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_02.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	I23	I24	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_03.bmp
 BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-kar)	I13 * 5 + 933	I14 * 5 + 407	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	*.BMP	*.BMP	1	0	8	0
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I14 * 5 + 375	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I13 * 5 + 940	I14 * 5 + 369	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
@@ -100,7 +100,7 @@ LABEL	0	16777215	1	-1	0	0		81	722	10	ARIAL	[ Robot 3 ] Érvénytelen robotkonfigur
 RECTLED	0	255	1	-1	0	0		56	747	5.0	1
 LABEL	0	16777215	1	-1	0	0		81	747	10	ARIAL	[ Daru ] Érvénytelen daru pozíció.	0	1
 1
-16
+24
 BELT_1
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -181,6 +181,46 @@ BELT_3
  0.00000000000000E+0000
  0.00000000000000E+0000
  5.00000000000000E+0000
+SENSOR_31
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 5.00000000000000E+0000
+SENSOR_32
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 5.00000000000000E+0000
+BODY_1_X
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-3.27680000000000E+0004
+ 3.27670000000000E+0004
+BODY_1_Y
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-3.27680000000000E+0004
+ 3.27670000000000E+0004
+BODY_2_X
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-3.27680000000000E+0004
+ 3.27670000000000E+0004
+BODY_2_Y
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-3.27680000000000E+0004
+ 3.27670000000000E+0004
+BODY_3_X
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-3.27680000000000E+0004
+ 3.27670000000000E+0004
+BODY_3_Y
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-3.27680000000000E+0004
+ 3.27670000000000E+0004
 16777215
  1.00000000000000E+0001
  1.00000000000000E+0001
@@ -200,26 +240,26 @@ O1
 0
 0
 0
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
- 0.00000000000000E+0000                   
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                      
 1
 0
 1
