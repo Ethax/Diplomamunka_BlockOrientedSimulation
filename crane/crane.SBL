@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42425
+42428
 ! 
 ! 
 ! 
@@ -27,7 +27,7 @@ ERR_INVALID
 [Export Parameter Count]
 0
 [Block Count]
-21
+27
 [Block #0]
 383   SUPERBLOCK
 TO_XY_COORD
@@ -211,6 +211,66 @@ UNSIGNED
 1
 1 0 0   0
 2
+[Block #21]
+0   Text
+Text
+775 125 923 146  100
+0
+0
+0 0 0   0
+Ekvivalens C kód:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #22]
+0   Text
+Text
+775 150 2078 661  100
+0
+0
+0 0 0   0
+extern bool fast();bool crane(unsigned char position, bool open_close, unsigned char* position_x, unsigned char* position_y, unsigned char* gripper) {  bool clock = fast(), is_done;  static bool anim_end = false;  unsigned char endpoint_x, endpoint_y;    /* Hibás mûködés jelzése, ha a megadott pozíció és megfogó-állapot érvénytelen. */  if(!is_valid(position, current_pos, anim_end, open_close, current_state))    return true;    /* Az animáció következõ koordinátáinak kiszámítása, ha a megadott pozíció és megfogó-állapot érvényes. */  if(is_valid(position, current_pos, anim_end, open_close, current_state)) {    /* Az új értékek letárolása. */    anim_end = false;    current_pos = position;    current_state = open_close;        /* Az animáció végpontjainak és a jelenlegi koordinátáinak, illetve a megfogó-animáció következõ képkockájának meghatározása. */    to_xy_coord(position, &&endpoint_x, &&endpoint_y);    *position_x = animate_x(endpoint_x, false, clock);    *position_y = animate_y(endpoint_y, false, clock);    *gripper = grip_anim(open_close, true, &&is_done);        /* A mozgás befejezésének eltárolása, ha a jelenlegi koordináták megegyeznek a végpontok koordinátáival és a megfogó-animáció is elérte az utolsó képkockát. */    if(position_x == endpoint_x &&&& position_y == endpoint_y &&&& is_selected && is_done)      anim_end = true;  }    /* Hibátlan mûködés jelzése. */  return false;}
+10   0   0   0   16777215   0   0
+Courier New
+[Block #23]
+0   Text
+Text
+775 25 833 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #24]
+0   Text
+Text
+775 50 1218 83  100
+0
+0
+0 0 0   0
+Mûködteti a darut az animációban, és leellenõrzi a megadott pozíciókérvényességét.
+11   0   0   0   16777215   0   0
+Arial
+[Block #25]
+0   Text
+Text
+775 700 881 721  100
+0
+0
+0 0 0   0
+Megjegyzés:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #26]
+0   Text
+Text
+775 725 1270 758  100
+0
+0
+0 0 0   0
+A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
+11   0   0   0   16777215   0   0
+Arial
 [Connection Count]
 33
 [Connection #0]

@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42423
+42428
 ! 
 ! 
 ! 
@@ -186,7 +186,7 @@ START_L_TO_H
 [Block #18]
 0   Text
 Text
-650 100 798 121  100
+650 125 798 146  100
 0
 0
 0 0 0   0
@@ -196,11 +196,11 @@ ARIAL
 [Block #19]
 0   Text
 Text
-650 125 1337 492  100
+650 150 2073 821  100
 0
 0
 0 0 0   0
-#define MIN(a, b) (((a) < (b)) ? (a) : (b))#define MAX(a, b) (((a) > (b)) ? (a) : (b))#define get_bit(var, bit) ((var >> bit) && 1)void robot_select(unsigned char number, bool* robot_1, bool* robot_2, bool* robot_3) {  /* A robotokat aktiváló bitek hamisra állítása. */  *robot_3 = *robot_2 = *robot_1 = false;    /* A robotválasztó értékének az [0, 3] értéktartományra kényszerítése. */  number = MAX(operation, 0);  number = MIN(operation, 3);    /* A robotválasztó értékének megfelelõ aktiváló bit igazra állítása. */  if(get_bit(number, 1) &&&& get_bit(number, 0)) {    *robot_3 = true;  }  else {    if(get_bit(number, 1))      *robot_2 = true;    else if(get_bit(number, 0))      *robot_1 = true;  }}
+extern bool start_high_to_low(bool actual);extern bool start_low_to_high(bool actual);bool robot_start_validator(bool* start, bool done, bool is_sel_new, bool is_pos_new, bool* err_short_sig, bool* err_restart) {  static bool start_hold = false;  static bool is_start_end_1 = false, is_start_end_2 = false;  static bool rs_err_restart = false;    /* Hibaellenõrzési okokból tárolt jelzõbitek törlése, ha a mozgatás befejezõdött. */  if(done) {    is_start_end_2 = false;    rs_err_restart = false;  }    /* Hibaellenõrzési okokból tárolt jelzõbitek törlése, ha a mozgatás befejezõdött vagy a START bemeneten felfutás történt. */  if(done || start_low_to_high(*start)) {    start_hold = false;    is_start_end_1 = false;  }    /* Az indítási impulzus végét jelzõ bitek beállítása, ha a START bemeneten lefutás történt. */  if(start_high_to_low(*start)) {    is_start_end_1 = true;    is_start_end_2 = true;  }    /* A túl rövid indítási impulzust jelzõ hiba beállítása vagy törlése. */  if(!start_hold &&&& is_start_end_1)    *err_short_sig = true;  else    *err_short_sig = false;      /* Az ismételt indítást jelzõ hiba beállítása, ha magas logikai szinten tartott kimenet mellett megváltozott kiválaszó vagy pozíció értékekkel újabb START impulzus érkezett. */  if(*start &&&& is_start_end_2 &&&& start_hold &&&& (is_sel_new || is_pos_new))    rs_err_restart = true;  *err_restart = rs_err_restart;    /* A START bemenet újraolvasása 100 milliszekundumos késleltetéssel és az indítás tartott logikai szintjének visszaadása. */  usleep(100000);  start_hold |= *start;  return start_hold;}
 10   0   0   0   16777215   0   0
 Courier New
 [Block #20]
@@ -216,17 +216,17 @@ ARIAL
 [Block #21]
 0   Text
 Text
-650 50 1155 66  100
+650 50 1157 100  100
 0
 0
 0 0 0   0
-!!!!! [ KIJAVÍTANI ] A megadott sorszám alapján kiválasztja a megfelelõ robotot.
+Ellenõrzi a robotok indítási feltételeit, és a robotok mogzásának befejezõdéséigmagas logikai szinten tartja az indító bitet, ha a feltételek megfelelõek.Hiba esetén beállítja a megfelelõ hibajelzõ biteket.
 11   0   0   0   16777215   0   0
 Arial
 [Block #22]
 0   Text
 Text
-650 525 756 546  100
+650 850 756 871  100
 0
 0
 0 0 0   0
@@ -236,7 +236,7 @@ ARIAL
 [Block #23]
 0   Text
 Text
-650 550 1145 583  100
+650 875 1145 908  100
 0
 0
 0 0 0   0
