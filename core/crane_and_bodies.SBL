@@ -1,0 +1,754 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42430
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+6   20
+BELT_BITS
+12   1
+CRANE_POS
+13   1
+GRIPPER_STATE
+14   1
+SET_BODY_1
+35   1
+SET_BODY_2
+36   1
+SET_BODY_3
+37   1
+BELT_1
+1   1
+BELT_2
+2   1
+BELT_3
+3   1
+SENSOR_11
+18   1
+SENSOR_12
+21   1
+SENSOR_21
+22   1
+SENSOR_22
+23   1
+SENSOR_31
+24   1
+SENSOR_32
+25   1
+CRANE_X
+26   1
+CRANE_Y
+27   1
+GRIP_FRAME
+28   1
+BODY_1_X
+29   1
+BODY_1_Y
+30   1
+BODY_2_X
+31   1
+BODY_2_Y
+32   1
+BODY_3_X
+33   1
+BODY_3_Y
+34   1
+ERR_POS
+53   1
+ERR_CRANE
+54   1
+[Export Parameter Count]
+0
+[Block Count]
+55
+[Block #0]
+383   SUPERBLOCK
+CRANE
+450 25 521 109  100
+2
+4
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane.SBL
+0
+[Block #1]
+383   SUPERBLOCK
+BELT_1
+1000 250 1071 301  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\belt_controller.SBL
+0
+[Block #2]
+383   SUPERBLOCK
+BELT_2
+1000 325 1071 376  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\belt_controller.SBL
+0
+[Block #3]
+383   SUPERBLOCK
+BELT_3
+1000 400 1071 451  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\belt_controller.SBL
+0
+[Block #4]
+383   SUPERBLOCK
+BODY_1
+575 150 646 306  100
+8
+4
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body.SBL
+0
+[Block #5]
+306   CONST
+TYPE: 1
+575 325 646 376  100
+0
+1
+1 0 0   0
+ 1.00000000000000E+0000  0
+[Block #6]
+383   SUPERBLOCK
+BODY_2
+575 400 646 556  100
+8
+4
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body.SBL
+0
+[Block #7]
+306   CONST
+TYPE: 2
+575 575 646 626  100
+0
+1
+1 0 0   0
+ 2.00000000000000E+0000  0
+[Block #8]
+383   SUPERBLOCK
+BODY_2
+575 650 646 806  100
+8
+4
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body.SBL
+0
+[Block #9]
+306   CONST
+TYPE: 3
+575 825 646 876  100
+0
+1
+1 0 0   0
+ 3.00000000000000E+0000  0
+[Block #10]
+447   DECODER
+BELT_DEC
+450 150 521 216  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #11]
+447   DECODER
+BELT_DEC
+875 325 946 391  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #12]
+344   FCT1
+BELT_BITS
+25 175 96 226  100
+1
+1
+0 0 0   0
+8
+x
+[Block #13]
+344   FCT1
+CRANE_POS
+25 25 96 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #14]
+344   FCT1
+GRIPPER_STATE
+25 100 96 151  100
+1
+1
+0 0 0   0
+8
+x
+[Block #15]
+447   DECODER
+BELT_DEC
+450 400 521 466  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #16]
+447   DECODER
+BELT_DEC
+450 650 521 716  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #17]
+383   SUPERBLOCK
+SENSOR_DEC
+875 575 946 695  100
+1
+6
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_decoder.SBL
+0
+[Block #18]
+396   LOGIC
+SENSOR_11
+1000 500 1071 566  100
+3
+1
+0 0 0   0
+1
+[Block #19]
+383   SUPERBLOCK
+SENSOR_DEC
+875 725 946 845  100
+1
+6
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_decoder.SBL
+0
+[Block #20]
+383   SUPERBLOCK
+SENSOR_DEC
+875 875 946 995  100
+1
+6
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_decoder.SBL
+0
+[Block #21]
+396   LOGIC
+SENSOR_12
+1000 600 1071 666  100
+3
+1
+0 0 0   0
+1
+[Block #22]
+396   LOGIC
+SENSOR_21
+1000 700 1071 766  100
+3
+1
+0 0 0   0
+1
+[Block #23]
+396   LOGIC
+SENSOR_22
+1000 800 1071 866  100
+3
+1
+0 0 0   0
+1
+[Block #24]
+396   LOGIC
+SENSOR_31
+1000 900 1071 966  100
+3
+1
+0 0 0   0
+1
+[Block #25]
+396   LOGIC
+SENSOR_32
+1000 1000 1071 1066  100
+3
+1
+0 0 0   0
+1
+[Block #26]
+344   FCT1
+CRANE_X
+1000 25 1071 76  100
+1
+1
+0 0 0   0
+8
+x
+[Block #27]
+344   FCT1
+CRANE_Y
+1000 100 1071 151  100
+1
+1
+0 0 0   0
+8
+x
+[Block #28]
+344   FCT1
+GRIP_FRAME
+1000 175 1071 226  100
+1
+1
+0 0 0   0
+8
+x
+[Block #29]
+344   FCT1
+BODY_1_X
+725 125 796 176  100
+1
+1
+0 0 0   0
+8
+x
+[Block #30]
+344   FCT1
+BODY_1_Y
+725 200 796 251  100
+1
+1
+0 0 0   0
+8
+x
+[Block #31]
+344   FCT1
+BODY_2_X
+725 375 796 426  100
+1
+1
+0 0 0   0
+8
+x
+[Block #32]
+344   FCT1
+BODY_2_Y
+725 450 796 501  100
+1
+1
+0 0 0   0
+8
+x
+[Block #33]
+344   FCT1
+BODY_3_X
+725 625 796 676  100
+1
+1
+0 0 0   0
+8
+x
+[Block #34]
+344   FCT1
+BODY_3_Y
+725 700 796 751  100
+1
+1
+0 0 0   0
+8
+x
+[Block #35]
+344   FCT1
+SET_BODY_1
+25 250 96 301  100
+1
+1
+0 0 0   0
+8
+x
+[Block #36]
+344   FCT1
+SET_BODY_2
+25 500 96 551  100
+1
+1
+0 0 0   0
+8
+x
+[Block #37]
+344   FCT1
+SET_BODY_3
+25 750 96 801  100
+1
+1
+0 0 0   0
+8
+x
+[Block #38]
+362   COMPARATOR
+N_1 == N_2
+200 250 271 301  100
+2
+1
+0 0 0   0
+2
+[Block #39]
+362   COMPARATOR
+N_1 == N_3
+200 325 271 376  100
+2
+1
+0 0 0   0
+0
+[Block #40]
+355   LOGIC2
+NUM_EQ
+325 325 396 376  100
+2
+1
+0 0 0   0
+1
+[Block #41]
+355   LOGIC2
+NUM_NE
+325 250 396 301  100
+2
+1
+0 0 0   0
+3
+[Block #42]
+352   ANASWITCH
+ANASWITCH
+450 250 521 301  100
+2
+1
+0 0 0   0
+1
+[Block #43]
+362   COMPARATOR
+N_2 == N_1
+200 500 271 551  100
+2
+1
+0 0 0   0
+2
+[Block #44]
+362   COMPARATOR
+N_2 == N_3
+200 575 271 626  100
+2
+1
+0 0 0   0
+0
+[Block #45]
+355   LOGIC2
+NUM_EQ
+325 575 396 626  100
+2
+1
+0 0 0   0
+1
+[Block #46]
+355   LOGIC2
+NUM_NE
+325 500 396 551  100
+2
+1
+0 0 0   0
+3
+[Block #47]
+352   ANASWITCH
+ANASWITCH
+450 500 521 551  100
+2
+1
+0 0 0   0
+1
+[Block #48]
+362   COMPARATOR
+N_3 == N_2
+200 750 271 801  100
+2
+1
+0 0 0   0
+2
+[Block #49]
+362   COMPARATOR
+N_3 == N_1
+200 825 271 876  100
+2
+1
+0 0 0   0
+0
+[Block #50]
+355   LOGIC2
+NUM_EQ
+325 825 396 876  100
+2
+1
+0 0 0   0
+1
+[Block #51]
+355   LOGIC2
+NUM_NE
+325 750 396 801  100
+2
+1
+0 0 0   0
+3
+[Block #52]
+352   ANASWITCH
+ANASWITCH
+450 750 521 801  100
+2
+1
+0 0 0   0
+1
+[Block #53]
+396   LOGIC
+ERR_POS
+450 975 521 1041  100
+3
+1
+0 0 0   0
+1
+[Block #54]
+344   FCT1
+ERR_CRANE
+725 975 796 1026  100
+1
+1
+0 0 0   0
+8
+x
+[Connection Count]
+97
+[Connection #0]
+5   1   4   8   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+9   1   8   8   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+7   1   6   8   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+10   1   4   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+15   1   6   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+16   1   8   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+10   2   4   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+15   2   6   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+16   2   8   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+10   3   4   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+15   3   6   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+16   3   8   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+42   1   4   7   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+47   1   6   7   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+52   1   8   7   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+17   2   21   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+11   2   2   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+38   1   41   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+39   1   40   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+41   1   42   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+43   1   46   1   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #21]
+44   1   45   2   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #22]
+46   1   47   2   32768   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #23]
+48   1   51   1   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #24]
+49   1   50   2   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #25]
+51   1   52   2   32768   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #26]
+20   5   24   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+19   4   23   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #28]
+19   3   22   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #29]
+11   3   3   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+11   1   1   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+38   1   40   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+39   1   41   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+43   1   45   1   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #34]
+44   1   46   2   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #35]
+48   1   50   1   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #36]
+49   1   51   2   255   -1   -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 -200 -250 
+[Connection #37]
+20   6   25   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+17   1   18   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #39]
+17   3   22   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+20   4   23   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #41]
+19   5   24   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #42]
+19   2   21   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #43]
+0   2   4   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #44]
+17   4   23   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #45]
+50   1   53   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #46]
+20   3   22   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #47]
+0   1   4   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #48]
+19   6   25   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #49]
+19   1   18   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #50]
+17   5   24   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #51]
+20   2   21   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #52]
+17   6   25   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #53]
+20   1   18   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #54]
+45   1   53   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #55]
+0   2   6   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #56]
+0   1   6   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #57]
+40   1   53   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #58]
+0   2   8   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #59]
+0   1   8   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #60]
+4   1   30   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #61]
+6   1   32   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #62]
+8   1   34   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #63]
+4   2   29   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #64]
+6   2   31   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #65]
+8   2   33   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #66]
+35   1   38   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #67]
+36   1   43   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #68]
+37   1   48   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #69]
+35   1   39   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #70]
+36   1   44   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #71]
+37   1   49   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #72]
+0   4   54   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #73]
+8   4   20   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #74]
+6   4   19   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #75]
+4   4   17   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #76]
+13   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #77]
+35   1   42   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #78]
+36   1   47   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #79]
+37   1   52   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #80]
+12   1   10   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #81]
+14   1   0   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #82]
+12   1   15   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #83]
+12   1   16   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #84]
+8   3   44   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #85]
+6   3   38   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #86]
+4   3   43   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #87]
+6   3   48   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #88]
+8   3   39   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #89]
+4   3   49   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #90]
+0   2   26   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #91]
+0   1   27   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #92]
+0   3   28   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #93]
+14   1   4   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #94]
+14   1   6   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #95]
+14   1   8   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #96]
+12   1   11   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

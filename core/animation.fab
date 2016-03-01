@@ -1,6 +1,6 @@
 405
 Karosszéria gyártósor
-98
+97
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
 BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	100	300	100	400	I6	5	5	0
@@ -63,26 +63,25 @@ RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Bal-alsó)	420	630	10	10	0
 RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-középsõ)	795	410	10	10	0
 RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-alsó)	795	630	10	10	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Feliratok ]
-BUTTON	0	12632256	1	-1	0	0		Tárgy 1	853	691	80	25	5.0	1	0	2	0	8	1
 LABEL	0	65535	1	-1	0	0		60	190	22	Arial Black	R1	0	1
-RECTLED	0	65280	1	-1	0	0		320	165	5.0	1
+RECTLED	0	65280	1	-1	0	0		320	165	5.0	0
 LABEL	0	16777215	1	-1	0	0		345	165	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0		320	190	5.0	1
+RECTLED	0	33023	1	-1	0	0		320	190	5.0	0
 LABEL	0	16777215	1	-1	0	0		345	190	10	ARIAL	Hegeszt	0	1
-RECTLED	0	65280	1	-1	0	0		320	215	5.0	1
+RECTLED	0	65280	1	-1	0	0		320	215	5.0	0
 LABEL	0	16777215	1	-1	0	0		345	215	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0		60	550	22	Arial Black	R2	0	1
-RECTLED	0	65280	1	-1	0	0		320	505	5.0	1
+RECTLED	0	65280	1	-1	0	0		320	505	5.0	0
 LABEL	0	16777215	1	-1	0	0		345	505	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0		320	530	5.0	1
+RECTLED	0	33023	1	-1	0	0		320	530	5.0	0
 LABEL	0	16777215	1	-1	0	0		345	530	10	ARIAL	Hegeszt	0	1
-RECTLED	0	65280	1	-1	0	0		320	555	5.0	1
+RECTLED	0	65280	1	-1	0	0		320	555	5.0	0
 LABEL	0	16777215	1	-1	0	0		345	555	10	ARIAL	Befejezve	0	1
-RECTLED	0	65280	1	-1	0	0		695	165	5.0	1
+RECTLED	0	65280	1	-1	0	0		695	165	5.0	0
 LABEL	0	16777215	1	-1	0	0		720	165	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0		695	190	5.0	1
+RECTLED	0	33023	1	-1	0	0		695	190	5.0	0
 LABEL	0	16777215	1	-1	0	0		720	190	10	ARIAL	Fest	0	1
-RECTLED	0	65280	1	-1	0	0		695	215	5.0	1
+RECTLED	0	65280	1	-1	0	0		695	215	5.0	0
 LABEL	0	16777215	1	-1	0	0		720	215	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0		435	190	22	Arial Black	R3	0	1
 LABEL	0	65535	1	-1	0	0		435	550	22	Arial Black	R3	0	1
@@ -90,15 +89,15 @@ LABEL	0	65535	1	-1	0	0		1242	252	14	Arial Black	7	0	1
 LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
 LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
 LABEL	0	65535	1	-1	0	0		1242	582	14	Arial Black	5	0	1
-LABEL	0	65535	1	-1	0	0		56	644	14	Arial Black	Hibalehetõségek	0	1
-RECTLED	0	255	1	-1	0	0		56	672	5.0	1
-LABEL	0	16777215	1	-1	0	0		81	672	10	ARIAL	[ Robot 1 ] Érvénytelen robotkonfiguráció.	0	1
-RECTLED	0	255	1	-1	0	0		56	697	5.0	1
-LABEL	0	16777215	1	-1	0	0		81	697	10	ARIAL	[ Robot 2 ] Érvénytelen robotkonfiguráció.	0	1
-RECTLED	0	255	1	-1	0	0		56	722	5.0	1
-LABEL	0	16777215	1	-1	0	0		81	722	10	ARIAL	[ Robot 3 ] Érvénytelen robotkonfiguráció.	0	1
-RECTLED	0	255	1	-1	0	0		56	747	5.0	1
-LABEL	0	16777215	1	-1	0	0		81	747	10	ARIAL	[ Daru ] Érvénytelen daru pozíció.	0	1
+BUTTON	0	12632256	1	-1	0	0	Tárgy 1: Behelyezés (Cella 1)	Tárgy 1	131	670	80	25	5.0	1	0	2	0	8	1
+BUTTON	0	12632256	1	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Tárgy 2	131	707	80	25	5.0	1	0	2	0	8	1
+BUTTON	0	12632256	3	-1	0	0	Tárgy 3: Behelyezés (Cella 1)	Tárgy 3	131	744	80	25	5.0	3	0	2	0	8	1
+BUTTON	0	12632256	4	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Tárgy 1	506	670	80	25	5.0	4	0	2	0	8	1
+BUTTON	0	12632256	5	-1	0	0	Tárgy 2: Behelyezés (Cella 2)	Tárgy 2	506	707	80	25	5.0	5	0	2	0	8	1
+BUTTON	0	12632256	6	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Tárgy 3	506	744	80	25	5.0	6	0	2	0	8	1
+BUTTON	0	12632256	7	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Tárgy 1	881	670	80	25	5.0	7	0	2	0	8	1
+BUTTON	0	12632256	8	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Tárgy 2	881	707	80	25	5.0	8	0	2	0	8	1
+BUTTON	0	12632256	9	-1	0	0	Tárgy 3: Behelyezés (Cella 3)	Tárgy 3	881	744	80	25	5.0	9	0	2	0	8	1
 1
 24
 BELT_1
@@ -231,8 +230,16 @@ BODY_3_Y
 1
 1286
 797
-1
-O1
+9
+B1_TO_CELL_1
+B2_TO_CELL_1
+B3_TO_CELL_1
+B1_TO_CELL_2
+B2_TO_CELL_2
+B3_TO_CELL_2
+B1_TO_CELL_3
+B2_TO_CELL_3
+B3_TO_CELL_3
 1
 0
 0
@@ -240,26 +247,26 @@ O1
 0
 0
 0
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
- 0.00000000000000E+0000                      
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                           
 1
 0
 1
