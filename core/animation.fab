@@ -23,8 +23,8 @@ RECT	0	0	1	-1	0	0	Cella 2: Robot 2 (Test)	490	550	190	40	0
 HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + I9	540	30	80	I10 * 2	6979733	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 3 ]
 BMPSEQ	0	16777215	16	-1	0	0	Cella 3: Futószalag	800	390	375	80	16	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
-DYNLINE	65535	8421504	5	-1	0	0	Cella 3: Érkezés	850	300	850	400	I11	5	5	0
-DYNLINE	65280	8421504	5	-1	0	0	Cella 3: Szenzor	1015	300	1015	400	I12	5	5	0
+DYNLINE	65535	8421504	5	-1	0	0	Cella 3: Érkezés	850	300	850	400	I17	5	5	0
+DYNLINE	65280	8421504	5	-1	0	0	Cella 3: Szenzor	1015	300	1015	400	I18	5	5	0
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	189	190	40	0
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	660	190	40	0
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	654	64	500	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_bridge.bmp
@@ -90,7 +90,7 @@ LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
 LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
 LABEL	0	65535	1	-1	0	0		1242	582	14	Arial Black	5	0	1
 BUTTON	0	12632256	1	-1	0	0	Tárgy 1: Behelyezés (Cella 1)	Tárgy 1	131	670	80	25	5.0	1	0	2	0	8	1
-BUTTON	0	12632256	1	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Tárgy 2	131	707	80	25	5.0	1	0	2	0	8	1
+BUTTON	0	12632256	2	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Tárgy 2	131	707	80	25	5.0	2	0	2	0	8	1
 BUTTON	0	12632256	3	-1	0	0	Tárgy 3: Behelyezés (Cella 1)	Tárgy 3	131	744	80	25	5.0	3	0	2	0	8	1
 BUTTON	0	12632256	4	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Tárgy 1	506	670	80	25	5.0	4	0	2	0	8	1
 BUTTON	0	12632256	5	-1	0	0	Tárgy 2: Behelyezés (Cella 2)	Tárgy 2	506	707	80	25	5.0	5	0	2	0	8	1
@@ -98,7 +98,7 @@ BUTTON	0	12632256	6	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Tárgy 3	506	744	80	25	5
 BUTTON	0	12632256	7	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Tárgy 1	881	670	80	25	5.0	7	0	2	0	8	1
 BUTTON	0	12632256	8	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Tárgy 2	881	707	80	25	5.0	8	0	2	0	8	1
 BUTTON	0	12632256	9	-1	0	0	Tárgy 3: Behelyezés (Cella 3)	Tárgy 3	881	744	80	25	5.0	9	0	2	0	8	1
-1
+0
 24
 BELT_1
  1.00000000000000E+0000
@@ -227,9 +227,9 @@ BODY_3_Y
 1
 1
 1
-1
+2
 1286
-797
+812
 9
 B1_TO_CELL_1
 B2_TO_CELL_1
