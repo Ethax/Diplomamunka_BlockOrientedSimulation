@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42430
+42435
 ! 
 ! 
 ! 
@@ -12,12 +12,12 @@
 ! Miklós Árpád
 ! SZTE
 [Block Count]
-54
+56
 [Block #0]
 385   USER1
 ANIMATION
-950 75 1021 519  100
-24
+950 75 1021 537  100
+25
 9
 0 0 0   0
 C:\Program Files (x86)\Kahlert\WinFACT 7\UserDLLs\FAB.dll
@@ -25,28 +25,39 @@ C:\Program Files (x86)\Kahlert\WinFACT 7\UserDLLs\FAB.dll
 0 0 0   0
 405
 Karosszéria gyártósor
-97
+81
+LABEL	0	16777215	1	-1	0	0	Cím	26	55	16	Arial Black	Karosszéria gyártósor	0	1
+LABEL	0	16777215	1	-1	0	0	Készítõ	26	74	10	Arial	Készítette: Miklós Árpád	0	1
+BITMAP	0	16777215	1	-1	0	0	Kerítés: Felsõ	45	304	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_top.bmp
+BITMAP	0	16777215	1	-1	0	0	Kerítés: Alsó	45	638	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_bottom.bmp
+RECT	0	6316128	1	-1	0	0	Platform: Kezdõ	0	390	50	80	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
 BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	100	300	100	400	I6	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	I7	5	5	0
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 1 (Pozíció)	120	139	180	6	0	3	4	4	8	1
 RECT	0	0	1	-1	0	0	Cella 1: Robot 1 (Test)	115	190	190	40	0
-HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1 (Kar)	120 + I2	240	30	80	I3 * 2	6985109	2	0	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1 (Kar)	120 + (I2 * 2)	240	30	80	I3 * 2	6985109	2	0	0
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 2 (Pozíció)	120	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 1: Robot 2 (Test)	115	550	190	40	0
-HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + I4	540	30	80	I5 * 2	6985109	0	0	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + (I4 * 2)	540	30	80	I5 * 2	6985109	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 2 ]
 BMPSEQ	0	16777215	8	-1	0	0	Cella 2: Futószalag	425	390	375	80	8	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 2: Érkezés	475	300	475	400	I11	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 2: Szenzor	690	300	690	400	I12	5	5	0
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 1 (Pozíció)	495	139	180	6	0	3	4	4	8	1
 RECT	0	0	1	-1	0	0	Cella 2: Robot 1 (Test)	490	190	190	40	0
-HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 1 (Kar)	495 + I9	240	30	80	I10 * 2	6979733	2	0	0
+HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 1 (Kar)	495 + (I9 * 2)	240	30	80	I10 * 2	6979733	2	0	0
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 2 (Pozíció)	495	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 2: Robot 2 (Test)	490	550	190	40	0
-HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + I9	540	30	80	I10 * 2	6979733	0	0	0
+HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + (I9 * 2)	540	30	80	I10 * 2	6979733	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 3 ]
+RECT	0	6316128	1	-1	0	0	Célállomás 3: Platform	852	280	200	80	0
+LABEL	16777215	65535	1	-1	0	0	Célállomás 3: Címke	931	260	22	Arial Black	C3	0	1
+RECT	0	6316128	1	-1	0	0	Célállomás 2: Platform	852	500	200	80	0
+LABEL	16777215	65535	1	-1	0	0	Célállomás 2: Címke	931	480	22	Arial Black	C2	0	1
+RECT	0	6316128	1	-1	0	0	Célállomás 1: Platform	852	610	200	80	0
+LABEL	16777215	65535	1	-1	0	0	Célállomás 1: Címke	931	590	22	Arial Black	C1	0	1
 BMPSEQ	0	16777215	16	-1	0	0	Cella 3: Futószalag	800	390	375	80	16	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 3: Érkezés	850	300	850	400	I17	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 3: Szenzor	1015	300	1015	400	I18	5	5	0
@@ -60,56 +71,29 @@ BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	I23	I24	160	65	0	D:\Current Stu
 BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-kar)	I13 * 5 + 933	I14 * 5 + 407	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	*.BMP	*.BMP	1	0	8	0
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I14 * 5 + 375	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I13 * 5 + 940	I14 * 5 + 369	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
-SEPARATOR	255	16777215	1	-1	0	0	[ Fénykapuk ]
-LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Felsõ)	425	95	50	95	0	0
-LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Bal-felsõ)	50	95	50	295	0	0
-LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Jobb-felsõ)	425	95	425	295	0	0
-LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Alsó)	425	605	50	605	0	0
-LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Bal-alsó)	50	405	50	605	0	0
-LINE2	255	0	2	-1	0	0	Cella 1: Fénykapu (Jobb-alsó)	425	405	425	605	0	0
-LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Felsõ)	800	75	425	75	0	0
-LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Bal-felsõ)	425	75	425	95	0	0
-LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Jobb-felsõ)	800	75	800	295	0	0
-LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Alsó)	800	625	425	625	0	0
-LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Bal-alsó)	425	605	425	625	0	0
-LINE2	255	0	2	-1	0	0	Cella 2: Fénykapu (Jobb-alsó)	800	405	800	625	0	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-felsõ)	45	100	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-felsõ)	420	100	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-középsõ)	45	300	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-középsõ)	420	300	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-középsõ)	45	410	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-középsõ)	420	410	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Bal-alsó)	45	610	10	10	0
-RECT	0	0	1	-1	0	0	Cella 1: Fénykapu (Jobb-alsó)	420	610	10	10	0
-RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Bal-felsõ)	420	80	10	10	0
-RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-felsõ)	795	80	10	10	0
-RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-középsõ)	795	300	10	10	0
-RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Bal-alsó)	420	630	10	10	0
-RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-középsõ)	795	410	10	10	0
-RECT	0	0	1	-1	0	0	Cella 2: Fénykapu (Jobb-alsó)	795	630	10	10	0
-SEPARATOR	255	16777215	1	-1	0	0	[ Feliratok ]
-LABEL	0	65535	1	-1	0	0		60	190	22	Arial Black	R1	0	1
-RECTLED	0	65280	1	-1	0	0		320	165	5.0	0
-LABEL	0	16777215	1	-1	0	0		345	165	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0		320	190	5.0	0
-LABEL	0	16777215	1	-1	0	0		345	190	10	ARIAL	Hegeszt	0	1
-RECTLED	0	65280	1	-1	0	0		320	215	5.0	0
-LABEL	0	16777215	1	-1	0	0		345	215	10	ARIAL	Befejezve	0	1
-LABEL	0	65535	1	-1	0	0		60	550	22	Arial Black	R2	0	1
-RECTLED	0	65280	1	-1	0	0		320	505	5.0	0
-LABEL	0	16777215	1	-1	0	0		345	505	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0		320	530	5.0	0
-LABEL	0	16777215	1	-1	0	0		345	530	10	ARIAL	Hegeszt	0	1
-RECTLED	0	65280	1	-1	0	0		320	555	5.0	0
-LABEL	0	16777215	1	-1	0	0		345	555	10	ARIAL	Befejezve	0	1
-RECTLED	0	65280	1	-1	0	0		695	165	5.0	0
-LABEL	0	16777215	1	-1	0	0		720	165	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0		695	190	5.0	0
-LABEL	0	16777215	1	-1	0	0		720	190	10	ARIAL	Fest	0	1
-RECTLED	0	65280	1	-1	0	0		695	215	5.0	0
-LABEL	0	16777215	1	-1	0	0		720	215	10	ARIAL	Befejezve	0	1
-LABEL	0	65535	1	-1	0	0		435	190	22	Arial Black	R3	0	1
-LABEL	0	65535	1	-1	0	0		435	550	22	Arial Black	R3	0	1
+SEPARATOR	255	16777215	1	-1	0	0	[ Feliratok és jelzések ]
+LABEL	0	65535	1	-1	0	0	Robot 1: Címke	60	190	22	Arial Black	R1	0	1
+RECTLED	0	65280	1	-1	0	0	Robot 1: Kiválasztva (LED)	320	165	1	I25 - (2 * INT(I25 / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 1: Kiválasztva (Címke)	345	165	10	ARIAL	Kiválasztva	0	1
+RECTLED	0	33023	1	-1	0	0	Robot 1: Hegeszt (LED)	320	190	1	(I25 / 2) - (2 * INT((I25 / 2) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 1: Hegeszt (Címke)	345	190	10	ARIAL	Hegeszt	0	1
+RECTLED	0	65280	1	-1	0	0	Robot 1: Befejezve (LED)	320	215	1	(I25 / 4) - (2 * INT((I25 / 4) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 1: Befejezve (Címke)	345	215	10	ARIAL	Befejezve	0	1
+LABEL	0	65535	1	-1	0	0	Robot 2: Címke	60	550	22	Arial Black	R2	0	1
+RECTLED	0	65280	1	-1	0	0	Robot 2: Kiválasztva (LED)	320	505	1	(I25 / 8) - (2 * INT((I25 / 8) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 2: Kiválasztva (Címke)	345	505	10	ARIAL	Kiválasztva	0	1
+RECTLED	0	33023	1	-1	0	0	Robot 2: Hegeszt (LED)	320	530	1	(I25 / 16) - (2 * INT((I25 / 16) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 2: Hegeszt (Címke)	345	530	10	ARIAL	Hegeszt	0	1
+RECTLED	0	65280	1	-1	0	0	Robot 2: Befejezve (LED)	320	555	1	(I25 / 32) - (2 * INT((I25 / 32) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 2: Befejezve (Címke)	345	555	10	ARIAL	Befejezve	0	1
+LABEL	0	65535	1	-1	0	0	Robot 3: Címke 1	435	190	22	Arial Black	R3	0	1
+LABEL	0	65535	1	-1	0	0	Robot 3: Címke 2	435	550	22	Arial Black	R3	0	1
+RECTLED	0	65280	1	-1	0	0	Robot 3: Kiválasztva (LED)	695	165	1	(I25 / 64) - (2 * INT((I25 / 64) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 3: Kiválasztva (Címke)	720	165	10	ARIAL	Kiválasztva	0	1
+RECTLED	0	33023	1	-1	0	0	Robot 3: Fest (LED)	695	190	1	(I25 / 128) - (2 * INT((I25 / 128) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 3: Fest (Címke)	720	190	10	ARIAL	Fest	0	1
+RECTLED	0	65280	1	-1	0	0	Robot 3: Befejezve (LED)	695	215	1	(I25 / 256) - (2 * INT((I25 / 256) / 2))
+LABEL	0	16777215	1	-1	0	0	Robot 3: Befejezve (Címke)	720	215	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0		1242	252	14	Arial Black	7	0	1
 LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
 LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
@@ -123,13 +107,13 @@ BUTTON	0	12632256	6	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Tárgy 3	506	744	80	25	5
 BUTTON	0	12632256	7	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Tárgy 1	881	670	80	25	5.0	7	0	2	0	8	1
 BUTTON	0	12632256	8	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Tárgy 2	881	707	80	25	5.0	8	0	2	0	8	1
 BUTTON	0	12632256	9	-1	0	0	Tárgy 3: Behelyezés (Cella 3)	Tárgy 3	881	744	80	25	5.0	9	0	2	0	8	1
-340
-134
+331
+86
 1286
 812
 1
 2
-24
+25
 BELT_1
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -250,6 +234,11 @@ BODY_3_Y
  0.00000000000000E+0000
 -3.27680000000000E+0004
  3.27670000000000E+0004
+LED_CTRL
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 5.12000000000000E+0002
 16777215
  1.00000000000000E+0001
  1.00000000000000E+0001
@@ -281,7 +270,7 @@ B3_TO_CELL_3
  0.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 4.00000000000000E+0000
+ 1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
@@ -292,12 +281,13 @@ B3_TO_CELL_3
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 8.68000000000000E+0002
- 6.02000000000000E+0002
- 8.69000000000000E+0002
- 4.98000000000000E+0002
- 8.70000000000000E+0002
- 2.72000000000000E+0002
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 3.20000000000000E+0002
  0.00000000000000E+0000
                           
  0.00000000000000E+0000
@@ -586,61 +576,61 @@ CRANE_POS
 0
 [Block #27]
 383   SUPERBLOCK
-CRANE_BODY
-275 500 346 872  100
+CRANE_N_BODY
+275 500 346 890  100
 6
-20
+21
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\crane_and_bodies.SBL
 0
 [Block #28]
 386   MUX
 BODY_SER
-425 750 496 870  100
+400 725 471 845  100
 6
 1
 0 0 0   0
 [Block #29]
 387   DEMUX
 BODY_DES
-800 425 871 545  100
+825 425 896 545  100
 1
 6
 0 0 0   0
 [Block #30]
 386   MUX
 CRANE_SER
-550 750 621 816  100
+500 675 571 741  100
 3
 1
 0 0 0   0
 [Block #31]
 387   DEMUX
 CRANE_DES
-800 300 871 366  100
+825 300 896 366  100
 1
 3
 0 0 0   0
 [Block #32]
 383   SUPERBLOCK
 ROBOTS
-150 75 221 393  100
+150 100 221 382  100
 9
-17
+15
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\robots.SBL
 0
 [Block #33]
 386   MUX
 ROBOT_SER
-450 25 521 145  100
+275 100 346 220  100
 6
 1
 0 0 0   0
 [Block #34]
 387   DEMUX
 ROBOT_DES
-675 100 746 220  100
+700 100 771 220  100
 1
 6
 0 0 0   0
@@ -719,7 +709,7 @@ FALSE
 [Block #44]
 448   ENCODER
 R_DONE_ENC
-450 175 521 241  100
+275 250 346 316  100
 3
 1
 0 0 0   0
@@ -728,7 +718,7 @@ R_DONE_ENC
 [Block #45]
 447   DECODER
 R_DONE_DEC
-1600 500 1671 566  100
+1600 550 1671 616  100
 1
 3
 0 0 0   0
@@ -737,7 +727,7 @@ R_DONE_DEC
 [Block #46]
 448   ENCODER
 SENS_ENC
-550 575 621 695  100
+400 550 471 670  100
 6
 1
 0 0 0   0
@@ -746,7 +736,7 @@ SENS_ENC
 [Block #47]
 447   DECODER
 SENS_DEC
-675 250 746 370  100
+700 250 771 370  100
 1
 6
 0 0 0   0
@@ -755,14 +745,14 @@ SENS_DEC
 [Block #48]
 386   MUX
 BELT_SER
-425 500 496 566  100
+500 500 571 566  100
 3
 1
 0 0 0   0
 [Block #49]
 387   DEMUX
 BELT_DES
-800 25 871 91  100
+825 25 896 91  100
 1
 3
 0 0 0   0
@@ -802,203 +792,235 @@ SENS_DEC
 0 0 0   0
 6   0
 0
+[Block #54]
+383   SUPERBLOCK
+BODY_TYPE
+1200 250 1271 316  100
+3
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\selected_body_informer.SBL
+0
+[Block #55]
+447   DECODER
+BODY_TYPE
+1600 50 1671 101  100
+1
+2
+0 0 0   0
+2   0
+0
 [Connection Count]
-98
+105
 [Connection #0]
 43   1   42   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
-0   1   50   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+51   1   54   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #2]
-45   1   36   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #3]
-25   1   27   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #4]
-8   1   32   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #5]
-3   1   32   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #6]
-22   1   26   2   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #7]
-11   1   25   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #8]
-0   5   51   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #9]
-13   1   26   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #10]
-10   1   25   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #11]
-0   9   52   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #12]
-7   1   32   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #13]
-4   1   32   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #14]
-45   2   37   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #15]
-53   5   18   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #16]
-1   1   32   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #17]
-23   1   26   3   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #18]
-12   1   25   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #19]
-5   1   32   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #20]
-53   3   17   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #21]
-53   2   19   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #22]
-2   1   32   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #23]
-9   1   32   8   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #24]
-45   3   38   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #25]
-53   1   16   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #26]
-53   4   20   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #27]
-53   6   21   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #28]
-0   6   52   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #29]
-26   1   27   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #30]
-0   2   51   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #31]
-6   1   32   9   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #32]
-0   4   50   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #33]
-0   8   51   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #34]
-0   3   52   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #35]
-0   7   50   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #36]
-46   1   47   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #37]
-27   1   48   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #38]
-27   2   48   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #39]
-27   3   48   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #40]
-31   3   0   15   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #41]
-31   2   0   14   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #42]
-31   1   0   13   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #43]
-29   4   0   22   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #44]
-29   5   0   23   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #45]
-29   6   0   24   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #46]
-29   3   0   21   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #47]
-29   1   0   19   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #48]
-29   2   0   20   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #49]
-27   17   28   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #50]
-27   18   28   6   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #51]
-27   16   28   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #52]
-27   13   28   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #53]
-27   14   28   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #54]
-27   15   28   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #55]
-49   1   0   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #56]
-49   2   0   8   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #57]
-49   3   0   16   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #58]
-33   1   34   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #59]
-24   1   27   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #60]
-30   1   31   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #61]
-34   4   0   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #62]
-34   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #63]
-34   3   0   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #64]
-34   2   0   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #65]
-27   8   46   5   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #66]
-27   9   46   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #67]
-27   6   46   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #68]
-27   7   46   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #69]
-27   4   46   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #70]
-27   5   46   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #71]
-47   4   0   12   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #72]
-47   3   0   11   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #73]
-47   6   0   18   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #74]
-47   5   0   17   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #75]
-34   5   0   9   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #76]
-34   6   0   10   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #77]
-47   2   0   7   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #78]
-47   1   0   6   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #79]
-27   12   30   3   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #80]
-27   11   30   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #81]
-27   10   30   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #82]
-32   9   44   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #83]
-32   6   44   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #84]
 32   2   33   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #85]
+[Connection #3]
 32   1   33   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #86]
-32   3   44   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #87]
+[Connection #4]
+3   1   32   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+25   1   27   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+0   1   50   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+27   4   46   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+27   5   46   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+27   6   46   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+27   7   46   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+27   8   46   5   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+27   9   46   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+31   3   0   15   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+27   17   28   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+27   18   28   6   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+55   2   15   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+31   2   0   14   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+27   16   28   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+31   1   0   13   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+27   15   28   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+22   1   26   2   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+11   1   25   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+27   13   28   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #24]
+27   14   28   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+45   2   37   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
+8   1   32   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
 32   4   33   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #88]
+[Connection #28]
 32   5   33   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #89]
+[Connection #29]
+45   3   38   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+13   1   26   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+10   1   25   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+55   1   14   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+0   5   51   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+4   1   32   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+29   5   0   23   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+29   4   0   22   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #37]
+29   6   0   24   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+29   3   0   21   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #39]
+29   1   0   19   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+29   2   0   20   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #41]
 32   8   33   6   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #90]
+[Connection #42]
 32   7   33   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #43]
+7   1   32   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #44]
+32   9   44   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #45]
+53   5   18   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #46]
+0   9   52   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #47]
+23   1   26   3   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #48]
+12   1   25   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #49]
+45   1   36   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #50]
+5   1   32   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #51]
+49   1   0   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #52]
+53   3   17   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #53]
+53   2   19   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #54]
+1   1   32   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #55]
+9   1   32   8   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #56]
+53   1   16   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #57]
+53   4   20   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #58]
+32   6   44   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #59]
+0   6   52   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #60]
+2   1   32   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #61]
+53   6   21   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #62]
+26   1   27   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #63]
+0   2   51   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #64]
+32   3   44   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #65]
+6   1   32   9   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #66]
+0   4   50   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #67]
+50   1   54   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #68]
+52   1   54   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #69]
+0   8   51   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #70]
+49   2   0   8   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #71]
+0   3   52   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #72]
+0   7   50   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #73]
+49   3   0   16   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #74]
+27   1   48   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #75]
+27   2   48   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #76]
+27   3   48   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #77]
+27   12   30   3   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #78]
+27   11   30   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #79]
+27   10   30   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #80]
+34   4   0   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #81]
+34   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #82]
+34   3   0   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #83]
+34   2   0   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #84]
+47   4   0   12   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #85]
+47   3   0   11   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #86]
+47   6   0   18   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #87]
+47   5   0   17   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #88]
+34   5   0   9   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #89]
+34   6   0   10   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #90]
+47   2   0   7   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #91]
-28   1   29   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+47   1   0   6   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #92]
-48   1   49   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+24   1   27   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #93]
-52   1   27   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+46   1   47   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #94]
-51   1   27   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+30   1   31   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #95]
-50   1   27   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+48   1   49   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #96]
-46   1   53   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+54   1   55   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #97]
+33   1   34   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #98]
+28   1   29   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #99]
+32   15   0   25   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #100]
+52   1   27   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #101]
+51   1   27   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #102]
+50   1   27   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #103]
+46   1   53   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #104]
 44   1   45   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  2   1   1   2   0   4   0

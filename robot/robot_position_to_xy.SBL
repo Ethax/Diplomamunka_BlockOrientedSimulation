@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42421
+42435
 ! 
 ! 
 ! 
@@ -73,28 +73,28 @@ CONST: 0
  0.00000000000000E+0000  0
 [Block #6]
 306   CONST
-CONST: 50
+CONST: 25
 300 175 371 226  100
 0
 1
 0 0 0   0
- 5.00000000000000E+0001  0
+ 2.50000000000000E+0001  0
 [Block #7]
 306   CONST
-CONST: 100
+CONST: 50
 300 250 371 301  100
 0
 1
 0 0 0   0
- 1.00000000000000E+0002  0
+ 5.00000000000000E+0001  0
 [Block #8]
 306   CONST
-CONST: 150
+CONST: 75
 300 325 371 376  100
 0
 1
 0 0 0   0
- 1.50000000000000E+0002  0
+ 7.50000000000000E+0001  0
 [Block #9]
 353   ANASWITCH2
 POSITION_Y
@@ -160,7 +160,7 @@ Text
 0
 0
 0 0 0   0
-void robot_position_to_xy(unsigned char position, unsigned char* position_x, unsigned char* position_y) {  /* Az X koordináta meghatározása. */  switch((position && 0x03) + 1) {  case 1:    *position_x = 0;    break;  case 2:    *position_x = 50;    break;  case 3:    *position_x = 100;    break;  case 4:    *position_x = 150;    break;  }    /* Az Y koordináta meghatározása. */  if((position && 0x04) || (position == 0))    *position_y = 0;  else    *position_y = 50;}
+void robot_position_to_xy(unsigned char position, unsigned char* position_x, unsigned char* position_y) {  /* Az X koordináta meghatározása. */  switch((position && 0x03) + 1) {  case 1:    *position_x = 0;    break;  case 2:    *position_x = 25;    break;  case 3:    *position_x = 50;    break;  case 4:    *position_x = 75;    break;  }    /* Az Y koordináta meghatározása. */  if((position && 0x04) || (position == 0))    *position_y = 0;  else    *position_y = 50;}
 10   0   0   0   16777215   0   0
 Courier New
 [Block #17]
