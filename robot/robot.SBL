@@ -29,13 +29,13 @@ POSITION_Y
 DONE
 25   1
 SEQUENCE
-30   1
+29   1
 ERR_INVALID
-31   1
+30   1
 [Export Parameter Count]
 0
 [Block Count]
-33
+34
 [Block #0]
 383   SUPERBLOCK
 IS_VALID
@@ -257,16 +257,6 @@ DONE
 1
 1 0 0   0
 [Block #27]
-0   Text
-Text
-414 728 1200 781  100
-0
-0
-0 0 0   0
-ROBOT:* SEQUENCE kimenet: memondja, hogy éppen melyik szekvenciát járja be a robot.* WELDER bemenet és kimenet: le kell ellenõrizni típustól függõen, hogy hegeszt-e. !!! MÉGSE KELL? Ellenõrizni!
-12   0   0   0   16777215   0   0
-ARIAL
-[Block #28]
 383   SUPERBLOCK
 SEQUENCE_ID
 275 75 346 126  100
@@ -275,34 +265,54 @@ SEQUENCE_ID
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_sequence_identifier.SBL
 0
-[Block #29]
+[Block #28]
 384   LABEL
 DONE
 875 25 946 58  100
 1
 1
 1 0 0   0
-[Block #30]
+[Block #29]
 384   LABEL
 SEQUENCE
 1000 375 1071 408  100
 1
 1
 0 0 0   0
-[Block #31]
+[Block #30]
 384   LABEL
 ERR_INVALID
 1000 425 1071 458  100
 1
 1
 0 0 0   0
-[Block #32]
+[Block #31]
 384   LABEL
 SEQUENCE
 400 75 471 108  100
 1
 1
 0 0 0   0
+[Block #32]
+0   Text
+Text
+1125 25 1183 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #33]
+0   Text
+Text
+1125 50 1668 253  100
+0
+0
+0 0 0   0
+Fogadja az új robotpozíciót, majd érvényesíti azt a korábbi pozíció és a megadotttípus függvényében. Amennyiben az új pozíció érvényes, a megadott konfigurációfüggvényében (lassú-gyors, állj, érvényesítés) elvégzi a robot mozgatását azanimációban.A mozgatás sebességét két különbözõ frekvenciájú órajel-generátor közötti váltássalvalósítja meg. Ezek az órajel-generátorok állandó üzemben mûködnek az animációteljes életciklusa alatt.A bejárt robotpozíciók alapján megkísérli azonosítani a bejárt utat. Amennyiben abejárt pozíciók megegyeznek valamelyik elõre definiált útvonallal, visszaadja annakazonosítószámát a késõbbi ellenõrzésekhez.
+11   0   0   0   16777215   0   0
+Arial
 [Connection Count]
 41
 [Connection #0]
@@ -314,7 +324,7 @@ SEQUENCE
 [Connection #3]
 14   1   11   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-21   1   29   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+21   1   28   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
 0   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
@@ -334,59 +344,59 @@ SEQUENCE
 [Connection #13]
 21   1   25   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #14]
-9   1   8   1   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+27   1   31   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #15]
-10   1   8   3   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+9   1   8   1   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
 [Connection #16]
-7   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   8   3   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
 [Connection #17]
-0   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #18]
-2   1   28   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #19]
-7   1   11   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   27   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-16   1   2   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   11   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #21]
-4   1   7   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   2   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #22]
-1   2   11   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4   1   7   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #23]
-1   1   12   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   2   11   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #24]
-17   1   8   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   1   12   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #25]
-18   1   3   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   1   8   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #26]
-20   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+18   1   3   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #27]
-19   1   22   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+20   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #28]
-16   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+19   1   22   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #29]
-1   2   13   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #30]
-8   1   7   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   2   13   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #31]
-6   1   23   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+8   1   7   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #32]
-11   1   24   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   23   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #33]
-19   1   4   3   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   24   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #34]
-21   1   26   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+19   1   4   3   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #35]
-26   1   2   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+21   1   26   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #36]
-16   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+26   1   2   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #37]
-29   1   28   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #38]
-22   1   31   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+31   1   29   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #39]
-28   1   32   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+28   1   27   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #40]
-32   1   30   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+22   1   30   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]
