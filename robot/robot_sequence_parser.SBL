@@ -1,0 +1,254 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42451
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+4   2
+ARRAY_SIZE
+8   1
+REF_ARRAY
+9   1
+POSITION
+10   1
+CHECK
+11   1
+INDEX
+13   1
+MATCH_FOUND
+14   1
+[Export Parameter Count]
+0
+[Block Count]
+20
+[Block #0]
+344   FCT1
+INDEX + 1
+525 25 596 76  100
+1
+1
+0 0 0   0
+8
+x + 1
+[Block #1]
+383   SUPERBLOCK
+STEPPER
+275 75 346 126  100
+2
+1
+1 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\incremental_counter_8bit.SBL
+0
+[Block #2]
+362   COMPARATOR
+INDEX == MAX
+275 150 346 201  100
+2
+1
+0 0 0   0
+2
+[Block #3]
+362   COMPARATOR
+STEP != POS
+275 325 346 376  100
+2
+1
+0 0 0   0
+5
+[Block #4]
+352   ANASWITCH
+CHECK_EN
+275 250 346 301  100
+2
+1
+1 0 0   0
+1
+[Block #5]
+355   LOGIC2
+RESET
+400 200 471 251  100
+2
+1
+0 0 0   0
+1
+[Block #6]
+356   RSFLIPFLOP
+MATCH
+525 150 596 201  100
+2
+1
+0 0 0   0
+0   0   1
+0
+[Block #7]
+344   FCT1
+SIZE - 1
+150 75 221 126  100
+1
+1
+0 0 0   0
+8
+x - 1
+[Block #8]
+384   LABEL
+ARRAY_SIZE
+25 75 96 108  100
+1
+1
+0 0 0   0
+[Block #9]
+384   LABEL
+REF_ARRAY
+25 325 96 358  100
+1
+1
+0 0 0   0
+[Block #10]
+384   LABEL
+POSITION
+25 375 96 408  100
+1
+1
+0 0 0   0
+[Block #11]
+384   LABEL
+CHECK
+25 425 96 458  100
+1
+1
+0 0 0   0
+[Block #12]
+413   ONDELAY
+DELAY: 100MS
+400 75 471 126  100
+1
+1
+1 0 0   0
+ 1.00000000000000E-0001  0
+[Block #13]
+384   LABEL
+INDEX
+650 25 721 58  100
+1
+1
+0 0 0   0
+[Block #14]
+384   LABEL
+MATCH_FOUND
+650 150 721 183  100
+1
+1
+0 0 0   0
+[Block #15]
+355   LOGIC2
+RESET
+525 300 596 351  100
+2
+1
+0 0 0   0
+1
+[Block #16]
+413   ONDELAY
+DELAY: 100MS
+400 275 471 326  100
+1
+1
+0 0 0   0
+ 1.00000000000000E-0001  0
+[Block #17]
+404   LOGCHANGE
+POS_L_TO_H
+400 350 471 401  100
+1
+1
+0 0 0   0
+1   0
+[Block #18]
+0   Text
+Text
+775 25 833 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #19]
+0   Text
+Text
+775 50 1359 202  100
+0
+0
+0 0 0   0
+A CHECK bemenet minden felfutó élére a STEPPER számláló segítségével elõre lép amegadott tömb következõ elemére és összehasonlítja azt a POSITION bemenet értékével.Ha a két érték különbözik, akkor alaphelyzetbe állítja a számlálót, ellenkezõesetben változatlanul hagyja azt.A továbblépés minden esetben csak akkor lehetséges, ha a tömb aktuális eseme és aPOSITION bemenet értéke megegyezik. Ha az utolsó elemre is egyezés alakul ki, aMATCH_FOUND kimeneten magas logikai szint jelenik meg, ami a POSITION bemenetenészlelhetõ felfutó élig vagy újabb eltérésig fennmarad.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+21
+[Connection #0]
+1   1   2   2   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+3   1   4   1   255   -1   -1325 -1075 -1325 -1075 -1325 -1075 -1325 -1075 -1325 -1075 -1325 -1075 -1325 -1075 -1325 -1075 
+[Connection #2]
+5   1   12   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+12   1   1   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+6   1   14   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+0   1   13   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+8   1   7   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+16   1   15   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+2   1   5   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+17   1   15   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+7   1   2   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+15   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+4   1   16   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+4   1   5   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+9   1   3   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+2   1   6   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+10   1   3   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+1   1   0   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+11   1   4   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+11   1   1   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+10   1   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

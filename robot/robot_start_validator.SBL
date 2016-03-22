@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42428
+42449
 ! 
 ! 
 ! 
@@ -11,25 +11,23 @@
 ! Karosszéria gyártósor
 ! Miklós Árpád
 ! SZTE
-4   3
-DONE
-10   1
-START
-11   1
-IS_POS_NEW
-13   1
-IS_SEL_NEW
+3   3
+START_SIG
 14   1
-ERR_SHORT_SIG
-8   1
-ERR_RESTART
-9   1
+IS_DONE
+15   1
+IS_POS_NEW
+16   1
 ONLINE
-12   1
+17   1
+ERR_SHORT_SIG
+18   1
+ERR_REP_START
+19   1
 [Export Parameter Count]
 0
 [Block Count]
-24
+20
 [Block #0]
 356   RSFLIPFLOP
 START_HOLD
@@ -50,7 +48,7 @@ START_DELAY
 [Block #2]
 404   LOGCHANGE
 START_H_TO_L
-150 375 221 426  100
+150 325 221 376  100
 1
 1
 0 0 0   0
@@ -58,7 +56,7 @@ START_H_TO_L
 [Block #3]
 356   RSFLIPFLOP
 IS_START_END
-150 450 221 501  100
+150 400 221 451  100
 2
 1
 0 0 0   0
@@ -66,8 +64,8 @@ IS_START_END
 0
 [Block #4]
 396   LOGIC
-IS_RESTART
-425 425 496 509  100
+IS_REPEATED
+375 375 446 459  100
 4
 1
 0 0 0   0
@@ -75,7 +73,7 @@ IS_RESTART
 [Block #5]
 404   LOGCHANGE
 START_H_TO_L
-425 225 496 276  100
+375 175 446 226  100
 1
 1
 0 0 0   0
@@ -83,7 +81,7 @@ START_H_TO_L
 [Block #6]
 356   RSFLIPFLOP
 IS_START_END
-425 300 496 351  100
+375 250 446 301  100
 2
 1
 0 0 0   0
@@ -92,82 +90,29 @@ IS_START_END
 [Block #7]
 354   LOGIC1
 NOT_ONLINE
-425 150 496 201  100
+375 100 446 151  100
 1
 1
 0 0 0   0
 0
 [Block #8]
 355   LOGIC2
-ERR_SHORT_SIG
-525 225 596 276  100
+IS_SHORT_SIG
+500 175 571 226  100
 2
 1
 0 0 0   0
 0
 [Block #9]
 356   RSFLIPFLOP
-ERR_RESTART
-525 450 596 501  100
+REP_START
+500 400 571 451  100
 2
 1
 0 0 0   0
 0   0   1
 0
 [Block #10]
-344   FCT1
-DONE
-25 100 96 151  100
-1
-1
-0 0 0   0
-8
-x
-[Block #11]
-344   FCT1
-START
-25 25 96 76  100
-1
-1
-0 0 0   0
-8
-x
-[Block #12]
-344   FCT1
-ONLINE
-525 25 596 76  100
-1
-1
-0 0 0   0
-8
-x
-[Block #13]
-344   FCT1
-IS_POS_NEW
-25 375 96 426  100
-1
-1
-0 0 0   0
-8
-x
-[Block #14]
-344   FCT1
-IS_SEL_NEW
-25 300 96 351  100
-1
-1
-0 0 0   0
-8
-x
-[Block #15]
-355   LOGIC2
-SEL_POS_NEW
-25 450 96 501  100
-2
-1
-0 0 0   0
-1
-[Block #16]
 355   LOGIC2
 OR
 250 100 321 151  100
@@ -175,7 +120,7 @@ OR
 1
 0 0 0   0
 1
-[Block #17]
+[Block #11]
 404   LOGCHANGE
 START_L_TO_H
 150 100 221 151  100
@@ -183,116 +128,118 @@ START_L_TO_H
 1
 0 0 0   0
 1   0
-[Block #18]
+[Block #12]
 0   Text
 Text
-650 125 798 146  100
-0
-0
-0 0 0   0
-Ekvivalens C kód:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #19]
-0   Text
-Text
-650 150 2073 821  100
-0
-0
-0 0 0   0
-extern bool start_high_to_low(bool actual);extern bool start_low_to_high(bool actual);bool robot_start_validator(bool* start, bool done, bool is_sel_new, bool is_pos_new, bool* err_short_sig, bool* err_restart) {  static bool start_hold = false;  static bool is_start_end_1 = false, is_start_end_2 = false;  static bool rs_err_restart = false;    /* Hibaellenõrzési okokból tárolt jelzõbitek törlése, ha a mozgatás befejezõdött. */  if(done) {    is_start_end_2 = false;    rs_err_restart = false;  }    /* Hibaellenõrzési okokból tárolt jelzõbitek törlése, ha a mozgatás befejezõdött vagy a START bemeneten felfutás történt. */  if(done || start_low_to_high(*start)) {    start_hold = false;    is_start_end_1 = false;  }    /* Az indítási impulzus végét jelzõ bitek beállítása, ha a START bemeneten lefutás történt. */  if(start_high_to_low(*start)) {    is_start_end_1 = true;    is_start_end_2 = true;  }    /* A túl rövid indítási impulzust jelzõ hiba beállítása vagy törlése. */  if(!start_hold &&&& is_start_end_1)    *err_short_sig = true;  else    *err_short_sig = false;      /* Az ismételt indítást jelzõ hiba beállítása, ha magas logikai szinten tartott kimenet mellett megváltozott kiválaszó vagy pozíció értékekkel újabb START impulzus érkezett. */  if(*start &&&& is_start_end_2 &&&& start_hold &&&& (is_sel_new || is_pos_new))    rs_err_restart = true;  *err_restart = rs_err_restart;    /* A START bemenet újraolvasása 100 milliszekundumos késleltetéssel és az indítás tartott logikai szintjének visszaadása. */  usleep(100000);  start_hold |= *start;  return start_hold;}
-10   0   0   0   16777215   0   0
-Courier New
-[Block #20]
-0   Text
-Text
-650 25 708 46  100
+725 25 783 46  100
 0
 0
 0 0 0   0
 Leírás:
 14   0   0   0   16777215   0   0
 ARIAL
-[Block #21]
+[Block #13]
 0   Text
 Text
-650 50 1157 100  100
+725 50 1298 168  100
 0
 0
 0 0 0   0
-Ellenõrzi a robotok indítási feltételeit, és a robotok mogzásának befejezõdéséigmagas logikai szinten tartja az indító bitet, ha a feltételek megfelelõek.Hiba esetén beállítja a megfelelõ hibajelzõ biteket.
+Leellenõrzi a robotmozgást jóváhagyó jel hosszát, a már mozgásban levõ robotvalamilyen paraméterének megváltoztatásához szükséges feltételeket, és érvényesjóváhagyási feltételek mellett magas logikai szinten tartja az indító ONLINE bitet.Az ONLINE bit engedélyezi a robotok mozgását. A fogadott paraméterek érvényességétõlfüggetlenül a robotok mozgásának megkezdéséhez vagy folytatásához az ONLINE bit isjelentõs szerepet játszik.
 11   0   0   0   16777215   0   0
 Arial
-[Block #22]
-0   Text
-Text
-650 850 756 871  100
-0
-0
+[Block #14]
+384   LABEL
+START_SIG
+25 175 96 208  100
+1
+1
 0 0 0   0
-Megjegyzés:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #23]
-0   Text
-Text
-650 875 1145 908  100
-0
-0
+[Block #15]
+384   LABEL
+IS_DONE
+25 225 96 258  100
+1
+1
 0 0 0   0
-A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
-11   0   0   0   16777215   0   0
-Arial
+[Block #16]
+384   LABEL
+IS_POS_NEW
+25 450 96 483  100
+1
+1
+0 0 0   0
+[Block #17]
+384   LABEL
+ONLINE
+600 25 671 58  100
+1
+1
+0 0 0   0
+[Block #18]
+384   LABEL
+ERR_SHORT_SIG
+600 175 671 208  100
+1
+1
+0 0 0   0
+[Block #19]
+384   LABEL
+ERR_REP_START
+600 400 671 433  100
+1
+1
+0 0 0   0
 [Connection Count]
 24
 [Connection #0]
-4   1   9   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   10   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
-17   1   16   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #2]
 1   1   0   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+9   1   19   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
-7   1   8   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+8   1   18   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-6   1   8   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4   1   9   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-11   1   1   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   8   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
-11   1   17   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   8   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-11   1   2   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   11   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-10   1   3   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #9]
-16   1   0   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #10]
-5   1   6   1   255   -1   -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 
-[Connection #11]
-2   1   3   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #12]
-13   1   15   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #13]
-14   1   15   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #14]
 0   1   7   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #15]
-16   1   6   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #16]
+[Connection #9]
+14   1   1   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+14   1   2   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+10   1   6   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+15   1   3   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
 0   1   4   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+10   1   0   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+5   1   6   1   255   -1   -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 -250 -1050 
+[Connection #16]
+2   1   3   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #17]
-10   1   16   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #18]
-0   1   12   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #19]
 3   1   4   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+15   1   10   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+0   1   17   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-15   1   4   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #21]
-11   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   4   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #22]
-11   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #23]
-10   1   9   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15   1   9   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]

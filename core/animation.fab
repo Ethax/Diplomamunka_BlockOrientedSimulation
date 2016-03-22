@@ -1,6 +1,6 @@
 405
 Karosszéria gyártósor
-81
+88
 LABEL	0	16777215	1	-1	0	0	Cím	26	55	16	Arial Black	Karosszéria gyártósor	0	1
 LABEL	0	16777215	1	-1	0	0	Készítõ	26	74	10	Arial	Készítette: Miklós Árpád	0	1
 BITMAP	0	16777215	1	-1	0	0	Kerítés: Felsõ	45	304	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_top.bmp
@@ -12,20 +12,20 @@ DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	100	300	100	400	I6	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	I7	5	5	0
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 1 (Pozíció)	120	139	180	6	0	3	4	4	8	1
 RECT	0	0	1	-1	0	0	Cella 1: Robot 1 (Test)	115	190	190	40	0
-HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1 (Kar)	120 + I2	240	30	80	I3 * 2	6985109	2	0	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1 (Kar)	120 + (I2 * 2)	240	30	80	I3 * 2	6985109	2	0	0
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 2 (Pozíció)	120	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 1: Robot 2 (Test)	115	550	190	40	0
-HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + I4	540	30	80	I5 * 2	6985109	0	0	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + (I4 * 2)	540	30	80	I5 * 2	6985109	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 2 ]
 BMPSEQ	0	16777215	8	-1	0	0	Cella 2: Futószalag	425	390	375	80	8	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 DYNLINE	65535	8421504	5	-1	0	0	Cella 2: Érkezés	475	300	475	400	I11	5	5	0
 DYNLINE	65280	8421504	5	-1	0	0	Cella 2: Szenzor	690	300	690	400	I12	5	5	0
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 1 (Pozíció)	495	139	180	6	0	3	4	4	8	1
 RECT	0	0	1	-1	0	0	Cella 2: Robot 1 (Test)	490	190	190	40	0
-HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 1 (Kar)	495 + I9	240	30	80	I10 * 2	6979733	2	0	0
+HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 1 (Kar)	495 + (I9 * 2)	240	30	80	I10 * 2	6979733	2	0	0
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 2 (Pozíció)	495	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 2: Robot 2 (Test)	490	550	190	40	0
-HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + I9	540	30	80	I10 * 2	6979733	0	0	0
+HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + (I9 * 2)	540	30	80	I10 * 2	6979733	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 3 ]
 RECT	0	6316128	1	-1	0	0	Célállomás 3: Platform	852	280	200	80	0
 LABEL	16777215	65535	1	-1	0	0	Célállomás 3: Címke	931	260	22	Arial Black	C3	0	1
@@ -73,15 +73,22 @@ LABEL	0	65535	1	-1	0	0		1242	252	14	Arial Black	7	0	1
 LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
 LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
 LABEL	0	65535	1	-1	0	0		1242	582	14	Arial Black	5	0	1
-BUTTON	0	12632256	1	-1	0	0	Tárgy 1: Behelyezés (Cella 1)	Tárgy 1	131	670	80	25	5.0	1	0	2	0	8	1
-BUTTON	0	12632256	2	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Tárgy 2	131	707	80	25	5.0	2	0	2	0	8	1
-BUTTON	0	12632256	3	-1	0	0	Tárgy 3: Behelyezés (Cella 1)	Tárgy 3	131	744	80	25	5.0	3	0	2	0	8	1
-BUTTON	0	12632256	4	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Tárgy 1	506	670	80	25	5.0	4	0	2	0	8	1
-BUTTON	0	12632256	5	-1	0	0	Tárgy 2: Behelyezés (Cella 2)	Tárgy 2	506	707	80	25	5.0	5	0	2	0	8	1
-BUTTON	0	12632256	6	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Tárgy 3	506	744	80	25	5.0	6	0	2	0	8	1
-BUTTON	0	12632256	7	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Tárgy 1	881	670	80	25	5.0	7	0	2	0	8	1
-BUTTON	0	12632256	8	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Tárgy 2	881	707	80	25	5.0	8	0	2	0	8	1
-BUTTON	0	12632256	9	-1	0	0	Tárgy 3: Behelyezés (Cella 3)	Tárgy 3	881	744	80	25	5.0	9	0	2	0	8	1
+LABEL	0	16777215	1	-1	0	0	Tárgy 1: Behelyezés (Címke)	45	669	12	Arial Black	Tárgy 1:	0	1
+BUTTON	0	12632256	1	-1	0	0	Tárgy 1: Behelyezés (Cella 1)	Cella 1	130	670	60	25	5.0	1	0	2	0	8	1
+BUTTON	0	12632256	4	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Cella 2	205	670	60	25	5.0	4	0	2	0	8	1
+BUTTON	0	12632256	7	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Cella 3	280	670	60	25	5.0	7	0	2	0	8	1
+LABEL	0	16777215	1	-1	0	0	Tárgy 2: Behelyezés (Címke)	45	706	12	Arial Black	Tárgy 2:	0	1
+BUTTON	0	12632256	2	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Cella 1	130	707	60	25	5.0	2	0	2	0	8	1
+BUTTON	0	12632256	5	-1	0	0	Tárgy 2: Behelyezés (Cella 2)	Cella 2	205	707	60	25	5.0	5	0	2	0	8	1
+BUTTON	0	12632256	8	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Cella 3	280	707	60	25	5.0	8	0	2	0	8	1
+LABEL	0	16777215	1	-1	0	0	Tárgy 3: Behelyezés (Címke)	45	743	12	Arial Black	Tárgy 3:	0	1
+BUTTON	0	12632256	3	-1	0	0	Tárgy 3: Behelyezés (Cella 1)	Cella 1	130	744	60	25	5.0	3	0	2	0	8	1
+BUTTON	0	12632256	6	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Cella 2	205	744	60	25	5.0	6	0	2	0	8	1
+BUTTON	0	12632256	9	-1	0	0	Tárgy 3: Behelyezés (Cella 3)	Cella 3	280	744	60	25	5.0	9	0	2	0	8	1
+LABEL	0	16777215	1	-1	0	0	Operátor: Címke	417	724	12	Arial Black	Operátor:	0	1
+UPDOWN	0	12632256	1	-1	0	0		513	744	40	62	0	2	1	0	1	0	1
+BUTTON	0	12632256	1	-1	0	0		Nyugtázás	568	707	100	25	5.0	1	0	18	0	8	1
+SWITCH	0	12632256	1	-1	0	0		Vész-Stop	568	744	100	25	5.0	1	0	20	0	8	-1		1
 0
 25
 BELT_1
@@ -236,26 +243,26 @@ B3_TO_CELL_3
 0
 0
 0
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
- 0.00000000000000E+0000                           
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
+ 0.00000000000000E+0000                            
 1
 0
 1

@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42421
+42449
 ! 
 ! 
 ! 
@@ -13,15 +13,15 @@
 ! SZTE
 2   1
 OPERAND_A
-11   1
+14   1
 OPERAND_B
-12   1
-RESULT
-2   1
+15   1
+OUTPUT
+16   1
 [Export Parameter Count]
 0
 [Block Count]
-20
+17
 [Block #0]
 383   SUPERBLOCK
 ALU
@@ -33,15 +33,15 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_8b
 0
 [Block #1]
 354   LOGIC1
-FALSE
-400 225 471 276  100
+C_IN: FALSE
+400 250 471 301  100
 0
 1
 1 0 0   0
 2
 [Block #2]
 345   FCT2
-RESULT
+OUT + C_OUT
 500 125 571 176  100
 2
 1
@@ -117,93 +117,56 @@ MIN(X, Y)
 10
 x+y
 [Block #11]
-344   FCT1
-OPERAND_A
-25 100 96 151  100
-1
-1
-0 0 0   0
-8
-x
-[Block #12]
-344   FCT1
-OPERAND_B
-25 175 96 226  100
-1
-1
-0 0 0   0
-8
-x
-[Block #13]
 306   CONST
-AND
-400 50 471 101  100
+OP: AND
+400 25 471 76  100
 0
 1
 1 0 0   0
  2.00000000000000E+0000  0
-[Block #14]
+[Block #12]
 0   Text
 Text
-625 100 773 121  100
-0
-0
-0 0 0   0
-Ekvivalens C kód:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #15]
-0   Text
-Text
-625 125 1352 396  100
-0
-0
-0 0 0   0
-#define MIN(a, b) (((a) < (b)) ? (a) : (b))#define MAX(a, b) (((a) > (b)) ? (a) : (b))unsigned char bitwise_and_8bit(unsigned char operand_a, unsigned char operand_b) {  bool carry_out = false;    /* Az A operandus értékének az elõjel nélküli, 8-bites értéktartományra kényszerítése. */  operand_a = MAX(operation, 0);  operand_a = MIN(operation, 255);    /* A B operandus értékének az elõjel nélküli, 8-bites értéktartományra kényszerítése. */  operand_b = MAX(operation, 0);  operand_b = MIN(operation, 255);    /* A mûvelet elvégzése és az eredmény visszaadása. */  return alu_8bit(operand_a, operand_b, 2, false, &carry_out) + carry_out;}
-10   0   0   0   16777215   0   0
-Courier New
-[Block #16]
-0   Text
-Text
-625 25 683 46  100
+725 25 783 46  100
 0
 0
 0 0 0   0
 Leírás:
 14   0   0   0   16777215   0   0
 ARIAL
-[Block #17]
+[Block #13]
 0   Text
 Text
-625 50 996 66  100
+725 50 1277 117  100
 0
 0
 0 0 0   0
-Bitenkénti ÉS mûveletet valósít még két 8-bites számmal.
+Bitenkénti ÉS mûveletet valósít még két 8-bites egész között.Ez a blokkdiagram leegyszerûsíti a bemenetek értéktartományának korlátozását más,összetettebb blokkdiagramokban, és leköti az ALU mûveletét.
 11   0   0   0   16777215   0   0
 Arial
-[Block #18]
-0   Text
-Text
-625 425 731 446  100
-0
-0
+[Block #14]
+384   LABEL
+OPERAND_A
+25 25 96 58  100
+1
+1
 0 0 0   0
-Megjegyzés:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #19]
-0   Text
-Text
-625 450 1120 483  100
-0
-0
+[Block #15]
+384   LABEL
+OPERAND_B
+25 275 96 308  100
+1
+1
 0 0 0   0
-A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
-11   0   0   0   16777215   0   0
-Arial
+[Block #16]
+384   LABEL
+OUTPUT
+600 125 671 158  100
+1
+1
+0 0 0   0
 [Connection Count]
-14
+15
 [Connection #0]
 3   1   5   2   0   -1   -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 
 [Connection #1]
@@ -213,25 +176,27 @@ Arial
 [Connection #3]
 7   1   9   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-1   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   1   0   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-13   1   0   4   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   0   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
-0   1   2   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   16   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-0   2   2   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   1   2   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-5   1   6   1   255   -1   -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 
+0   2   2   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #9]
-9   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   6   1   255   -1   -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 -175 -50 
 [Connection #10]
-11   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #11]
-12   1   5   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #12]
 10   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #13]
+[Connection #12]
 6   1   0   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+14   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+15   1   5   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]

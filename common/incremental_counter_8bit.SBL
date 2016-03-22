@@ -1,0 +1,175 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42450
+! 
+! 
+! 
+! 
+! 
+! 
+! 
+! 
+2   1
+STEP
+8   1
+RESET
+9   1
+OUTPUT
+10   1
+[Export Parameter Count]
+0
+[Block Count]
+13
+[Block #0]
+383   SUPERBLOCK
+ITERATOR
+400 100 471 166  100
+3
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
+0
+[Block #1]
+354   LOGIC1
+UNSIGNED
+400 25 471 76  100
+0
+1
+1 0 0   0
+2
+[Block #2]
+353   ANASWITCH2
+SOURCE
+275 100 346 176  100
+3
+1
+0 0 0   0
+1
+[Block #3]
+306   CONST
+CONST: 0
+275 25 346 76  100
+0
+1
+1 0 0   0
+ 0.00000000000000E+0000  0
+[Block #4]
+344   FCT1
+ITERATOR++
+275 200 346 251  100
+1
+1
+1 0 0   0
+8
+x + 1
+[Block #5]
+355   LOGIC2
+OR
+275 275 346 326  100
+2
+1
+0 0 0   0
+1
+[Block #6]
+404   LOGCHANGE
+RST_L_TO_H
+150 200 221 251  100
+1
+1
+0 0 0   0
+1   0
+[Block #7]
+404   LOGCHANGE
+STEP_L_TO_H
+150 275 221 326  100
+1
+1
+0 0 0   0
+1   0
+[Block #8]
+384   LABEL
+STEP
+25 275 96 308  100
+1
+1
+0 0 0   0
+[Block #9]
+384   LABEL
+RESET
+25 200 96 233  100
+1
+1
+0 0 0   0
+[Block #10]
+384   LABEL
+OUTPUT
+525 175 596 208  100
+1
+1
+0 0 0   0
+[Block #11]
+0   Text
+Text
+650 25 708 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #12]
+0   Text
+Text
+650 50 1226 117  100
+0
+0
+0 0 0   0
+Növekményes számláló, amelyik a 8-bites egészek értéktartományában képes számlálni.A léptetõ bemenetre valójában egy órajel is köthetõ, ebben az esetben közönséges8-bites számlálóként fog üzemelni, ez azonban feltétel.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+12
+[Connection #0]
+1   1   0   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+3   1   2   1   0   -1   -275 -200 -275 -200 -275 -200 -275 -200 -275 -200 -275 -200 -275 -200 -275 -200 
+[Connection #2]
+4   1   2   3   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+2   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+9   1   6   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+8   1   7   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+7   1   5   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+0   1   10   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+6   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+5   1   0   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+0   1   4   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+9   1   2   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

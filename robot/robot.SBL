@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42435
+42451
 ! 
 ! 
 ! 
@@ -11,27 +11,27 @@
 ! Karosszéria gyártósor
 ! Miklós Árpád
 ! SZTE
-6   4
+5   5
 POSITION
-3   1
+16   1
 SLOW_FAST
-5   1
-IS_SELECTED
-6   1
+17   1
 STOP
-7   1
+18   1
 IS_ONLINE
-9   1
+19   1
 TYPE
-29   1
-IS_DONE
-10   1
-ERR_INVALID
-12   1
+20   1
 POSITION_X
 23   1
 POSITION_Y
 24   1
+DONE
+25   1
+SEQUENCE
+30   1
+ERR_INVALID
+31   1
 [Export Parameter Count]
 0
 [Block Count]
@@ -39,7 +39,7 @@ POSITION_Y
 [Block #0]
 383   SUPERBLOCK
 IS_VALID
-175 75 246 141  100
+275 150 346 216  100
 3
 1
 0 0 0   0
@@ -48,7 +48,7 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_p
 [Block #1]
 383   SUPERBLOCK
 TO_XY_COORD
-325 25 396 76  100
+525 50 596 101  100
 1
 2
 0 0 0   0
@@ -57,135 +57,65 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_p
 [Block #2]
 383   SUPERBLOCK
 CURRENT_POS
-25 100 96 166  100
+150 150 221 216  100
 3
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
 0
 [Block #3]
-344   FCT1
-POSITION
-25 25 96 76  100
+354   LOGIC1
+NOT_STOP
+275 250 346 301  100
 1
 1
 0 0 0   0
-8
-x
+0
 [Block #4]
-354   LOGIC1
-NOT_STOP
-175 350 246 401  100
-1
+396   LOGIC
+ANIM_ENABLE
+400 250 471 316  100
+3
 1
 0 0 0   0
 0
 [Block #5]
-344   FCT1
-SLOW_FAST
-25 600 96 651  100
-1
-1
-0 0 0   0
-8
-x
-[Block #6]
-344   FCT1
-IS_SELECTED
-25 425 96 476  100
-1
-1
-0 0 0   0
-8
-x
-[Block #7]
-344   FCT1
-STOP
-25 350 96 401  100
-1
-1
-0 0 0   0
-8
-x
-[Block #8]
-396   LOGIC
-ANIM_ENABLE
-325 250 396 334  100
-4
-1
-0 0 0   0
-0
-[Block #9]
-344   FCT1
-IS_ONLINE
-25 500 96 551  100
-1
-1
-0 0 0   0
-8
-x
-[Block #10]
-344   FCT1
-IS_DONE
-625 475 696 526  100
-1
-1
-0 0 0   0
-8
-x
-[Block #11]
-396   LOGIC
-ANIM_END
-625 375 696 441  100
-3
-1
-0 0 0   0
-0
-[Block #12]
-396   LOGIC
-ERR_INVALID
-175 475 246 541  100
-3
-1
-0 0 0   0
-0
-[Block #13]
 354   LOGIC1
 NOT_VALID
-175 250 246 301  100
+275 325 346 376  100
 1
 1
 1 0 0   0
 0
-[Block #14]
+[Block #6]
 383   SUPERBLOCK
 ANIMATE_X
-500 25 571 91  100
+650 50 721 116  100
 3
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
 0
-[Block #15]
+[Block #7]
 355   LOGIC2
 CLK_ENABLE
-325 350 396 401  100
+525 125 596 176  100
 2
 1
 0 0 0   0
 0
-[Block #16]
+[Block #8]
 353   ANASWITCH2
 CLOCK
-175 600 246 676  100
+275 500 346 576  100
 3
 1
 0 0 0   0
 1
-[Block #17]
+[Block #9]
 301   GENERATOR
 FAST
-25 675 96 726  100
+150 475 221 526  100
 0
 1
 0 0 0   0
@@ -194,10 +124,10 @@ FAST
  1.00000000000000E+0000    0.00000000000000E+0000
  5.00000000000000E-0002    1.00000000000000E-0001    0.00000000000000E+0000    0.00000000000000E+0000
 1.0
-[Block #18]
+[Block #10]
 301   GENERATOR
 SLOW
-25 750 96 801  100
+150 550 221 601  100
 0
 1
 0 0 0   0
@@ -206,210 +136,257 @@ SLOW
  1.00000000000000E+0000    0.00000000000000E+0000
  1.00000000000000E-0001    2.00000000000000E-0001    0.00000000000000E+0000    0.00000000000000E+0000
 1.0
-[Block #19]
+[Block #11]
 383   SUPERBLOCK
 ANIMATE_Y
-500 175 571 241  100
+650 225 721 291  100
 3
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
 0
-[Block #20]
+[Block #12]
 362   COMPARATOR
 SETP == OUTP
-625 100 696 151  100
+775 50 846 101  100
 2
 1
 0 0 0   0
 2
-[Block #21]
+[Block #13]
 362   COMPARATOR
 SETP == OUTP
-625 250 696 301  100
+775 225 846 276  100
 2
 1
 0 0 0   0
 2
-[Block #22]
+[Block #14]
 354   LOGIC1
 FALSE
-500 300 571 351  100
+650 150 721 201  100
 0
 1
 1 0 0   0
 2
+[Block #15]
+354   LOGIC1
+UNSIGNED
+150 75 221 126  100
+0
+1
+1 0 0   0
+2
+[Block #16]
+384   LABEL
+POSITION
+25 25 96 58  100
+1
+1
+0 0 0   0
+[Block #17]
+384   LABEL
+SLOW_FAST
+25 525 96 558  100
+1
+1
+0 0 0   0
+[Block #18]
+384   LABEL
+STOP
+25 275 96 308  100
+1
+1
+0 0 0   0
+[Block #19]
+384   LABEL
+IS_ONLINE
+25 325 96 358  100
+1
+1
+0 0 0   0
+[Block #20]
+384   LABEL
+TYPE
+25 225 96 258  100
+1
+1
+0 0 0   0
+[Block #21]
+355   LOGIC2
+ANIM_END
+875 150 946 201  100
+2
+1
+0 0 0   0
+0
+[Block #22]
+355   LOGIC2
+POS_INVALID
+275 400 346 451  100
+2
+1
+0 0 0   0
+0
 [Block #23]
-344   FCT1
+384   LABEL
 POSITION_X
-625 25 696 76  100
+1000 100 1071 133  100
 1
 1
 0 0 0   0
-8
-x
 [Block #24]
-344   FCT1
+384   LABEL
 POSITION_Y
-625 175 696 226  100
+1000 200 1071 233  100
 1
 1
 0 0 0   0
-8
-x
 [Block #25]
-0   Text
-Text
-775 125 923 146  100
-0
-0
+384   LABEL
+DONE
+1000 150 1071 183  100
+1
+1
 0 0 0   0
-Ekvivalens C kód:
-14   0   0   0   16777215   0   0
-ARIAL
 [Block #26]
-0   Text
-Text
-775 150 2190 597  100
-0
-0
-0 0 0   0
-extern bool fast();extern bool slow();bool robot(unsigned char position, bool type, bool stop, bool is_selected, bool is_online, bool slow_fast, unsigned char* position_x, unsigned char* position_y, bool* is_done) {  bool clock = slow_fast ? fast() : slow();  unsigned char endpoint_x, endpoint_y;    /* Hibás mûködés jelzése, ha a megadott pozíció érvénytelen, a robot ki lett választva és üzembe lett helyezve. */  if(!is_valid(position, current_pos, type) &&&& is_selected &&&& is_online)    return true;    /* Az animáció következõ koordinátáinak kiszámítása, ha a megadott pozíció érvényes, a robot ki lett választva, nincs megállítva és üzembe lett helyezve */  if(is_valid(position, current_pos, type) &&&& is_selected &&&& !stop &&&& is_online) {    /* Az animáció végpontjainak és a jelenlegi koordinátáinak meghatározása. */    to_xy_coord(position, &&endpoint_x, &&endpoint_y);    *position_x = animate_x(endpoint_x, false, clock);    *position_y = animate_y(endpoint_y, false, clock);        /* A jelenlegi pozíció eltárolása, ha a jelenlegi koordináták megegyeznek a végpontok koordinátáival és a robot ki lett választva. */    if(position_x == endpoint_x &&&& position_y == endpoint_y &&&& is_selected) {      *is_done = true;      current_pos = position;    }  }    /* Hibátlan mûködés jelzése. */  return false;}
-10   0   0   0   16777215   0   0
-Courier New
+384   LABEL
+DONE
+525 325 596 358  100
+1
+1
+1 0 0   0
 [Block #27]
 0   Text
 Text
-775 25 833 46  100
+414 728 1200 781  100
 0
 0
 0 0 0   0
-Leírás:
-14   0   0   0   16777215   0   0
+ROBOT:* SEQUENCE kimenet: memondja, hogy éppen melyik szekvenciát járja be a robot.* WELDER bemenet és kimenet: le kell ellenõrizni típustól függõen, hogy hegeszt-e. !!! MÉGSE KELL? Ellenõrizni!
+12   0   0   0   16777215   0   0
 ARIAL
 [Block #28]
-0   Text
-Text
-775 50 1234 83  100
-0
-0
+383   SUPERBLOCK
+SEQUENCE_ID
+275 75 346 126  100
+2
+1
 0 0 0   0
-Mûködteti a robotokat az animációban, és ellenõrzi a megadott pozíciókérvényességét a robotok típusaitól függõen.
-11   0   0   0   16777215   0   0
-Arial
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_sequence_identifier.SBL
+0
 [Block #29]
-344   FCT1
-TYPE
-25 225 96 276  100
+384   LABEL
+DONE
+875 25 946 58  100
 1
-1
-0 0 0   0
-8
-x
-[Block #30]
-0   Text
-Text
-775 625 881 646  100
-0
-0
-0 0 0   0
-Megjegyzés:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #31]
-0   Text
-Text
-775 650 1270 683  100
-0
-0
-0 0 0   0
-A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
-11   0   0   0   16777215   0   0
-Arial
-[Block #32]
-354   LOGIC1
-UNSIGNED
-175 175 246 226  100
-0
 1
 1 0 0   0
-2
+[Block #30]
+384   LABEL
+SEQUENCE
+1000 375 1071 408  100
+1
+1
+0 0 0   0
+[Block #31]
+384   LABEL
+ERR_INVALID
+1000 425 1071 458  100
+1
+1
+0 0 0   0
+[Block #32]
+384   LABEL
+SEQUENCE
+400 75 471 108  100
+1
+1
+0 0 0   0
 [Connection Count]
-37
+41
 [Connection #0]
-22   1   19   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   22   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
-0   1   13   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15   1   2   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #2]
-13   1   12   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   6   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
-22   1   14   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   11   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-14   1   23   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+21   1   29   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-19   1   24   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
-14   1   20   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13   1   21   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-19   1   21   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+12   1   21   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-8   1   15   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #9]
-11   1   10   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #10]
-3   1   2   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #11]
-21   1   11   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #12]
-20   1   11   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #13]
-7   1   4   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #14]
-9   1   12   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #15]
-5   1   16   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #16]
 2   1   0   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+1   1   6   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+6   1   12   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+11   1   13   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+3   1   4   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+21   1   25   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+9   1   8   1   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+[Connection #15]
+10   1   8   3   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+[Connection #16]
+7   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #17]
-3   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #18]
-6   1   12   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   28   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #19]
-4   1   8   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   11   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-17   1   16   1   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+16   1   2   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #21]
-18   1   16   3   0   -1   -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 -150 -1725 
+4   1   7   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #22]
-29   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   2   11   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #23]
-0   1   8   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   1   12   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #24]
-16   1   15   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   1   8   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #25]
-1   1   14   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+18   1   3   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #26]
-1   2   19   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+20   1   0   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #27]
-15   1   19   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+19   1   22   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #28]
-15   1   14   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #29]
-32   1   2   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   2   13   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #30]
-3   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+8   1   7   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #31]
-1   1   20   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   23   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #32]
-6   1   8   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   24   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #33]
-1   2   21   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+19   1   4   3   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #34]
-9   1   8   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+21   1   26   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #35]
-6   1   11   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+26   1   2   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #36]
-11   1   2   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #37]
+29   1   28   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+22   1   31   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #39]
+28   1   32   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+32   1   30   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]
