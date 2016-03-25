@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42435
+42453
 ! 
 ! 
 ! 
@@ -16,83 +16,124 @@ POSITION
 2   1
 OPEN_CLOSE
 3   1
-POSITION_Y
-12   1
 POSITION_X
-13   1
+20   1
+POSITION_Y
+21   1
 GRIPPER
-15   1
+22   1
 ERR_INVALID
-18   1
+23   1
 [Export Parameter Count]
 0
 [Block Count]
-27
+25
 [Block #0]
-383   SUPERBLOCK
-TO_XY_COORD
-325 25 396 76  100
-1
-2
-0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_to_xy.SBL
+0   Text
+Text
+1075 25 1133 46  100
 0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
 [Block #1]
+0   Text
+Text
+1075 50 1604 100  100
+0
+0
+0 0 0   0
+Fogadja az új daru pozíciót és a megfogó új állapotát, majd érvényesíti azokat akorábbi pozíció és állapot függvényében. Amennyiben az új pozíció és az új állapotérvényesek, elvégzi a daru és a megfogó mozgatását az animációban.
+11   0   0   0   16777215   0   0
+Arial
+[Block #2]
+384   LABEL
+POSITION
+25 25 96 58  100
+1
+1
+0 0 0   0
+[Block #3]
+384   LABEL
+OPEN_CLOSE
+25 225 96 258  100
+1
+1
+0 0 0   0
+[Block #4]
 383   SUPERBLOCK
 CURRENT_POS
-25 100 96 166  100
+150 150 221 216  100
 3
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
 0
-[Block #2]
-344   FCT1
-POSITION
-25 25 96 76  100
-1
-1
-0 0 0   0
-8
-x
-[Block #3]
-344   FCT1
-OPEN_CLOSE
-25 275 96 326  100
-1
-1
-0 0 0   0
-8
-x
-[Block #4]
-396   LOGIC
-ANIM_END
-625 350 696 416  100
-3
-1
-0 0 0   0
-0
 [Block #5]
 383   SUPERBLOCK
+IS_VALID
+275 150 346 252  100
+5
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_validator.SBL
+0
+[Block #6]
+354   LOGIC1
+UNSIGNED
+150 75 221 126  100
+0
+1
+1 0 0   0
+2
+[Block #7]
+357   DFLIPFLOP
+CUR_STATE
+150 275 221 326  100
+2
+1
+0 0 0   0
+0   0   1
+[Block #8]
+414   OFFDELAY
+OFFDELAY
+275 275 346 326  100
+1
+1
+1 0 0   0
+ 1.00000000000000E-0001  0
+[Block #9]
+383   SUPERBLOCK
+TO_XY_COORD
+400 25 471 76  100
+1
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_to_xy.SBL
+0
+[Block #10]
+383   SUPERBLOCK
 ANIMATE_Y
-500 25 571 91  100
+575 25 646 91  100
 3
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
 0
-[Block #6]
+[Block #11]
 355   LOGIC2
 CLK_ENABLE
-325 175 396 226  100
+400 100 471 151  100
 2
 1
 0 0 0   0
 0
-[Block #7]
+[Block #12]
 301   GENERATOR
 FAST
-325 250 396 301  100
+400 175 471 226  100
 0
 1
 1 0 0   0
@@ -101,244 +142,171 @@ FAST
  1.00000000000000E+0000    0.00000000000000E+0000
  5.00000000000000E-0002    1.00000000000000E-0001    0.00000000000000E+0000    0.00000000000000E+0000
 1.0
-[Block #8]
+[Block #13]
 383   SUPERBLOCK
 ANIMATE_X
-500 175 571 241  100
+575 200 646 266  100
 3
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
 0
-[Block #9]
-362   COMPARATOR
-SETP == OUTP
-625 100 696 151  100
-2
-1
-0 0 0   0
-2
-[Block #10]
-362   COMPARATOR
-SETP == OUTP
-625 250 696 301  100
-2
-1
-0 0 0   0
-2
-[Block #11]
+[Block #14]
 354   LOGIC1
 FALSE
-500 300 571 351  100
+575 125 646 176  100
 0
 1
 1 0 0   0
 2
-[Block #12]
-344   FCT1
-POSITION_Y
-625 25 696 76  100
+[Block #15]
+384   LABEL
+CLK_ENABLE
+150 350 221 383  100
 1
 1
-0 0 0   0
-8
-x
-[Block #13]
-344   FCT1
-POSITION_X
-625 175 696 226  100
-1
+1 0 0   0
+[Block #16]
+362   COMPARATOR
+SETP == OUTP
+700 200 771 251  100
+2
 1
 0 0 0   0
-8
-x
-[Block #14]
+2
+[Block #17]
+362   COMPARATOR
+SETP == OUTP
+700 25 771 76  100
+2
+1
+0 0 0   0
+2
+[Block #18]
 383   SUPERBLOCK
 GRIP_ANIM
-500 475 571 526  100
+700 300 771 351  100
 2
 2
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_gripper_controller.SBL
 0
-[Block #15]
-344   FCT1
-GRIPPER
-625 475 696 526  100
-1
-1
-0 0 0   0
-8
-x
-[Block #16]
-357   DFLIPFLOP
-CUR_STATE
-25 350 96 401  100
-2
-1
-0 0 0   0
-0   0   1
-[Block #17]
-383   SUPERBLOCK
-IS_VALID
-175 125 246 227  100
-5
-1
-0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_validator.SBL
-0
-[Block #18]
-354   LOGIC1
-ERR_INVALID
-625 550 696 601  100
-1
-1
-0 0 0   0
-0
 [Block #19]
-414   OFFDELAY
-OFFDELAY
-325 400 396 451  100
+396   LOGIC
+ANIM_END
+825 200 896 266  100
+3
 1
-1
-1 0 0   0
- 1.00000000000000E-0001  0
+0 0 0   0
+0
 [Block #20]
-354   LOGIC1
-UNSIGNED
-25 200 96 251  100
-0
+384   LABEL
+POSITION_X
+950 150 1021 183  100
 1
-1 0 0   0
-2
+1
+0 0 0   0
 [Block #21]
-0   Text
-Text
-775 125 923 146  100
-0
-0
+384   LABEL
+POSITION_Y
+950 75 1021 108  100
+1
+1
 0 0 0   0
-Ekvivalens C kód:
-14   0   0   0   16777215   0   0
-ARIAL
 [Block #22]
-0   Text
-Text
-775 150 2078 661  100
-0
-0
+384   LABEL
+GRIPPER
+950 300 1021 333  100
+1
+1
 0 0 0   0
-extern bool fast();bool crane(unsigned char position, bool open_close, unsigned char* position_x, unsigned char* position_y, unsigned char* gripper) {  bool clock = fast(), is_done;  static bool anim_end = false;  unsigned char endpoint_x, endpoint_y;    /* Hibás mûködés jelzése, ha a megadott pozíció és megfogó-állapot érvénytelen. */  if(!is_valid(position, current_pos, anim_end, open_close, current_state))    return true;    /* Az animáció következõ koordinátáinak kiszámítása, ha a megadott pozíció és megfogó-állapot érvényes. */  if(is_valid(position, current_pos, anim_end, open_close, current_state)) {    /* Az új értékek letárolása. */    anim_end = false;    current_pos = position;    current_state = open_close;        /* Az animáció végpontjainak és a jelenlegi koordinátáinak, illetve a megfogó-animáció következõ képkockájának meghatározása. */    to_xy_coord(position, &&endpoint_x, &&endpoint_y);    *position_x = animate_x(endpoint_x, false, clock);    *position_y = animate_y(endpoint_y, false, clock);    *gripper = grip_anim(open_close, true, &&is_done);        /* A mozgás befejezésének eltárolása, ha a jelenlegi koordináták megegyeznek a végpontok koordinátáival és a megfogó-animáció is elérte az utolsó képkockát. */    if(position_x == endpoint_x &&&& position_y == endpoint_y &&&& is_selected && is_done)      anim_end = true;  }    /* Hibátlan mûködés jelzése. */  return false;}
-10   0   0   0   16777215   0   0
-Courier New
 [Block #23]
-0   Text
-Text
-775 25 833 46  100
-0
-0
+384   LABEL
+ERR_INVALID
+950 400 1021 433  100
+1
+1
 0 0 0   0
-Leírás:
-14   0   0   0   16777215   0   0
-ARIAL
 [Block #24]
-0   Text
-Text
-775 50 1218 83  100
-0
-0
+354   LOGIC1
+NOT_VALID
+700 400 771 451  100
+1
+1
 0 0 0   0
-Mûködteti a darut az animációban, és leellenõrzi a megadott pozíciókérvényességét.
-11   0   0   0   16777215   0   0
-Arial
-[Block #25]
-0   Text
-Text
-775 700 881 721  100
 0
-0
-0 0 0   0
-Megjegyzés:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #26]
-0   Text
-Text
-775 725 1270 758  100
-0
-0
-0 0 0   0
-A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
-11   0   0   0   16777215   0   0
-Arial
 [Connection Count]
-33
+35
 [Connection #0]
-7   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15   1   7   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
-20   1   1   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+8   1   5   5   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #2]
-11   1   8   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   4   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
-11   1   5   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+12   1   11   2   8421504   -1   -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 
 [Connection #4]
-5   1   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   10   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-8   1   13   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+14   1   13   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
-14   1   15   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15   1   4   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-5   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4   1   5   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-8   1   10   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13   1   16   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #9]
-14   2   4   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   17   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #10]
-3   1   16   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+16   1   19   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #11]
-2   1   1   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+3   1   7   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #12]
-10   1   4   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   5   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #13]
-9   1   4   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   11   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #14]
-17   1   6   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+18   2   19   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #15]
-1   1   17   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   4   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #16]
-2   1   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+17   1   19   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #17]
-3   1   17   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   1   10   1   16711808   -1   -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 -325 -25 
 [Connection #18]
-16   1   17   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   10   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #19]
-0   1   5   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   13   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #20]
-6   1   8   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   2   13   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #21]
-6   1   5   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+18   1   22   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #22]
-0   2   8   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+24   1   23   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #23]
-19   1   17   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+3   1   5   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #24]
-2   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   5   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #25]
-0   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   1   17   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #26]
-0   2   10   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   2   16   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #27]
-17   1   14   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+11   1   15   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #28]
-4   1   19   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #29]
-6   1   1   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   21   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #30]
-6   1   16   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13   1   20   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #31]
-17   1   18   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   18   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #32]
-3   1   14   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   24   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+19   1   8   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+3   1   18   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]

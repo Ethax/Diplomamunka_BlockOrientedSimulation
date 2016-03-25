@@ -12,7 +12,7 @@
 ! Miklós Árpád
 ! SZTE
 [Block Count]
-56
+57
 [Block #0]
 385   USER1
 ANIMATION
@@ -817,6 +817,16 @@ BODY_TYPE
 0 0 0   0
 2   0
 0
+[Block #56]
+0   Text
+Text
+338 986 757 1003  100
+0
+0
+0 0 0   0
+------------------------------------------------------------------------------------
+12   0   0   0   16777215   0   0
+ARIAL
 [Connection Count]
 105
 [Connection #0]

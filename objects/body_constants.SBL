@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42427
+42454
 ! 
 ! 
 ! 
@@ -13,146 +13,200 @@
 ! SZTE
 1   2
 BODY_TYPE
-0   1
+12   1
 BODY_WIDTH
-5   1
+13   1
 DEF_Y_POS
-6   1
+14   1
 [Export Parameter Count]
 0
 [Block Count]
-13
+19
 [Block #0]
-344   FCT1
-BODY_TYPE
-25 25 96 76  100
-1
-1
-0 0 0   0
-8
-x
-[Block #1]
 306   CONST
 CONST: 1
-150 100 221 151  100
+150 175 221 226  100
 0
 1
 1 0 0   0
  1.00000000000000E+0000  0
-[Block #2]
+[Block #1]
 306   CONST
 CONST: 3
-275 100 346 151  100
+275 175 346 226  100
 0
 1
 1 0 0   0
  3.00000000000000E+0000  0
-[Block #3]
+[Block #2]
 345   FCT2
 MAX(X, Y)
-150 25 221 76  100
+150 100 221 151  100
 2
 1
 0 0 0   0
 9
 x+y
-[Block #4]
+[Block #3]
 345   FCT2
 MIN(X, Y)
-275 25 346 76  100
+275 100 346 151  100
 2
 1
 0 0 0   0
 10
 x+y
+[Block #4]
+405   MULTISWITCH
+WIDTH_SW
+775 25 846 109  100
+4
+1
+0 0 0   0
 [Block #5]
 405   MULTISWITCH
-BODY_WIDTH
-525 75 596 159  100
+Y_POS_SW
+775 200 846 284  100
 4
 1
 0 0 0   0
 [Block #6]
-405   MULTISWITCH
-DEF_Y_POS
-775 75 846 159  100
-4
-1
-0 0 0   0
-[Block #7]
 306   CONST
 CONST: 160
-400 175 471 226  100
-0
-1
-0 0 0   0
- 1.60000000000000E+0002  0
-[Block #8]
-306   CONST
-CONST: 161
-400 100 471 151  100
-0
-1
-0 0 0   0
- 1.61000000000000E+0002  0
-[Block #9]
-306   CONST
-CONST: 164
-400 25 471 76  100
-0
-1
-0 0 0   0
- 1.64000000000000E+0002  0
-[Block #10]
-306   CONST
-CONST: 382
-650 175 721 226  100
-0
-1
-0 0 0   0
- 3.82000000000000E+0002  0
-[Block #11]
-306   CONST
-CONST: 388
 650 100 721 151  100
 0
 1
 0 0 0   0
- 3.88000000000000E+0002  0
-[Block #12]
+ 1.60000000000000E+0002  0
+[Block #7]
+306   CONST
+CONST: 161
+525 100 596 151  100
+0
+1
+0 0 0   0
+ 1.61000000000000E+0002  0
+[Block #8]
+306   CONST
+CONST: 164
+400 100 471 151  100
+0
+1
+0 0 0   0
+ 1.64000000000000E+0002  0
+[Block #9]
 306   CONST
 CONST: 382
-650 25 721 76  100
+650 275 721 326  100
 0
 1
 0 0 0   0
  3.82000000000000E+0002  0
+[Block #10]
+306   CONST
+CONST: 388
+525 275 596 326  100
+0
+1
+0 0 0   0
+ 3.88000000000000E+0002  0
+[Block #11]
+306   CONST
+CONST: 382
+400 275 471 326  100
+0
+1
+0 0 0   0
+ 3.82000000000000E+0002  0
+[Block #12]
+384   LABEL
+BODY_TYPE
+25 100 96 133  100
+1
+1
+0 0 0   0
+[Block #13]
+384   LABEL
+BODY_WIDTH
+875 25 946 58  100
+1
+1
+0 0 0   0
+[Block #14]
+384   LABEL
+DEF_Y_POS
+875 250 946 283  100
+1
+1
+0 0 0   0
+[Block #15]
+384   LABEL
+BODY_TYPE
+400 25 471 58  100
+1
+1
+0 0 0   0
+[Block #16]
+384   LABEL
+BODY_TYPE
+400 200 471 233  100
+1
+1
+0 0 0   0
+[Block #17]
+0   Text
+Text
+1000 25 1058 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #18]
+0   Text
+Text
+1000 50 1575 219  100
+0
+0
+0 0 0   0
+A különbözõ karosszériák mozgatásához és átemeléséhez szolgáltat konstans értékeketa típustól függõen. A DEF_Y_POS jelenti azt az Y koordinátát az animációban, amelyenaz adott típusú karosszéria éppen a futószalag közepén helyezkedik el. A BODY_WIDTHaz adott típusú karosszéria hosszát jelenti.Ezek az értékek képpontokban vannak megadva és az animáció koordinátarendszeréhezvannak viszonyítva, ahol a (0, 0) koordináta az ablak bal felsõ sarkában található,és a számok az Y tengelyen lefelé, az X tengelyen pedig jobbra növekednek. Mindenérték a karosszériát képviselõ képfájl méreteitõl függ, ezért egy karosszériaképének lecserélésekor ezeket az értékeket is korrigálni kell.
+11   0   0   0   16777215   0   0
+Arial
 [Connection Count]
-12
+16
 [Connection #0]
-2   1   4   2   0   -1   -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 
-[Connection #1]
 1   1   3   2   0   -1   -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 
+[Connection #1]
+0   1   2   2   0   -1   -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 
 [Connection #2]
-11   1   6   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4   1   13   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
-8   1   5   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+5   1   14   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-3   1   4   1   33023   -1   -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 
+12   1   2   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-0   1   3   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   3   1   33023   -1   -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 -200 -75 
 [Connection #6]
-12   1   6   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+9   1   5   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-10   1   6   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+6   1   4   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-9   1   5   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+3   1   15   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #9]
-7   1   5   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+3   1   16   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #10]
-4   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   5   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #11]
-4   1   6   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   4   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+16   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+15   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+11   1   5   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+8   1   4   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]

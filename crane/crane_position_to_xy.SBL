@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42425
+42453
 ! 
 ! 
 ! 
@@ -13,221 +13,206 @@
 ! SZTE
 1   2
 POSITION
-1   1
-POSITION_Y
-2   1
+15   1
 POSITION_X
-7   1
+17   1
+POSITION_Y
+18   1
 [Export Parameter Count]
 0
 [Block Count]
-20
+19
 [Block #0]
 306   CONST
 0b00000111
-150 25 221 76  100
+150 350 221 401  100
 0
 1
 1 0 0   0
  7.00000000000000E+0000  0
 [Block #1]
-344   FCT1
-POSITION
-25 25 96 76  100
-1
-1
-0 0 0   0
-8
-x
-[Block #2]
 405   MULTISWITCH
 POSITION_Y
-425 200 496 302  100
+400 200 471 302  100
 5
 1
 0 0 0   0
-[Block #3]
+[Block #2]
 344   FCT1
 POSITION++
-300 200 371 251  100
+275 200 346 251  100
 1
 1
 0 0 0   0
 8
 x + 1
-[Block #4]
+[Block #3]
 306   CONST
 CONST: 0
-300 275 371 326  100
+275 275 346 326  100
 0
 1
 0 0 0   0
  0.00000000000000E+0000  0
-[Block #5]
+[Block #4]
 306   CONST
 CONST: 22
-300 350 371 401  100
+275 350 346 401  100
 0
 1
 0 0 0   0
  2.20000000000000E+0001  0
-[Block #6]
+[Block #5]
 306   CONST
 CONST: 44
-300 425 371 476  100
+275 425 346 476  100
 0
 1
 0 0 0   0
  4.40000000000000E+0001  0
-[Block #7]
+[Block #6]
 353   ANASWITCH2
 POSITION_X
-425 50 496 126  100
+400 50 471 126  100
 3
 1
 0 0 0   0
 1
-[Block #8]
+[Block #7]
 306   CONST
 CONST: 17
-300 25 371 76  100
+275 25 346 76  100
 0
 1
 0 0 0   0
  1.70000000000000E+0001  0
-[Block #9]
+[Block #8]
 306   CONST
 CONST: 0
-300 100 371 151  100
+275 100 346 151  100
 0
 1
 0 0 0   0
  0.00000000000000E+0000  0
-[Block #10]
+[Block #9]
 0   Text
 Text
-550 125 698 146  100
-0
-0
-0 0 0   0
-Ekvivalens C kód:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #11]
-0   Text
-Text
-550 150 1357 517  100
-0
-0
-0 0 0   0
-void crane_position_to_xy(unsigned char position, signed char* position_x, signed char* position_y) {  /* Az X koordináta meghatározása. */  if(position && 0x01)    *position_x = 17;  else    *position_x = 0;    /* Az Y koordináta meghatározása. */  switch(((position && 0x07) >> 1) + 1) {  case 1:    *position_y = 0;    break;  case 2:    *position_y = 22;    break;  case 3:    *position_y = 44;    break;  case 4:    *position_y = -22;    break;  }}
-10   0   0   0   16777215   0   0
-Courier New
-[Block #12]
-0   Text
-Text
-550 25 608 46  100
+625 25 683 46  100
 0
 0
 0 0 0   0
 Leírás:
 14   0   0   0   16777215   0   0
 ARIAL
-[Block #13]
+[Block #10]
 0   Text
 Text
-550 50 1057 100  100
+625 50 1171 100  100
 0
 0
 0 0 0   0
-Átalakítja a daru pozíciókat az animációhoz szükséges X és Y koordinátákká. Amegadott pozíció alsó bitje az animációban a daru X-irányú elmozdulását, amásodik és harmadik bit pedig az Y-irányú elmozdulását jelentik.
+Átalakítja a daru pozíciókat az animációhoz szükséges X és Y koordinátákká. Amegadott pozíció alsó bitje az animációban a daru X-irányú elmozdulását, a másodikés harmadik bit pedig az Y-irányú elmozdulását jelentik.
 11   0   0   0   16777215   0   0
 Arial
-[Block #14]
-0   Text
-Text
-550 550 656 571  100
-0
-0
-0 0 0   0
-Megjegyzés:
-14   0   0   0   16777215   0   0
-ARIAL
-[Block #15]
-0   Text
-Text
-550 575 1045 608  100
-0
-0
-0 0 0   0
-A fenti C kód csak szemléltetõ jellegû, és csak a blokkdiagram mûködésénekkönnyebb megértését szolgálja.
-11   0   0   0   16777215   0   0
-Arial
-[Block #16]
+[Block #11]
 383   SUPERBLOCK
 POS && 0x07
-25 100 96 151  100
+150 275 221 326  100
 2
 1
 0 0 0   0
 D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
 0
-[Block #17]
+[Block #12]
 447   DECODER
 DECODER
 150 100 221 166  100
 1
 3
-0 0 0   0
+1 0 0   0
 3   0
 0
-[Block #18]
+[Block #13]
 448   ENCODER
-ENCODER
+PART_Y
 150 200 221 251  100
 2
 1
-1 0 0   0
+0 0 0   0
 2   0
 0
-[Block #19]
+[Block #14]
 306   CONST
 CONST: -22
-300 500 371 551  100
+275 500 346 551  100
 0
 1
 0 0 0   0
 -2.20000000000000E+0001  0
+[Block #15]
+384   LABEL
+POSITION
+25 275 96 308  100
+1
+1
+0 0 0   0
+[Block #16]
+384   LABEL
+PART_X
+150 25 221 58  100
+1
+1
+0 0 0   0
+[Block #17]
+384   LABEL
+POSITION_X
+500 50 571 83  100
+1
+1
+0 0 0   0
+[Block #18]
+384   LABEL
+POSITION_Y
+500 275 571 308  100
+1
+1
+0 0 0   0
 [Connection Count]
-14
+17
 [Connection #0]
-17   2   18   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0   1   11   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #1]
-17   3   18   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+12   1   16   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #2]
-16   1   17   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+12   2   13   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #3]
-3   1   2   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+12   3   13   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #4]
-9   1   7   3   0   -1   -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 
+11   1   12   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #5]
-8   1   7   1   0   -1   -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 
+6   1   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #6]
-4   1   2   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1   1   18   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #7]
-5   1   2   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+15   1   11   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #8]
-6   1   2   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13   1   2   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #9]
-1   1   16   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+2   1   1   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #10]
-0   1   16   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+8   1   6   3   0   -1   -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 
 [Connection #11]
-18   1   3   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+7   1   6   1   0   -1   -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 -25 -475 
 [Connection #12]
-17   1   7   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+3   1   1   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #13]
-19   1   2   5   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+4   1   1   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+5   1   1   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+14   1   1   5   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+16   1   6   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
 [Logical Levels]
