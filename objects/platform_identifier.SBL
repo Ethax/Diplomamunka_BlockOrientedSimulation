@@ -1,0 +1,392 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42455
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+3   1
+IS_ON_BELT
+14   1
+CRANE_Y_POS
+15   1
+GRIPPER_OPEN
+16   1
+PLATFORM_NO
+25   1
+[Export Parameter Count]
+0
+[Block Count]
+34
+[Block #0]
+362   COMPARATOR
+CRANE_Y == -22
+125 575 196 626  100
+2
+1
+0 0 0   0
+2
+[Block #1]
+306   CONST
+PLATFORM: C3
+250 650 321 701  100
+0
+1
+1 0 0   0
+ 3.00000000000000E+0000  0
+[Block #2]
+306   CONST
+PLATFORM: C2
+525 650 596 701  100
+0
+1
+1 0 0   0
+ 2.00000000000000E+0000  0
+[Block #3]
+306   CONST
+PLATFORM: C1
+800 650 871 701  100
+0
+1
+1 0 0   0
+ 1.00000000000000E+0000  0
+[Block #4]
+362   COMPARATOR
+CRANE_Y == 22
+400 575 471 626  100
+2
+1
+0 0 0   0
+2
+[Block #5]
+362   COMPARATOR
+CRANE_Y == 44
+675 575 746 626  100
+2
+1
+0 0 0   0
+2
+[Block #6]
+306   CONST
+CONST: -22
+125 650 196 701  100
+0
+1
+1 0 0   0
+-2.20000000000000E+0001  0
+[Block #7]
+352   ANASWITCH
+C3_NUM
+250 575 321 626  100
+2
+1
+0 0 0   0
+1
+[Block #8]
+306   CONST
+CONST: 22
+400 650 471 701  100
+0
+1
+1 0 0   0
+ 2.20000000000000E+0001  0
+[Block #9]
+306   CONST
+CONST: 44
+675 650 746 701  100
+0
+1
+1 0 0   0
+ 4.40000000000000E+0001  0
+[Block #10]
+352   ANASWITCH
+C2_NUM
+525 575 596 626  100
+2
+1
+0 0 0   0
+1
+[Block #11]
+352   ANASWITCH
+C1_NUM
+800 575 871 626  100
+2
+1
+0 0 0   0
+1
+[Block #12]
+348   MAXMIN
+NUM_SWITCH
+900 500 971 566  100
+3
+1
+0 0 0   0
+0
+[Block #13]
+384   LABEL
+NUM_SWITCH
+150 150 221 183  100
+1
+1
+0 0 0   0
+[Block #14]
+384   LABEL
+IS_ON_BELT
+25 150 96 183  100
+1
+1
+0 0 0   0
+[Block #15]
+384   LABEL
+CRANE_Y_POS
+25 525 96 558  100
+1
+1
+0 0 0   0
+[Block #16]
+384   LABEL
+GRIPPER_OPEN
+25 300 96 333  100
+1
+1
+0 0 0   0
+[Block #17]
+362   COMPARATOR
+NUM == 0
+400 375 471 426  100
+2
+1
+1 0 0   0
+2
+[Block #18]
+306   CONST
+CONST: 0
+275 375 346 426  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #19]
+404   LOGCHANGE
+RESET
+150 200 221 251  100
+1
+1
+0 0 0   0
+1   0
+[Block #20]
+353   ANASWITCH2
+SOURCE
+525 75 596 151  100
+3
+1
+0 0 0   0
+1
+[Block #21]
+355   LOGIC2
+SET
+525 225 596 276  100
+2
+1
+0 0 0   0
+1
+[Block #22]
+414   OFFDELAY
+OFF_200_MS
+275 200 346 251  100
+1
+1
+0 0 0   0
+ 2.00000000000000E-0001  0
+[Block #23]
+413   ONDELAY
+ON_100_MS
+400 200 471 251  100
+1
+1
+0 0 0   0
+ 1.00000000000000E-0001  0
+[Block #24]
+306   CONST
+CONST: 0
+400 25 471 76  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #25]
+384   LABEL
+PLATFORM_NO
+925 175 996 208  100
+1
+1
+0 0 0   0
+[Block #26]
+384   LABEL
+NUM_SWITCH
+150 450 221 483  100
+1
+1
+1 0 0   0
+[Block #27]
+383   SUPERBLOCK
+NUM_HOLD
+650 175 721 241  100
+3
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
+0
+[Block #28]
+354   LOGIC1
+UNSIGNED
+650 100 721 151  100
+0
+1
+1 0 0   0
+2
+[Block #29]
+356   RSFLIPFLOP
+LIFTING
+275 75 346 126  100
+2
+1
+0 0 0   0
+0   0   1
+0
+[Block #30]
+396   LOGIC
+AND
+400 275 471 341  100
+3
+1
+0 0 0   0
+0
+[Block #31]
+404   LOGCHANGE
+SET
+150 75 221 126  100
+1
+1
+0 0 0   0
+2   0
+[Block #32]
+0   Text
+Text
+1050 25 1108 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #33]
+0   Text
+Text
+1050 50 1601 151  100
+0
+0
+0 0 0   0
+A daru megfogójának nyitásakor a megfogó relatív Y koordinátájának segítségévelazonosítja a platform sorszámát, amelyikre a karosszéria került. A platform sorszámamindaddig a kimeneten marad, amíg a karosszéria újra a futószalagra nem kerül.Az azonosítás csak akkor történik meg, ha a karosszéria elõzõleg a futószalagon voltés fel lett emelve.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+37
+[Connection #0]
+6   1   0   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+8   1   4   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+9   1   5   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+28   1   27   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+17   1   30   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+1   1   7   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+2   1   10   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+3   1   11   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+26   1   13   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+15   1   0   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+11   1   12   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+22   1   23   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+19   1   22   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+0   1   7   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+4   1   10   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+5   1   11   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+31   1   29   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+23   1   21   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+21   1   27   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+24   1   20   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+30   1   21   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+14   1   19   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+14   1   31   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+20   1   27   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #24]
+19   1   29   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+29   1   30   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
+18   1   17   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+22   1   20   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #28]
+27   1   25   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #29]
+27   1   17   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+16   1   30   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+13   1   20   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+15   1   4   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+10   1   12   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+15   1   5   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+7   1   12   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+12   1   26   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

@@ -1,0 +1,605 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42456
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+8   8
+BODY_TYPE
+30   1
+SET_TO_CELL
+31   1
+BELT_ENC
+32   1
+X_OF_MOVE
+33   1
+Y_OF_MOVE
+34   1
+CRANE_X_POS
+35   1
+CRANE_Y_POS
+36   1
+GRIPPER_STATE
+37   1
+POS_CHANGED
+39   1
+NEW_X_POS
+40   1
+NEW_Y_POS
+41   1
+MOVE_EN
+42   1
+LIFT_EN
+43   1
+SENSOR_NUM
+44   1
+ON_BELT_N
+45   1
+ON_PLAT_N
+46   1
+[Export Parameter Count]
+0
+[Block Count]
+54
+[Block #0]
+383   SUPERBLOCK
+CRANE_COND
+425 250 496 370  100
+6
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_lifting_condition.SBL
+0
+[Block #1]
+383   SUPERBLOCK
+BELT_COND
+675 475 746 595  100
+6
+5
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_movement_condition.SBL
+0
+[Block #2]
+383   SUPERBLOCK
+BODY_CONST
+175 950 246 1001  100
+1
+2
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_constants.SBL
+0
+[Block #3]
+362   COMPARATOR
+IS_ON_BELT
+675 975 746 1026  100
+2
+1
+0 0 0   0
+2
+[Block #4]
+405   MULTISWITCH
+SET_X_POS
+775 225 846 309  100
+4
+1
+0 0 0   0
+[Block #5]
+306   CONST
+CONST: 0
+150 175 221 226  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #6]
+306   CONST
+CONST: 3
+425 100 496 151  100
+0
+1
+1 0 0   0
+ 3.00000000000000E+0000  0
+[Block #7]
+345   FCT2
+MAX(X, Y)
+300 25 371 76  100
+2
+1
+0 0 0   0
+9
+x+y
+[Block #8]
+345   FCT2
+MIN(X, Y)
+425 25 496 76  100
+2
+1
+0 0 0   0
+10
+x+y
+[Block #9]
+404   LOGCHANGE
+IS_CHANGED
+675 100 746 151  100
+1
+1
+0 0 0   0
+1   0
+[Block #10]
+362   COMPARATOR
+SET_TO > 0
+550 100 621 151  100
+2
+1
+0 0 0   0
+4
+[Block #11]
+351   EXTERNSH
+SET_VALUE
+775 50 846 101  100
+2
+1
+0 0 0   0
+ 0.00000000000000E+0000
+[Block #12]
+384   LABEL
+X_OF_MOVE
+425 775 496 808  100
+1
+1
+0 0 0   0
+[Block #13]
+362   COMPARATOR
+BELTS_ENC == 0
+150 100 221 151  100
+2
+1
+1 0 0   0
+2
+[Block #14]
+352   ANASWITCH
+SET_ENABLE
+150 25 221 76  100
+2
+1
+0 0 0   0
+1
+[Block #15]
+384   LABEL
+BELT_1_START
+700 425 771 458  100
+1
+1
+1 0 0   0
+[Block #16]
+384   LABEL
+BELT_2_START
+725 375 796 408  100
+1
+1
+1 0 0   0
+[Block #17]
+384   LABEL
+BELT_3_START
+750 325 821 358  100
+1
+1
+1 0 0   0
+[Block #18]
+384   LABEL
+BELT_1_STATE
+575 775 646 808  100
+1
+1
+1 0 0   0
+[Block #19]
+384   LABEL
+BELT_2_STATE
+600 725 671 758  100
+1
+1
+1 0 0   0
+[Block #20]
+384   LABEL
+BELT_3_STATE
+625 675 696 708  100
+1
+1
+1 0 0   0
+[Block #21]
+384   LABEL
+IS_ON_BELT
+650 625 721 658  100
+1
+1
+1 0 0   0
+[Block #22]
+447   DECODER
+BELT_DEC
+525 875 596 941  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #23]
+384   LABEL
+IS_ON_BELT
+400 400 471 433  100
+1
+1
+1 0 0   0
+[Block #24]
+384   LABEL
+BODY_WIDTH
+550 825 621 858  100
+1
+1
+1 0 0   0
+[Block #25]
+384   LABEL
+CRANE_X_POS
+325 550 396 583  100
+1
+1
+1 0 0   0
+[Block #26]
+384   LABEL
+CRANE_Y_POS
+350 500 421 533  100
+1
+1
+1 0 0   0
+[Block #27]
+384   LABEL
+GRIPPER_STATE
+375 450 446 483  100
+1
+1
+1 0 0   0
+[Block #28]
+384   LABEL
+BODY_WIDTH
+300 825 371 858  100
+1
+1
+1 0 0   0
+[Block #29]
+384   LABEL
+X_OF_MOVE
+150 250 221 283  100
+1
+1
+0 0 0   0
+[Block #30]
+384   LABEL
+BODY_TYPE
+25 950 96 983  100
+1
+1
+0 0 0   0
+[Block #31]
+384   LABEL
+SET_TO_CELL
+25 25 96 58  100
+1
+1
+0 0 0   0
+[Block #32]
+384   LABEL
+BELT_ENC
+25 900 96 933  100
+1
+1
+0 0 0   0
+[Block #33]
+384   LABEL
+X_OF_MOVE
+25 1050 96 1083  100
+1
+1
+0 0 0   0
+[Block #34]
+384   LABEL
+Y_OF_MOVE
+25 1000 96 1033  100
+1
+1
+0 0 0   0
+[Block #35]
+384   LABEL
+CRANE_X_POS
+25 600 96 633  100
+1
+1
+0 0 0   0
+[Block #36]
+384   LABEL
+CRANE_Y_POS
+25 650 96 683  100
+1
+1
+0 0 0   0
+[Block #37]
+384   LABEL
+GRIPPER_STATE
+25 700 96 733  100
+1
+1
+0 0 0   0
+[Block #38]
+384   LABEL
+BELT_ENC
+175 300 246 333  100
+1
+1
+0 0 0   0
+[Block #39]
+384   LABEL
+POS_CHANGED
+900 50 971 83  100
+1
+1
+0 0 0   0
+[Block #40]
+384   LABEL
+NEW_X_POS
+900 275 971 308  100
+1
+1
+0 0 0   0
+[Block #41]
+384   LABEL
+NEW_Y_POS
+900 1025 971 1058  100
+1
+1
+0 0 0   0
+[Block #42]
+384   LABEL
+MOVE_EN
+900 575 971 608  100
+1
+1
+0 0 0   0
+[Block #43]
+384   LABEL
+LIFT_EN
+900 175 971 208  100
+1
+1
+0 0 0   0
+[Block #44]
+384   LABEL
+SENSOR_NUM
+900 1075 971 1108  100
+1
+1
+0 0 0   0
+[Block #45]
+384   LABEL
+ON_BELT_N
+900 525 971 558  100
+1
+1
+0 0 0   0
+[Block #46]
+384   LABEL
+ON_PLAT_N
+900 125 971 158  100
+1
+1
+0 0 0   0
+[Block #47]
+384   LABEL
+LIFT_EN
+550 250 621 283  100
+1
+1
+0 0 0   0
+[Block #48]
+384   LABEL
+ON_PLAT_N
+575 325 646 358  100
+1
+1
+0 0 0   0
+[Block #49]
+0   Text
+Text
+1025 25 1083 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #50]
+0   Text
+Text
+1025 50 1586 134  100
+0
+0
+0 0 0   0
+Elõállítja a karosszériák animációjához szükséges paramétereket, úgymint az emelésvagy a mozgatás engedélyezése, a behelyezés koordinátái és az új koordináták életbeléptetéséhez szükséges impulzus. Ezek mellett meghatározza azt, hogy a karosszériaéppen melyik futószalagon van vagy melyik platformra lett áthelyezve, illetve akarosszéria aktuális helyzetére vonatkozóan kódolja az érzékelõk állapotát.
+11   0   0   0   16777215   0   0
+Arial
+[Block #51]
+383   SUPERBLOCK
+SENSOR_ENC
+525 1075 596 1126  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_encoder.SBL
+0
+[Block #52]
+352   ANASWITCH
+SENSOR_EN
+775 1075 846 1126  100
+2
+1
+0 0 0   0
+1
+[Block #53]
+384   LABEL
+X_OF_MOVE
+425 1075 496 1108  100
+1
+1
+0 0 0   0
+[Connection Count]
+64
+[Connection #0]
+6   1   8   2   0   -1   -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 
+[Connection #1]
+5   1   13   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+13   1   14   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+17   1   4   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+1   1   15   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+23   1   0   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+21   1   1   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+38   1   13   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+3   1   21   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+53   1   51   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+9   1   11   2   32768   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #11]
+3   1   52   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+22   1   18   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+16   1   4   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+1   2   16   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+20   1   1   5   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+27   1   0   5   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+10   1   9   1   32768   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #18]
+31   1   14   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+7   1   8   1   33023   -1   -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 -250 -125 
+[Connection #20]
+52   1   44   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+0   1   47   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+4   1   40   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+8   1   10   1   33023   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #24]
+33   1   29   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #25]
+11   1   4   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #26]
+22   2   19   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #27]
+15   1   4   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #28]
+1   3   17   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #29]
+19   1   1   4   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+26   1   0   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+30   1   2   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+14   1   7   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+0   2   48   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+5   1   7   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+32   1   38   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+22   3   20   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #37]
+18   1   1   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+25   1   0   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #39]
+24   1   1   2   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+28   1   0   2   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #41]
+1   4   45   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #42]
+1   5   42   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #43]
+9   1   39   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #44]
+24   1   28   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #45]
+51   1   52   1   12632064   -1   -250 -850 -250 -850 -250 -850 -250 -850 -250 -850 -250 -850 -250 -850 -250 -850 
+[Connection #46]
+21   1   23   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #47]
+12   1   1   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #48]
+29   1   0   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #49]
+48   1   46   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #50]
+8   1   11   1   33023   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #51]
+47   1   43   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #52]
+2   1   51   2   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #53]
+35   1   25   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #54]
+36   1   26   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #55]
+33   1   53   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #56]
+5   1   10   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #57]
+33   1   12   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #58]
+37   1   27   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #59]
+2   1   24   1   16711808   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #60]
+2   2   3   1   255   -1   -850 -675 -850 -675 -850 -675 -850 -675 -850 -675 -850 -675 -850 -675 -850 -675 
+[Connection #61]
+32   1   22   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #62]
+34   1   3   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #63]
+2   2   41   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG
