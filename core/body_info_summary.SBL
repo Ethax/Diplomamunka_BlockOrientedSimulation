@@ -1,0 +1,644 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42457
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+9   5
+B1_SENS_INFO
+10   1
+B1_BELT_INFO
+11   1
+B1_PLAT_INFO
+12   1
+B2_SENS_INFO
+13   1
+B2_BELT_INFO
+14   1
+B2_PLAT_INFO
+15   1
+B3_SENS_INFO
+16   1
+B3_BELT_INFO
+17   1
+B3_PLAT_INFO
+18   1
+SENS_INFO
+45   1
+BELT_INFO
+46   1
+PLAT_INFO
+47   1
+ERR_BELT_COL
+48   1
+ERR_PLAT_COL
+49   1
+[Export Parameter Count]
+0
+[Block Count]
+52
+[Block #0]
+383   SUPERBLOCK
+B1_SENS_DEC
+125 25 196 145  100
+1
+6
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_decoder.SBL
+0
+[Block #1]
+396   LOGIC
+SENSOR_11
+250 450 321 516  100
+3
+1
+0 0 0   0
+1
+[Block #2]
+383   SUPERBLOCK
+B2_SENS_DEC
+125 175 196 295  100
+1
+6
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_decoder.SBL
+0
+[Block #3]
+383   SUPERBLOCK
+B3_SENS_DEC
+125 325 196 445  100
+1
+6
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\sensor_decoder.SBL
+0
+[Block #4]
+396   LOGIC
+SENSOR_12
+375 450 446 516  100
+3
+1
+0 0 0   0
+1
+[Block #5]
+396   LOGIC
+SENSOR_21
+500 450 571 516  100
+3
+1
+0 0 0   0
+1
+[Block #6]
+396   LOGIC
+SENSOR_22
+625 450 696 516  100
+3
+1
+0 0 0   0
+1
+[Block #7]
+396   LOGIC
+SENSOR_31
+750 450 821 516  100
+3
+1
+0 0 0   0
+1
+[Block #8]
+396   LOGIC
+SENSOR_32
+875 450 946 516  100
+3
+1
+0 0 0   0
+1
+[Block #9]
+448   ENCODER
+SENS_ENC
+975 300 1046 420  100
+6
+1
+0 0 0   0
+6   0
+0
+[Block #10]
+384   LABEL
+B1_SENS_INFO
+25 25 96 58  100
+1
+1
+0 0 0   0
+[Block #11]
+384   LABEL
+B1_BELT_INFO
+25 550 96 583  100
+1
+1
+0 0 0   0
+[Block #12]
+384   LABEL
+B1_PLAT_INFO
+25 1025 96 1058  100
+1
+1
+0 0 0   0
+[Block #13]
+384   LABEL
+B2_SENS_INFO
+25 175 96 208  100
+1
+1
+0 0 0   0
+[Block #14]
+384   LABEL
+B2_BELT_INFO
+25 650 96 683  100
+1
+1
+0 0 0   0
+[Block #15]
+384   LABEL
+B2_PLAT_INFO
+25 1125 96 1158  100
+1
+1
+0 0 0   0
+[Block #16]
+384   LABEL
+B3_SENS_INFO
+25 325 96 358  100
+1
+1
+0 0 0   0
+[Block #17]
+384   LABEL
+B3_BELT_INFO
+25 750 96 783  100
+1
+1
+0 0 0   0
+[Block #18]
+384   LABEL
+B3_PLAT_INFO
+25 1225 96 1258  100
+1
+1
+0 0 0   0
+[Block #19]
+383   SUPERBLOCK
+B1_IN && B2_IN
+250 1325 321 1376  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #20]
+362   COMPARATOR
+NOT NULL
+375 1350 446 1401  100
+2
+1
+0 0 0   0
+5
+[Block #21]
+306   CONST
+CONST: 0
+250 1400 321 1451  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #22]
+383   SUPERBLOCK
+B2_IN && B3_IN
+500 1325 571 1376  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #23]
+362   COMPARATOR
+NOT NULL
+625 1350 696 1401  100
+2
+1
+0 0 0   0
+5
+[Block #24]
+383   SUPERBLOCK
+B1_IN && B3_IN
+750 1325 821 1376  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #25]
+362   COMPARATOR
+NOT NULL
+875 1350 946 1401  100
+2
+1
+0 0 0   0
+5
+[Block #26]
+396   LOGIC
+COLLOSION
+975 1400 1046 1466  100
+3
+1
+0 0 0   0
+1
+[Block #27]
+383   SUPERBLOCK
+B1_IN | B2_IN
+875 1075 946 1126  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_or_8bit.SBL
+0
+[Block #28]
+383   SUPERBLOCK
+RES | B3_IN
+975 1125 1046 1176  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_or_8bit.SBL
+0
+[Block #29]
+383   SUPERBLOCK
+DROP_TYPE
+125 1075 196 1126  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #30]
+383   SUPERBLOCK
+DROP_TYPE
+125 1175 196 1226  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #31]
+383   SUPERBLOCK
+DROP_TYPE
+125 1275 196 1326  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #32]
+383   SUPERBLOCK
+B1_IN && B2_IN
+250 850 321 901  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #33]
+362   COMPARATOR
+NOT NULL
+375 875 446 926  100
+2
+1
+0 0 0   0
+5
+[Block #34]
+306   CONST
+CONST: 0
+250 925 321 976  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #35]
+383   SUPERBLOCK
+B2_IN && B3_IN
+500 850 571 901  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #36]
+362   COMPARATOR
+NOT NULL
+625 875 696 926  100
+2
+1
+0 0 0   0
+5
+[Block #37]
+383   SUPERBLOCK
+B1_IN && B3_IN
+750 850 821 901  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #38]
+362   COMPARATOR
+NOT NULL
+875 875 946 926  100
+2
+1
+0 0 0   0
+5
+[Block #39]
+396   LOGIC
+COLLOSION
+975 925 1046 991  100
+3
+1
+0 0 0   0
+1
+[Block #40]
+383   SUPERBLOCK
+B1_IN | B2_IN
+875 600 946 651  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_or_8bit.SBL
+0
+[Block #41]
+383   SUPERBLOCK
+RES | B3_IN
+975 650 1046 701  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_or_8bit.SBL
+0
+[Block #42]
+383   SUPERBLOCK
+DROP_TYPE
+125 600 196 651  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #43]
+383   SUPERBLOCK
+DROP_TYPE
+125 700 196 751  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #44]
+383   SUPERBLOCK
+DROP_TYPE
+125 800 196 851  100
+1
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #45]
+384   LABEL
+SENS_INFO
+1075 300 1146 333  100
+1
+1
+0 0 0   0
+[Block #46]
+384   LABEL
+BELT_INFO
+1075 750 1146 783  100
+1
+1
+0 0 0   0
+[Block #47]
+384   LABEL
+PLAT_INFO
+1075 1225 1146 1258  100
+1
+1
+0 0 0   0
+[Block #48]
+384   LABEL
+ERR_BELT_COL
+1075 800 1146 833  100
+1
+1
+0 0 0   0
+[Block #49]
+384   LABEL
+ERR_PLAT_COL
+1075 1275 1146 1308  100
+1
+1
+0 0 0   0
+[Block #50]
+0   Text
+Text
+1200 25 1258 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #51]
+0   Text
+Text
+1200 50 1756 219  100
+0
+0
+0 0 0   0
+Összesíti a karosszériáktól származó adatokat, úgymint az érzékelõkre vonatkozóadatok, a futószalagon való elhelyezkedés adatai és a platformon való elhelyezkedésadatai.Az elhelyezkedésekre vonatkozó adatokból egyidõben az összesítéssel, leellenõrzi azesetleges ütközéseket is.A szimulációban jelenleg három karosszéria helyezkedik el, mindegyiknek különbözõ atípusa. Amennyiben a szimulációban a karosszériák száma bõvülne, úgy ebben ablokkdiagramban is meg kell növelni minden összesítõ hálózat elemeinek a számát.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+76
+[Connection #0]
+27   1   28   1   12632064   -1   -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 
+[Connection #1]
+40   1   41   1   12632064   -1   -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 
+[Connection #2]
+25   1   26   1   32768   -1   -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 
+[Connection #3]
+38   1   39   1   32768   -1   -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 
+[Connection #4]
+10   1   0   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+13   1   2   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+16   1   3   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+9   1   45   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+12   1   29   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+15   1   30   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+18   1   31   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+11   1   42   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+14   1   43   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+17   1   44   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+8   1   9   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+41   1   46   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+28   1   47   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+26   1   49   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+39   1   48   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+19   1   20   1   49344   -1   -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 
+[Connection #20]
+22   1   23   1   49344   -1   -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 
+[Connection #21]
+24   1   25   1   49344   -1   -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 -475 -1225 
+[Connection #22]
+32   1   33   1   49344   -1   -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 
+[Connection #23]
+35   1   36   1   49344   -1   -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 
+[Connection #24]
+37   1   38   1   49344   -1   -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 -600 -2675 
+[Connection #25]
+21   1   20   2   0   -1   -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 
+[Connection #26]
+34   1   33   2   0   -1   -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 
+[Connection #27]
+3   1   1   3   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #28]
+43   1   32   2   49344   -1   -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 
+[Connection #29]
+30   1   19   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+42   1   32   1   49344   -1   -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 
+[Connection #31]
+29   1   19   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+2   1   1   2   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #33]
+0   1   1   1   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #34]
+7   1   9   5   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+3   2   4   3   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #36]
+2   2   4   2   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #37]
+0   2   4   1   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #38]
+23   1   26   2   32768   -1   -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 
+[Connection #39]
+36   1   39   2   32768   -1   -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 
+[Connection #40]
+6   1   9   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #41]
+34   1   36   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #42]
+21   1   23   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #43]
+44   1   35   2   49344   -1   -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 
+[Connection #44]
+31   1   22   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #45]
+3   3   5   3   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #46]
+43   1   35   1   49344   -1   -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 
+[Connection #47]
+30   1   22   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #48]
+2   3   5   2   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #49]
+0   3   5   1   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #50]
+5   1   9   3   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #51]
+3   4   6   3   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #52]
+2   4   6   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #53]
+0   4   6   1   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #54]
+20   1   26   3   32768   -1   -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 -150 -600 
+[Connection #55]
+33   1   39   3   32768   -1   -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 -275 -2050 
+[Connection #56]
+4   1   9   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #57]
+34   1   38   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #58]
+21   1   25   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #59]
+44   1   37   2   49344   -1   -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 
+[Connection #60]
+31   1   24   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #61]
+3   5   7   3   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #62]
+2   5   7   2   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #63]
+42   1   37   1   49344   -1   -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 -125 -1450 
+[Connection #64]
+29   1   24   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #65]
+0   5   7   1   33023   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #66]
+1   1   9   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #67]
+3   6   8   3   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #68]
+2   6   8   2   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #69]
+0   6   8   1   32768   -1   -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 -875 -500 
+[Connection #70]
+15   1   27   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #71]
+14   1   40   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #72]
+12   1   27   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #73]
+11   1   40   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #74]
+18   1   28   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #75]
+17   1   41   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

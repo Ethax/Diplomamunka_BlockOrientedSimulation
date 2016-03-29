@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42453
+42457
 ! 
 ! 
 ! 
@@ -115,7 +115,7 @@ D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_p
 0
 [Block #10]
 383   SUPERBLOCK
-ANIMATE_Y
+ANIMATE_X
 575 25 646 91  100
 3
 1
@@ -144,7 +144,7 @@ FAST
 1.0
 [Block #13]
 383   SUPERBLOCK
-ANIMATE_X
+ANIMATE_Y
 575 200 646 266  100
 3
 1
@@ -202,14 +202,14 @@ ANIM_END
 [Block #20]
 384   LABEL
 POSITION_X
-950 150 1021 183  100
+950 100 1021 133  100
 1
 1
 0 0 0   0
 [Block #21]
 384   LABEL
 POSITION_Y
-950 75 1021 108  100
+950 150 1021 183  100
 1
 1
 0 0 0   0
@@ -296,9 +296,9 @@ NOT_VALID
 [Connection #28]
 2   1   9   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #29]
-10   1   21   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+10   1   20   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #30]
-13   1   20   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+13   1   21   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #31]
 5   1   18   2   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #32]

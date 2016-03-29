@@ -1,0 +1,284 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42457
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+3   5
+BELT_BITS
+0   1
+SET_BODY
+1   1
+BELT_INFO
+2   1
+SET_TO
+7   1
+BELT_1_STATE
+8   1
+BELT_2_STATE
+9   1
+BELT_3_STATE
+10   1
+ERR_USED_CELL
+11   1
+[Export Parameter Count]
+0
+[Block Count]
+23
+[Block #0]
+384   LABEL
+BELT_BITS
+25 425 96 458  100
+1
+1
+0 0 0   0
+[Block #1]
+384   LABEL
+SET_BODY
+25 75 96 108  100
+1
+1
+0 0 0   0
+[Block #2]
+384   LABEL
+BELT_INFO
+25 350 96 383  100
+1
+1
+0 0 0   0
+[Block #3]
+405   MULTISWITCH
+BELT_FREE_SW
+600 75 671 159  100
+4
+1
+0 0 0   0
+[Block #4]
+354   LOGIC1
+NOT_FREE
+725 150 796 201  100
+1
+1
+0 0 0   0
+0
+[Block #5]
+352   ANASWITCH
+SET_ENABLE
+825 25 896 76  100
+2
+1
+0 0 0   0
+1
+[Block #6]
+447   DECODER
+BELT_DEC
+725 425 796 491  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #7]
+384   LABEL
+SET_TO
+925 75 996 108  100
+1
+1
+0 0 0   0
+[Block #8]
+384   LABEL
+BELT_1_STATE
+925 400 996 433  100
+1
+1
+0 0 0   0
+[Block #9]
+384   LABEL
+BELT_2_STATE
+925 450 996 483  100
+1
+1
+0 0 0   0
+[Block #10]
+384   LABEL
+BELT_3_STATE
+925 500 996 533  100
+1
+1
+0 0 0   0
+[Block #11]
+384   LABEL
+ERR_USED_CELL
+925 125 996 158  100
+1
+1
+0 0 0   0
+[Block #12]
+383   SUPERBLOCK
+DROP_TYPE
+125 300 196 351  100
+1
+1
+1 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_transcoder.SBL
+0
+[Block #13]
+447   DECODER
+BELT_DEC
+125 200 196 266  100
+1
+3
+0 0 0   0
+3   0
+0
+[Block #14]
+354   LOGIC1
+IS_BELT_1_FREE
+475 275 546 326  100
+1
+1
+0 0 0   0
+0
+[Block #15]
+354   LOGIC1
+IS_BELT_2_FREE
+350 275 421 326  100
+1
+1
+0 0 0   0
+0
+[Block #16]
+354   LOGIC1
+IS_BELT_3_FREE
+225 275 296 326  100
+1
+1
+0 0 0   0
+0
+[Block #17]
+0   Text
+Text
+1050 25 1108 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #18]
+0   Text
+Text
+1050 50 1619 168  100
+0
+0
+0 0 0   0
+Leellenõrzi, hogy jelenleg van-e karosszéria abban a cellában, amelyikbe a jelenlegikarosszéria kerülne, és amennyiben a cella üres, továbbítja a karosszéria felé abehelyezés sorszámát. Mindezek mellett dekódolja a futószalagok állapotait, amiketszintén továbbít a karosszéria felé.A BELT_INFO bemeneten az összesített futószalag-adatra van szüksége, ugyanis ebbõltudja meghatározni, hogy egy-egy futószalag szabad-e.
+11   0   0   0   16777215   0   0
+Arial
+[Block #19]
+362   COMPARATOR
+NOT NULL
+600 200 671 251  100
+2
+1
+0 0 0   0
+5
+[Block #20]
+306   CONST
+CONST: 0
+600 275 671 326  100
+0
+1
+1 0 0   0
+ 0.00000000000000E+0000  0
+[Block #21]
+355   LOGIC2
+ENABLE
+825 175 896 226  100
+2
+1
+0 0 0   0
+0
+[Block #22]
+355   LOGIC2
+ENABLE
+725 75 796 126  100
+2
+1
+0 0 0   0
+0
+[Connection Count]
+24
+[Connection #0]
+20   1   19   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+12   1   13   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+4   1   21   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+22   1   5   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+5   1   7   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+13   3   16   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+21   1   11   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+3   1   22   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+3   1   4   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+19   1   22   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+14   1   3   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+2   1   12   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+6   2   9   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+6   1   8   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+6   3   10   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+19   1   21   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+13   2   15   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+15   1   3   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+13   1   14   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+16   1   3   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+1   1   3   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+1   1   19   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+0   1   6   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+1   1   5   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

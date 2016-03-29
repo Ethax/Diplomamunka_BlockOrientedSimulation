@@ -1,0 +1,187 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42457
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+1   1
+INFO_IN
+11   1
+INFO_OUT
+12   1
+[Export Parameter Count]
+0
+[Block Count]
+13
+[Block #0]
+447   DECODER
+INFO_DEC
+125 75 196 195  100
+1
+6
+0 0 0   0
+6   0
+0
+[Block #1]
+448   ENCODER
+PART_3
+250 25 321 76  100
+2
+1
+0 0 0   0
+2   0
+0
+[Block #2]
+448   ENCODER
+PART_2
+375 25 446 76  100
+2
+1
+0 0 0   0
+2   0
+0
+[Block #3]
+448   ENCODER
+PART_1
+500 25 571 76  100
+2
+1
+0 0 0   0
+2   0
+0
+[Block #4]
+362   COMPARATOR
+NOT NULL
+350 175 421 226  100
+2
+1
+0 0 0   0
+5
+[Block #5]
+306   CONST
+CONST: 0
+125 225 196 276  100
+0
+1
+0 0 0   0
+ 0.00000000000000E+0000  0
+[Block #6]
+362   COMPARATOR
+NOT NULL
+475 175 546 226  100
+2
+1
+0 0 0   0
+5
+[Block #7]
+362   COMPARATOR
+NOT NULL
+600 175 671 226  100
+2
+1
+0 0 0   0
+5
+[Block #8]
+448   ENCODER
+INFO_ENC
+700 100 771 166  100
+3
+1
+0 0 0   0
+3   0
+0
+[Block #9]
+0   Text
+Text
+925 25 983 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #10]
+0   Text
+Text
+925 50 1438 100  100
+0
+0
+0 0 0   0
+Átkódolja a karosszériára vonatkozó, 6 biten leírt elhelyezkedési adatot 3 bitenleírt adattá. Az új adat már csak a karosszéria jelenlétét tárolja a három helyszínvalamelyikén, a típusára vonatkozó információ elveszik.
+11   0   0   0   16777215   0   0
+Arial
+[Block #11]
+384   LABEL
+INFO_IN
+25 25 96 58  100
+1
+1
+0 0 0   0
+[Block #12]
+384   LABEL
+INFO_OUT
+800 25 871 58  100
+1
+1
+0 0 0   0
+[Connection Count]
+17
+[Connection #0]
+7   1   8   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+8   1   12   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+11   1   0   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+1   1   4   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+2   1   6   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+3   1   7   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #6]
+0   6   1   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #7]
+0   5   1   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #8]
+5   1   4   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+6   1   8   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+0   4   2   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+0   3   2   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #12]
+5   1   6   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #13]
+4   1   8   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #14]
+0   1   3   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+0   2   3   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+5   1   7   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG

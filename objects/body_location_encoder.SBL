@@ -1,0 +1,258 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42456
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+2   1
+BODY_TYPE
+13   1
+PLACE_NO
+14   1
+PLACE_INFO
+17   1
+[Export Parameter Count]
+0
+[Block Count]
+20
+[Block #0]
+352   ANASWITCH
+AT_PLACE_1
+400 125 471 176  100
+2
+1
+0 0 0   0
+1
+[Block #1]
+352   ANASWITCH
+AT_PLACE_2
+750 125 821 176  100
+2
+1
+0 0 0   0
+1
+[Block #2]
+352   ANASWITCH
+AT_PLACE_3
+1100 125 1171 176  100
+2
+1
+0 0 0   0
+1
+[Block #3]
+362   COMPARATOR
+PLACE_NO == 1
+275 150 346 201  100
+2
+1
+0 0 0   0
+2
+[Block #4]
+362   COMPARATOR
+PLACE_NO == 2
+625 150 696 201  100
+2
+1
+0 0 0   0
+2
+[Block #5]
+362   COMPARATOR
+PLACE_NO == 3
+975 150 1046 201  100
+2
+1
+0 0 0   0
+2
+[Block #6]
+306   CONST
+CONST: 1
+400 200 471 251  100
+0
+1
+1 0 0   0
+ 1.00000000000000E+0000  0
+[Block #7]
+306   CONST
+CONST: 2
+750 200 821 251  100
+0
+1
+1 0 0   0
+ 2.00000000000000E+0000  0
+[Block #8]
+306   CONST
+CONST: 3
+1100 200 1171 251  100
+0
+1
+1 0 0   0
+ 3.00000000000000E+0000  0
+[Block #9]
+447   DECODER
+TYPE_DEC
+500 125 571 176  100
+1
+2
+0 0 0   0
+2   0
+0
+[Block #10]
+447   DECODER
+TYPE_DEC
+850 125 921 176  100
+1
+2
+0 0 0   0
+2   0
+0
+[Block #11]
+447   DECODER
+TYPE_DEC
+1200 125 1271 176  100
+1
+2
+0 0 0   0
+2   0
+0
+[Block #12]
+448   ENCODER
+PLACE_ENC
+1325 250 1396 370  100
+6
+1
+0 0 0   0
+6   0
+0
+[Block #13]
+384   LABEL
+BODY_TYPE
+25 75 96 108  100
+1
+1
+0 0 0   0
+[Block #14]
+384   LABEL
+PLACE_NO
+25 25 96 58  100
+1
+1
+0 0 0   0
+[Block #15]
+383   SUPERBLOCK
+TYPE && 0x03
+150 75 221 126  100
+2
+1
+0 0 0   0
+D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+0
+[Block #16]
+306   CONST
+0b00000011
+150 150 221 201  100
+0
+1
+1 0 0   0
+ 3.00000000000000E+0000  0
+[Block #17]
+384   LABEL
+PLACE_INFO
+1450 250 1521 283  100
+1
+1
+0 0 0   0
+[Block #18]
+0   Text
+Text
+25 425 83 446  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #19]
+0   Text
+Text
+25 450 571 568  100
+0
+0
+0 0 0   0
+Kódolja a legfeljebb három részbõl álló helyszínen elhelyezkedõ, legfeljebb kétbiten leírható karosszéria típust. Egy ilyen helyszín lehet maga a gyártósor, aminekhárom cellája van, vagy a leválogató szakasz, aminek három platformja van.A kódolt információ olyan módon tárolja a karosszéria típusát és az általa elfoglalthelyet, hogy egyszerû bitmûveletekkel összehasonlítható legyen egy másik, ugyanígykódolt adattal és detektálható legyen az ütközés.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+24
+[Connection #0]
+16   1   15   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+0   1   9   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #2]
+1   1   10   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #3]
+2   1   11   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #4]
+13   1   15   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #5]
+4   1   1   2   32768   -1   -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 
+[Connection #6]
+3   1   0   2   32768   -1   -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 
+[Connection #7]
+5   1   2   2   32768   -1   -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 
+[Connection #8]
+12   1   17   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #9]
+11   1   12   5   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #10]
+11   2   12   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #11]
+6   1   3   2   0   -1   -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 
+[Connection #12]
+7   1   4   2   0   -1   -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 
+[Connection #13]
+8   1   5   2   0   -1   -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 -1275 -875 
+[Connection #14]
+15   1   0   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #15]
+14   1   3   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #16]
+10   2   12   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #17]
+10   1   12   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #18]
+15   1   1   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #19]
+14   1   4   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #20]
+9   1   12   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #21]
+9   2   12   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #22]
+15   1   2   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #23]
+14   1   5   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG
