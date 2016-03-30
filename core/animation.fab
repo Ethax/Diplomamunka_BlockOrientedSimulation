@@ -1,6 +1,6 @@
 405
 Karosszéria gyártósor
-88
+94
 LABEL	0	16777215	1	-1	0	0	Cím	26	55	16	Arial Black	Karosszéria gyártósor	0	1
 LABEL	0	16777215	1	-1	0	0	Készítõ	26	74	10	Arial	Készítette: Miklós Árpád	0	1
 BITMAP	0	16777215	1	-1	0	0	Kerítés: Felsõ	45	304	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_top.bmp
@@ -8,24 +8,28 @@ BITMAP	0	16777215	1	-1	0	0	Kerítés: Alsó	45	638	993	243	0	D:\Current Studies\Dip
 RECT	0	6316128	1	-1	0	0	Platform: Kezdõ	0	390	50	80	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
 BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
-DYNLINE	65535	8421504	5	-1	0	0	Cella 1: Érkezés	100	300	100	400	I6	5	5	0
-DYNLINE	65280	8421504	5	-1	0	0	Cella 1: Szenzor	315	300	315	400	I7	5	5	0
+LED	0	65535	1	-1	0	0	Cella 1: Érkezés (Felsõ)	91	306	1	I10 - (2 * INT(I10 / 2))
+LED	0	65535	1	-1	0	0	Cella 1: Érkezés (Alsó)	91	411	1	I10 - (2 * INT(I10 / 2))
+LED	0	65280	1	-1	0	0	Cella 1: Szenzor (Felsõ)	306	306	1	(I10 / 2) - (2 * INT((I10 / 2) / 2))
+LED	0	65280	1	-1	0	0	Cella 1: Szenzor (Alsó)	306	411	1	(I10 / 2) - (2 * INT((I10 / 2) / 2))
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 1 (Pozíció)	120	139	180	6	0	3	4	4	8	1
 RECT	0	0	1	-1	0	0	Cella 1: Robot 1 (Test)	115	190	190	40	0
-HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1 (Kar)	120 + (I2 * 2)	240	30	80	I3 * 2	6985109	2	0	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 1 (Kar)	120 + (I4 * 2)	240	30	80	I5 * 2	6985109	2	0	0
 HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 2 (Pozíció)	120	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 1: Robot 2 (Test)	115	550	190	40	0
-HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + (I4 * 2)	540	30	80	I5 * 2	6985109	0	0	0
+HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + (I6 * 2)	540	30	80	I7 * 2	6985109	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 2 ]
-BMPSEQ	0	16777215	8	-1	0	0	Cella 2: Futószalag	425	390	375	80	8	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
-DYNLINE	65535	8421504	5	-1	0	0	Cella 2: Érkezés	475	300	475	400	I11	5	5	0
-DYNLINE	65280	8421504	5	-1	0	0	Cella 2: Szenzor	690	300	690	400	I12	5	5	0
+BMPSEQ	0	16777215	2	-1	0	0	Cella 2: Futószalag	425	390	375	80	2	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
+LED	0	65535	1	-1	0	0	Cella 2: Érkezés (Felsõ)	466	306	1	(I10 / 4) - (2 * INT((I10 / 4) / 2))
+LED	0	65535	1	-1	0	0	Cella 2: Érkezés (Alsó)	466	411	1	(I10 / 4) - (2 * INT((I10 / 4) / 2))
+LED	0	65280	1	-1	0	0	Cella 2: Szenzor (Felsõ)	681	306	1	(I10 / 8) - (2 * INT((I10 / 8) / 2))
+LED	0	65280	1	-1	0	0	Cella 2: Szenzor (Alsó)	681	411	1	(I10 / 8) - (2 * INT((I10 / 8) / 2))
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 1 (Pozíció)	495	139	180	6	0	3	4	4	8	1
 RECT	0	0	1	-1	0	0	Cella 2: Robot 1 (Test)	490	190	190	40	0
-HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 1 (Kar)	495 + (I9 * 2)	240	30	80	I10 * 2	6979733	2	0	0
+HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 1 (Kar)	495 + (I8 * 2)	240	30	80	I9 * 2	6979733	2	0	0
 HSCALE	0	16777215	1	-1	0	0	Cella 2: Robot 2 (Pozíció)	495	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 2: Robot 2 (Test)	490	550	190	40	0
-HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + (I9 * 2)	540	30	80	I10 * 2	6979733	0	0	0
+HYDCYL	0	33023	1	-1	0	0	Cella 2: Robot 2 (Kar)	495 + (I8 * 2)	540	30	80	I9 * 2	6979733	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 3 ]
 RECT	0	6316128	1	-1	0	0	Célállomás 3: Platform	852	280	200	80	0
 LABEL	16777215	65535	1	-1	0	0	Célállomás 3: Címke	931	260	22	Arial Black	C3	0	1
@@ -33,41 +37,43 @@ RECT	0	6316128	1	-1	0	0	Célállomás 2: Platform	852	500	200	80	0
 LABEL	16777215	65535	1	-1	0	0	Célállomás 2: Címke	931	480	22	Arial Black	C2	0	1
 RECT	0	6316128	1	-1	0	0	Célállomás 1: Platform	852	610	200	80	0
 LABEL	16777215	65535	1	-1	0	0	Célállomás 1: Címke	931	590	22	Arial Black	C1	0	1
-BMPSEQ	0	16777215	16	-1	0	0	Cella 3: Futószalag	800	390	375	80	16	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
-DYNLINE	65535	8421504	5	-1	0	0	Cella 3: Érkezés	850	300	850	400	I17	5	5	0
-DYNLINE	65280	8421504	5	-1	0	0	Cella 3: Szenzor	1015	300	1015	400	I18	5	5	0
+BMPSEQ	0	16777215	3	-1	0	0	Cella 3: Futószalag	800	390	375	80	3	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
+LED	0	65535	1	-1	0	0	Cella 3: Érkezés (Felsõ)	841	306	1	(I10 / 16) - (2 * INT((I10 / 16) / 2))
+LED	0	65535	1	-1	0	0	Cella 3: Érkezés (Alsó)	841	411	1	(I10 / 16) - (2 * INT((I10 / 16) / 2))
+LED	0	65280	1	-1	0	0	Cella 3: Szenzor (Felsõ)	1006	306	1	(I10 / 32) - (2 * INT((I10 / 32) / 2))
+LED	0	65280	1	-1	0	0	Cella 3: Szenzor (Alsó)	1006	411	1	(I10 / 32) - (2 * INT((I10 / 32) / 2))
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	189	190	40	0
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	660	190	40	0
 BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	654	64	500	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_bridge.bmp
-BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-villa)	I13 * 5 + 933	I14 * 5 + 407	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_08.bmp	*.BMP	*.BMP	1	0	8	0
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	I19	I20	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	I21	I22	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_02.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	I23	I24	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_03.bmp
-BMPSEQ	0	16777215	15	-1	0	0	Cella 3: Daru (Megfogó-kar)	I13 * 5 + 933	I14 * 5 + 407	60	117	15	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	*.BMP	*.BMP	1	0	8	0
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I14 * 5 + 375	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I13 * 5 + 940	I14 * 5 + 369	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
+BMPSEQ	0	16777215	20	-1	0	0	Cella 3: Daru (Megfogó-villa)	I18 * 5 + 933	I19 * 5 + 407	60	117	20	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_08.bmp	*.BMP	*.BMP	1	0	8	0
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	I12	I13	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	I14	I15	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_02.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	I16	I17	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_03.bmp
+BMPSEQ	0	16777215	20	-1	0	0	Cella 3: Daru (Megfogó-kar)	I18 * 5 + 933	I19 * 5 + 407	60	117	20	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	*.BMP	*.BMP	1	0	8	0
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I19 * 5 + 375	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I18 * 5 + 940	I19 * 5 + 369	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
 SEPARATOR	255	16777215	1	-1	0	0	[ Feliratok és jelzések ]
 LABEL	0	65535	1	-1	0	0	Robot 1: Címke	60	190	22	Arial Black	R1	0	1
-RECTLED	0	65280	1	-1	0	0	Robot 1: Kiválasztva (LED)	320	165	1	I25 - (2 * INT(I25 / 2))
+RECTLED	0	65280	1	-1	0	0	Robot 1: Kiválasztva (LED)	320	165	1	I11 - (2 * INT(I11 / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 1: Kiválasztva (Címke)	345	165	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0	Robot 1: Hegeszt (LED)	320	190	1	(I25 / 2) - (2 * INT((I25 / 2) / 2))
+RECTLED	0	33023	1	-1	0	0	Robot 1: Hegeszt (LED)	320	190	1	(I11 / 2) - (2 * INT((I11 / 2) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 1: Hegeszt (Címke)	345	190	10	ARIAL	Hegeszt	0	1
-RECTLED	0	65280	1	-1	0	0	Robot 1: Befejezve (LED)	320	215	1	(I25 / 4) - (2 * INT((I25 / 4) / 2))
+RECTLED	0	65280	1	-1	0	0	Robot 1: Befejezve (LED)	320	215	1	(I11 / 4) - (2 * INT((I11 / 4) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 1: Befejezve (Címke)	345	215	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0	Robot 2: Címke	60	550	22	Arial Black	R2	0	1
-RECTLED	0	65280	1	-1	0	0	Robot 2: Kiválasztva (LED)	320	505	1	(I25 / 8) - (2 * INT((I25 / 8) / 2))
+RECTLED	0	65280	1	-1	0	0	Robot 2: Kiválasztva (LED)	320	505	1	(I11 / 8) - (2 * INT((I11 / 8) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 2: Kiválasztva (Címke)	345	505	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0	Robot 2: Hegeszt (LED)	320	530	1	(I25 / 16) - (2 * INT((I25 / 16) / 2))
+RECTLED	0	33023	1	-1	0	0	Robot 2: Hegeszt (LED)	320	530	1	(I11 / 16) - (2 * INT((I11 / 16) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 2: Hegeszt (Címke)	345	530	10	ARIAL	Hegeszt	0	1
-RECTLED	0	65280	1	-1	0	0	Robot 2: Befejezve (LED)	320	555	1	(I25 / 32) - (2 * INT((I25 / 32) / 2))
+RECTLED	0	65280	1	-1	0	0	Robot 2: Befejezve (LED)	320	555	1	(I11 / 32) - (2 * INT((I11 / 32) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 2: Befejezve (Címke)	345	555	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0	Robot 3: Címke 1	435	190	22	Arial Black	R3	0	1
 LABEL	0	65535	1	-1	0	0	Robot 3: Címke 2	435	550	22	Arial Black	R3	0	1
-RECTLED	0	65280	1	-1	0	0	Robot 3: Kiválasztva (LED)	695	165	1	(I25 / 64) - (2 * INT((I25 / 64) / 2))
+RECTLED	0	65280	1	-1	0	0	Robot 3: Kiválasztva (LED)	695	165	1	(I11 / 64) - (2 * INT((I11 / 64) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 3: Kiválasztva (Címke)	720	165	10	ARIAL	Kiválasztva	0	1
-RECTLED	0	33023	1	-1	0	0	Robot 3: Fest (LED)	695	190	1	(I25 / 128) - (2 * INT((I25 / 128) / 2))
+RECTLED	0	33023	1	-1	0	0	Robot 3: Fest (LED)	695	190	1	(I11 / 128) - (2 * INT((I11 / 128) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 3: Fest (Címke)	720	190	10	ARIAL	Fest	0	1
-RECTLED	0	65280	1	-1	0	0	Robot 3: Befejezve (LED)	695	215	1	(I25 / 256) - (2 * INT((I25 / 256) / 2))
+RECTLED	0	65280	1	-1	0	0	Robot 3: Befejezve (LED)	695	215	1	(I11 / 256) - (2 * INT((I11 / 256) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 3: Befejezve (Címke)	720	215	10	ARIAL	Befejezve	0	1
 LABEL	0	65535	1	-1	0	0		1242	252	14	Arial Black	7	0	1
 LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
@@ -75,23 +81,33 @@ LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
 LABEL	0	65535	1	-1	0	0		1242	582	14	Arial Black	5	0	1
 LABEL	0	16777215	1	-1	0	0	Tárgy 1: Behelyezés (Címke)	45	669	12	Arial Black	Tárgy 1:	0	1
 BUTTON	0	12632256	1	-1	0	0	Tárgy 1: Behelyezés (Cella 1)	Cella 1	130	670	60	25	5.0	1	0	2	0	8	1
-BUTTON	0	12632256	4	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Cella 2	205	670	60	25	5.0	4	0	2	0	8	1
-BUTTON	0	12632256	7	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Cella 3	280	670	60	25	5.0	7	0	2	0	8	1
+BUTTON	0	12632256	2	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Cella 2	205	670	60	25	5.0	2	0	2	0	8	1
+BUTTON	0	12632256	3	-1	0	0	Tárgy 1: Behelyezés (Cella 3)	Cella 3	280	670	60	25	5.0	3	0	2	0	8	1
 LABEL	0	16777215	1	-1	0	0	Tárgy 2: Behelyezés (Címke)	45	706	12	Arial Black	Tárgy 2:	0	1
-BUTTON	0	12632256	2	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Cella 1	130	707	60	25	5.0	2	0	2	0	8	1
+BUTTON	0	12632256	4	-1	0	0	Tárgy 2: Behelyezés (Cella 1)	Cella 1	130	707	60	25	5.0	4	0	2	0	8	1
 BUTTON	0	12632256	5	-1	0	0	Tárgy 2: Behelyezés (Cella 2)	Cella 2	205	707	60	25	5.0	5	0	2	0	8	1
-BUTTON	0	12632256	8	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Cella 3	280	707	60	25	5.0	8	0	2	0	8	1
+BUTTON	0	12632256	6	-1	0	0	Tárgy 2: Behelyezés (Cella 3)	Cella 3	280	707	60	25	5.0	6	0	2	0	8	1
 LABEL	0	16777215	1	-1	0	0	Tárgy 3: Behelyezés (Címke)	45	743	12	Arial Black	Tárgy 3:	0	1
-BUTTON	0	12632256	3	-1	0	0	Tárgy 3: Behelyezés (Cella 1)	Cella 1	130	744	60	25	5.0	3	0	2	0	8	1
-BUTTON	0	12632256	6	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Cella 2	205	744	60	25	5.0	6	0	2	0	8	1
+BUTTON	0	12632256	7	-1	0	0	Tárgy 3: Behelyezés (Cella 1)	Cella 1	130	744	60	25	5.0	7	0	2	0	8	1
+BUTTON	0	12632256	8	-1	0	0	Tárgy 3: Behelyezés (Cella 2)	Cella 2	205	744	60	25	5.0	8	0	2	0	8	1
 BUTTON	0	12632256	9	-1	0	0	Tárgy 3: Behelyezés (Cella 3)	Cella 3	280	744	60	25	5.0	9	0	2	0	8	1
 LABEL	0	16777215	1	-1	0	0	Operátor: Címke	417	724	12	Arial Black	Operátor:	0	1
 UPDOWN	0	12632256	10	-1	0	0		513	744	40	62	0	2	10	0	1	0	1
 BUTTON	0	12632256	11	-1	0	0		Nyugtázás	568	707	100	25	5.0	11	0	18	0	8	1
 SWITCH	0	12632256	12	-1	0	0		Vész-Stop	568	744	100	25	5.0	12	0	20	0	8	-1		1
 0
-25
+20
 BELT_1
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 5.00000000000000E+0000
+BELT_2
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 0.00000000000000E+0000
+ 5.00000000000000E+0000
+BELT_3
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
@@ -116,21 +132,6 @@ R2_POS_Y
  0.00000000000000E+0000
  0.00000000000000E+0000
  1.00000000000000E+0002
-SENSOR_11
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
-SENSOR_12
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
-BELT_2
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
 R3_POS_X
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -141,46 +142,16 @@ R3_POS_Y
  0.00000000000000E+0000
  0.00000000000000E+0000
  1.00000000000000E+0002
-SENSOR_21
+SENSOR_CTRL
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 5.00000000000000E+0000
-SENSOR_22
+ 2.56000000000000E+0002
+LED_CTRL
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 5.00000000000000E+0000
-CRANE_X
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 1.70000000000000E+0001
-CRANE_Y
- 1.00000000000000E+0000
- 0.00000000000000E+0000
--2.20000000000000E+0001
- 4.40000000000000E+0001
-CRANE_GRIPPER
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 1.00000000000000E+0000
- 8.00000000000000E+0000
-BELT_3
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
-SENSOR_31
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
-SENSOR_32
- 1.00000000000000E+0000
- 0.00000000000000E+0000
- 0.00000000000000E+0000
- 5.00000000000000E+0000
+ 5.12000000000000E+0002
 BODY_1_X
  1.00000000000000E+0000
  0.00000000000000E+0000
@@ -211,11 +182,21 @@ BODY_3_Y
  0.00000000000000E+0000
 -3.27680000000000E+0004
  3.27670000000000E+0004
-LED_CTRL
+CRANE_X
  1.00000000000000E+0000
  0.00000000000000E+0000
  0.00000000000000E+0000
- 5.12000000000000E+0002
+ 1.70000000000000E+0001
+CRANE_Y
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+-2.20000000000000E+0001
+ 4.40000000000000E+0001
+CRANE_GRIPPER
+ 1.00000000000000E+0000
+ 0.00000000000000E+0000
+ 1.00000000000000E+0000
+ 8.00000000000000E+0000
 16777215
  1.00000000000000E+0001
  1.00000000000000E+0001
@@ -225,16 +206,16 @@ LED_CTRL
 1
 2
 1302
-816
+807
 12
 B1_TO_CELL_1
-B2_TO_CELL_1
-B3_TO_CELL_1
 B1_TO_CELL_2
-B2_TO_CELL_2
-B3_TO_CELL_2
 B1_TO_CELL_3
+B2_TO_CELL_1
+B2_TO_CELL_2
 B2_TO_CELL_3
+B3_TO_CELL_1
+B3_TO_CELL_2
 B3_TO_CELL_3
 OPERATOR_MOVE
 OPERATOR_ACK
@@ -246,26 +227,26 @@ OPERATOR_STOP
 0
 0
 0
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
- 0.00000000000000E+0000                              
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
+ 0.00000000000000E+0000                                  
 1
 0
 1
