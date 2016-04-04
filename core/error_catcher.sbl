@@ -1,0 +1,1031 @@
+[Version]
+7.1.1.313
+[File Access]
+0   
+42465
+! 
+! 
+! 
+! 
+! 
+! Karosszéria gyártósor
+! Miklós Árpád
+! SZTE
+0   1
+TERMINATE
+80   1
+[Export Parameter Count]
+0
+[Block Count]
+83
+[Block #0]
+310   SOURCE
+ERR_B1_DROP
+25 75 58 108  100
+0
+1
+0 0 0   0
+1
+[Block #1]
+388   MESSAGE
+MSG_B1_DROP
+25 125 58 158  100
+1
+0
+1 0 0   0
+ERR_B1_DROP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #2]
+310   SOURCE
+ERR_B1_NSTOP
+100 75 133 108  100
+0
+1
+0 0 0   0
+1
+[Block #3]
+388   MESSAGE
+MSG_B1_NSTOP
+100 125 133 158  100
+1
+0
+1 0 0   0
+ERR_B1_NSTOP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #4]
+310   SOURCE
+ERR_B1_USED_CELL
+175 75 208 108  100
+0
+1
+0 0 0   0
+1
+[Block #5]
+388   MESSAGE
+MSG_B1_USED_CELL
+175 125 208 158  100
+1
+0
+1 0 0   0
+ERR_B1_USED_CELL
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #6]
+310   SOURCE
+ERR_B2_DROP
+25 250 58 283  100
+0
+1
+0 0 0   0
+1
+[Block #7]
+388   MESSAGE
+MSG_B2_DROP
+25 300 58 333  100
+1
+0
+1 0 0   0
+ERR_B2_DROP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #8]
+310   SOURCE
+ERR_B2_NSTOP
+100 250 133 283  100
+0
+1
+0 0 0   0
+1
+[Block #9]
+388   MESSAGE
+MSG_B2_NSTOP
+100 300 133 333  100
+1
+0
+1 0 0   0
+ERR_B2_NSTOP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #10]
+310   SOURCE
+ERR_B2_USED_CELL
+175 250 208 283  100
+0
+1
+0 0 0   0
+1
+[Block #11]
+388   MESSAGE
+MSG_B2_USED_CELL
+175 300 208 333  100
+1
+0
+1 0 0   0
+ERR_B2_USED_CELL
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #12]
+310   SOURCE
+ERR_B3_DROP
+25 425 58 458  100
+0
+1
+0 0 0   0
+1
+[Block #13]
+388   MESSAGE
+MSG_B3_DROP
+25 475 58 508  100
+1
+0
+1 0 0   0
+ERR_B3_DROP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #14]
+310   SOURCE
+ERR_B3_NSTOP
+100 425 133 458  100
+0
+1
+0 0 0   0
+1
+[Block #15]
+388   MESSAGE
+MSG_B3_NSTOP
+100 475 133 508  100
+1
+0
+1 0 0   0
+ERR_B3_NSTOP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #16]
+310   SOURCE
+ERR_B3_USED_CELL
+175 425 208 458  100
+0
+1
+0 0 0   0
+1
+[Block #17]
+388   MESSAGE
+MSG_B3_USED_CEL
+175 475 208 508  100
+1
+0
+1 0 0   0
+ERR_B3_USED_CEL
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #18]
+396   LOGIC
+BODY_1_ERR
+250 25 321 91  100
+3
+1
+0 0 0   0
+1
+[Block #19]
+396   LOGIC
+BODY_2_ERR
+250 200 321 266  100
+3
+1
+0 0 0   0
+1
+[Block #20]
+396   LOGIC
+BODY_3_ERR
+250 375 321 441  100
+3
+1
+0 0 0   0
+1
+[Block #21]
+310   SOURCE
+ERR_BELT_COL
+850 100 883 133  100
+0
+1
+0 0 0   0
+1
+[Block #22]
+388   MESSAGE
+MSG_BELT_COL
+850 150 883 183  100
+1
+0
+1 0 0   0
+ERR_BELT_COL
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #23]
+310   SOURCE
+ERR_CRANE_INV
+700 475 733 508  100
+0
+1
+0 0 0   0
+1
+[Block #24]
+388   MESSAGE
+MSG_CRANE_INV
+700 525 733 558  100
+1
+0
+1 0 0   0
+ERR_CRANE_INV
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #25]
+310   SOURCE
+ERR_INV_NSAFE
+700 300 733 333  100
+0
+1
+0 0 0   0
+1
+[Block #26]
+388   MESSAGE
+MSG_INV_NSAFE
+700 350 733 383  100
+1
+0
+1 0 0   0
+ERR_INV_NSAFE
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #27]
+310   SOURCE
+ERR_NOT_FAST
+625 300 658 333  100
+0
+1
+0 0 0   0
+1
+[Block #28]
+388   MESSAGE
+MSG_NOT_FAST
+625 350 658 383  100
+1
+0
+1 0 0   0
+ERR_NOT_FAST
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #29]
+310   SOURCE
+ERR_NOT_STOP
+850 300 883 333  100
+0
+1
+0 0 0   0
+1
+[Block #30]
+388   MESSAGE
+MSG_NOT_STOP
+850 350 883 383  100
+1
+0
+1 0 0   0
+ERR_NOT_STOP
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #31]
+310   SOURCE
+ERR_OP_CELL_1
+625 100 658 133  100
+0
+1
+0 0 0   0
+1
+[Block #32]
+388   MESSAGE
+MSG_OP_CELL_1
+625 150 658 183  100
+1
+0
+1 0 0   0
+ERR_OP_CELL_1
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #33]
+310   SOURCE
+ERR_OP_CELL_2
+700 100 733 133  100
+0
+1
+0 0 0   0
+1
+[Block #34]
+388   MESSAGE
+MSG_OP_CELL_2
+700 150 733 183  100
+1
+0
+1 0 0   0
+ERR_OP_CELL_2
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #35]
+310   SOURCE
+ERR_OP_CELL_3
+775 100 808 133  100
+0
+1
+0 0 0   0
+1
+[Block #36]
+388   MESSAGE
+MSG_OP_CELL_3
+775 150 808 183  100
+1
+0
+1 0 0   0
+ERR_OP_CELL_3
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #37]
+310   SOURCE
+ERR_PLAT_COL
+775 475 808 508  100
+0
+1
+0 0 0   0
+1
+[Block #38]
+388   MESSAGE
+MSG_PLAT_COL
+775 525 808 558  100
+1
+0
+1 0 0   0
+ERR_PLAT_COL
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #39]
+310   SOURCE
+ERR_RELOC
+850 475 883 508  100
+0
+1
+0 0 0   0
+1
+[Block #40]
+388   MESSAGE
+MSG_RELOC
+850 525 883 558  100
+1
+0
+1 0 0   0
+ERR_RELOC
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #41]
+310   SOURCE
+ERR_REP_NSAFE
+775 300 808 333  100
+0
+1
+0 0 0   0
+1
+[Block #42]
+388   MESSAGE
+MSG_REP_NSAFE
+775 350 808 383  100
+1
+0
+1 0 0   0
+ERR_REP_NSAFE
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #43]
+396   LOGIC
+OPER_ERR
+925 25 996 109  100
+4
+1
+0 0 0   0
+1
+[Block #44]
+396   LOGIC
+SAFETY_ERR
+925 225 996 309  100
+4
+1
+0 0 0   0
+1
+[Block #45]
+396   LOGIC
+RELOC_ERR
+925 425 996 491  100
+3
+1
+0 0 0   0
+1
+[Block #46]
+310   SOURCE
+R1_INVALID
+25 600 58 633  100
+0
+1
+0 0 0   0
+1
+[Block #47]
+388   MESSAGE
+MSG_R1_INVALID
+25 650 58 683  100
+1
+0
+1 0 0   0
+ERR_R1_INVALID
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #48]
+310   SOURCE
+R1_REP_START
+100 600 133 633  100
+0
+1
+0 0 0   0
+1
+[Block #49]
+388   MESSAGE
+MSG_R1_REP_START
+100 650 133 683  100
+1
+0
+1 0 0   0
+ERR_R1_REP_START
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #50]
+310   SOURCE
+R1_SHORT_SIG
+175 600 208 633  100
+0
+1
+0 0 0   0
+1
+[Block #51]
+388   MESSAGE
+MSG_R1_SHORT_SIG
+175 650 208 683  100
+1
+0
+1 0 0   0
+ERR_R1_SHORT_SIG
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #52]
+396   LOGIC
+ROBOT_1_ERR
+250 550 321 616  100
+3
+1
+0 0 0   0
+1
+[Block #53]
+310   SOURCE
+R2_INVALID
+25 775 58 808  100
+0
+1
+0 0 0   0
+1
+[Block #54]
+388   MESSAGE
+MSG_R2_INVALID
+25 825 58 858  100
+1
+0
+1 0 0   0
+ERR_R2_INVALID
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #55]
+310   SOURCE
+R2_REP_START
+100 775 133 808  100
+0
+1
+0 0 0   0
+1
+[Block #56]
+388   MESSAGE
+MSG_R2_REP_START
+100 825 133 858  100
+1
+0
+1 0 0   0
+ERR_R2_REP_START
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #57]
+310   SOURCE
+R2_SHORT_SIG
+175 775 208 808  100
+0
+1
+0 0 0   0
+1
+[Block #58]
+388   MESSAGE
+MSG_R2_SHORT_SIG
+175 825 208 858  100
+1
+0
+1 0 0   0
+ERR_R2_SHORT_SIG
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #59]
+396   LOGIC
+ROBOT_2_ERR
+250 725 321 791  100
+3
+1
+0 0 0   0
+1
+[Block #60]
+310   SOURCE
+R3_INVALID
+25 950 58 983  100
+0
+1
+0 0 0   0
+1
+[Block #61]
+388   MESSAGE
+MSG_R3_INVALID
+25 1000 58 1033  100
+1
+0
+1 0 0   0
+ERR_R3_INVALID
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #62]
+310   SOURCE
+R3_REP_START
+100 950 133 983  100
+0
+1
+0 0 0   0
+1
+[Block #63]
+388   MESSAGE
+MSG_R3_REP_START
+100 1000 133 1033  100
+1
+0
+1 0 0   0
+ERR_R3_REP_START
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #64]
+310   SOURCE
+R3_SHORT_SIG
+175 950 208 983  100
+0
+1
+0 0 0   0
+1
+[Block #65]
+388   MESSAGE
+MSG_R3_SHORT_SIG
+175 1000 208 1033  100
+1
+0
+1 0 0   0
+ERR_R3_SHORT_SIG
+OFF
+1   1
+2   0
+0   0
+
+
+[Block #66]
+396   LOGIC
+ROBOT_3_ERR
+250 900 321 966  100
+3
+1
+0 0 0   0
+1
+[Block #67]
+384   LABEL
+BODY_1_ERR
+375 75 446 108  100
+1
+1
+1 0 0   0
+[Block #68]
+384   LABEL
+BODY_2_ERR
+400 250 471 283  100
+1
+1
+1 0 0   0
+[Block #69]
+384   LABEL
+BODY_3_ERR
+425 425 496 458  100
+1
+1
+1 0 0   0
+[Block #70]
+384   LABEL
+ROBOT_1_ERR
+450 600 521 633  100
+1
+1
+1 0 0   0
+[Block #71]
+384   LABEL
+ROBOT_2_ERR
+475 775 546 808  100
+1
+1
+1 0 0   0
+[Block #72]
+384   LABEL
+ROBOT_3_ERR
+500 950 571 983  100
+1
+1
+1 0 0   0
+[Block #73]
+396   LOGIC
+ELEMENT_ERR
+525 1000 596 1120  100
+6
+1
+0 0 0   0
+1
+[Block #74]
+384   LABEL
+OPER_ERR
+1050 100 1121 133  100
+1
+1
+1 0 0   0
+[Block #75]
+384   LABEL
+SAFETY_ERR
+1075 300 1146 333  100
+1
+1
+1 0 0   0
+[Block #76]
+384   LABEL
+OPER_ERR
+1100 475 1171 508  100
+1
+1
+1 0 0   0
+[Block #77]
+396   LOGIC
+FUNCTION_ERR
+1125 525 1196 591  100
+3
+1
+0 0 0   0
+1
+[Block #78]
+384   LABEL
+ELEMENT_ERR
+700 725 771 758  100
+1
+1
+0 0 0   0
+[Block #79]
+355   LOGIC2
+GLOBAL_ERR
+700 625 771 676  100
+2
+1
+1 0 0   0
+1
+[Block #80]
+384   LABEL
+TERMINATE
+1225 675 1296 708  100
+1
+1
+0 0 0   0
+[Block #81]
+0   Text
+Text
+1350 25 1408 46  100
+0
+0
+0 0 0   0
+Leírás:
+14   0   0   0   16777215   0   0
+ARIAL
+[Block #82]
+0   Text
+Text
+1350 50 1957 967  100
+0
+0
+0 0 0   0
+Begyûjti a szimulációban fellépõ hibajelzéseket, és közvetíti ezeket a felhasználófelé.A hibajelzések, és jelentéseik:- ERR_B1_DROP - Az egyes típusú karosszéria elengedése a daru valamelyik magaspozícióján.- ERR_B1_NSTOP - Az elsõ cella második érzékelõjének jelzésére nem lett megállítva akarosszéria.- ERR_B1_USED_CELL - Az egyes típusú karosszéria behelyezési kísérlete foglaltcellába.- ERR_B2_DROP - A kettes típusú karosszéria elengedése a daru valamelyik magaspozícióján.- ERR_B2_NSTOP - A második cella második érzékelõjének jelzésére nem lett megállítvaa karosszéria.- ERR_B2_USED_CELL - A kettes típusú karosszéria behelyezési kísérlete foglaltcellába.- ERR_B3_DROP - A hármas típusú karosszéria elengedése a daru valamelyik magaspozícióján.- ERR_B3_NSTOP - A harmadik cella második érzékelõjének jelzésére nem lett megállítvaa karosszéria.- ERR_B3_USED_CELL - A hármas kettes típusú karosszéria behelyezési kísérlete foglaltcellába.- ERR_BELT_COL - Ütközés a futószalagok egyikén.- ERR_CRANE_INV - Érvénytelen daru- vagy megfogóvezérlési paraméterek.- ERR_INV_NSAFE - A vizsgálatra vonatkozó robotvezérlés nem felel meg a biztonságielõírásoknak: a kettes cella robotjai nem lassultak le vagy az egyes cella robotjainem dogoznak gyors üzemmódban.- ERR_NOT_FAST - Az egyes vagy a kettes cella robotjai nem dogoznak gyors üzemmódban.- ERR_NOT_STOP - A vészstop jelzésére nem álltak meg a robotok: minden robotnak kikell adni, függetlenül attól, hogy mozgásban van-e.- ERR_OP_CELL_1 - Az elsõ cellában nem az elõírásnak megfelelõ munkálat lettelvégezve: hibás hegesztési sorrend vagy nem a megfelelõ robot végezte a munkát.- ERR_OP_CELL_2 - A második cellában nem az elõírásnak megfelelõ munkálat lettelvégezve: hibás festési sorrend.- ERR_OP_CELL_3 - A harmadik cellában nem az elõírásnak megfelelõ munkálat lettelvégezve: a karosszéria nem lett átemelve.- ERR_PLAT_COL - Ütközés a platformok egyikén.- ERR_RELOC - A leválogatás nem felel meg az elõírásoknak: helytelen leválogatásisorrend.- ERR_REP_NSAFE - A javításra vonatkozó robotvezérlés nem felel meg a biztonságielõírásoknak: a kettes cella robotjai nem álltak meg vagy az egyes cella robotjai nemlassultak le.- ERR_R1_INVALID - Az egyes robot vezérlési paraméterei érvénytelenek.- ERR_R1_REP_START - Az egyes robot módosított pozícióra való vezérlésének kísérlete arobot mozgása közben.- ERR_R1_SHORT_SIG - Túl rövid impulzus az egyes robot engedélyezõ bemenetén.- ERR_R2_INVALID - A kettes robot vezérlési paraméterei érvénytelenek.- ERR_R2_REP_START - A kettes robot módosított pozícióra való vezérlésének kísérlete arobot mozgása közben.- ERR_R2_SHORT_SIG - Túl rövid impulzus a kettes robot engedélyezõ bemenetén.- ERR_R3_INVALID - A hármas robot vezérlési paraméterei érvénytelenek.- ERR_R3_REP_START - A hármas robot módosított pozícióra való vezérlésének kísérlete arobot mozgása közben.- ERR_R3_SHORT_SIG - Túl rövid impulzus a hármas robot engedélyezõ bemenetén.
+11   0   0   0   16777215   0   0
+Arial
+[Connection Count]
+80
+[Connection #0]
+0   1   1   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #1]
+2   1   3   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #2]
+4   1   5   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #3]
+6   1   7   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #4]
+8   1   9   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #5]
+10   1   11   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #6]
+12   1   13   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #7]
+14   1   15   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #8]
+16   1   17   1   16711935   -1   -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 -25 
+[Connection #9]
+21   1   22   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #10]
+25   1   26   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #11]
+27   1   28   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #12]
+29   1   30   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #13]
+31   1   32   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #14]
+33   1   34   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #15]
+35   1   36   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #16]
+37   1   38   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #17]
+23   1   24   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #18]
+39   1   40   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #19]
+41   1   42   1   16711935   -1   -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 -50 -425 
+[Connection #20]
+46   1   47   1   16711935   -1   -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 
+[Connection #21]
+48   1   49   1   16711935   -1   -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 
+[Connection #22]
+50   1   51   1   16711935   -1   -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 -475 -700 
+[Connection #23]
+53   1   54   1   16711935   -1   -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 
+[Connection #24]
+55   1   56   1   16711935   -1   -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 
+[Connection #25]
+57   1   58   1   16711935   -1   -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 -900 -1150 
+[Connection #26]
+60   1   61   1   16711935   -1   -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 
+[Connection #27]
+62   1   63   1   16711935   -1   -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 
+[Connection #28]
+64   1   65   1   16711935   -1   -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 -1325 -1725 
+[Connection #29]
+78   1   79   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #30]
+72   1   73   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #31]
+76   1   77   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #32]
+4   1   18   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #33]
+10   1   19   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #34]
+16   1   20   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #35]
+39   1   45   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #36]
+50   1   52   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #37]
+57   1   59   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #38]
+64   1   66   3   16711935   -1   -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 
+[Connection #39]
+21   1   43   4   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #40]
+29   1   44   4   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #41]
+75   1   77   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #42]
+71   1   73   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #43]
+70   1   73   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #44]
+74   1   77   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #45]
+69   1   73   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #46]
+73   1   78   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #47]
+2   1   18   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #48]
+8   1   19   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #49]
+14   1   20   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #50]
+37   1   45   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #51]
+48   1   52   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #52]
+55   1   59   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #53]
+62   1   66   2   16711935   -1   -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 
+[Connection #54]
+35   1   43   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #55]
+41   1   44   3   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #56]
+18   1   67   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #57]
+43   1   74   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #58]
+68   1   73   5   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #59]
+19   1   68   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #60]
+44   1   75   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #61]
+67   1   73   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #62]
+20   1   69   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #63]
+45   1   76   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #64]
+0   1   18   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #65]
+6   1   19   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #66]
+12   1   20   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #67]
+23   1   45   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #68]
+46   1   52   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #69]
+53   1   59   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #70]
+60   1   66   1   16711935   -1   -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 -425 -575 
+[Connection #71]
+33   1   43   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #72]
+25   1   44   2   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #73]
+52   1   70   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #74]
+59   1   71   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #75]
+66   1   72   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #76]
+31   1   43   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #77]
+27   1   44   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #78]
+77   1   79   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #79]
+79   1   80   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Simulation Parameters]
+ 1.00000000000000E+0001    1.00000000000000E-0002   0   2   1  0   1   1   2   0   4   0
+[Logical Levels]
+ 0.00000000000000E+0000    5.00000000000000E+0000    2.50000000000000E+0000
+[Frame Count]
+0
+[Optimization Parameters Count]
+0
+[Optimization Control Parameters]
+20   5   100   3   10   1   10   1   12345
+ 1.00000000000000E+0000    0.00000000000000E+0000    0.00000000000000E+0000
+OPT.DAT
+0
+1
+[Batch Parameters Count]
+0
+[Message Options]
+BORIS.MSG
