@@ -1,6 +1,6 @@
 405
 Karosszéria gyártósor
-95
+96
 LABEL	0	16777215	1	-1	0	0	Cím	26	55	16	Arial Black	Karosszéria gyártósor	0	1
 LABEL	0	16777215	1	-1	0	0	Készítõ	26	74	10	Arial	Készítette: Miklós Árpád	0	1
 BITMAP	0	16777215	1	-1	0	0	Kerítés: Felsõ	45	304	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_top.bmp
@@ -75,10 +75,11 @@ RECTLED	0	33023	1	-1	0	0	Robot 3: Fest (LED)	695	190	1	(I11 / 128) - (2 * INT((I
 LABEL	0	16777215	1	-1	0	0	Robot 3: Fest (Címke)	720	190	10	ARIAL	Fest	0	1
 RECTLED	0	65280	1	-1	0	0	Robot 3: Befejezve (LED)	695	215	1	(I11 / 256) - (2 * INT((I11 / 256) / 2))
 LABEL	0	16777215	1	-1	0	0	Robot 3: Befejezve (Címke)	720	215	10	ARIAL	Befejezve	0	1
-LABEL	0	65535	1	-1	0	0		1242	252	14	Arial Black	7	0	1
-LABEL	0	65535	1	-1	0	0		1242	362	14	Arial Black	1	0	1
-LABEL	0	65535	1	-1	0	0		1242	472	14	Arial Black	3	0	1
-LABEL	0	65535	1	-1	0	0		1242	582	14	Arial Black	5	0	1
+LABEL	0	65535	1	-1	0	0	Daru: 7-es pozíció (Címke)	1242	252	14	Arial Black	7	0	1
+LABEL	0	65535	1	-1	0	0	Daru: 1-es pozíció (Címke)	1242	362	14	Arial Black	1	0	1
+LABEL	0	65535	1	-1	0	0	Daru: 3-as pozíció (Címke)	1242	472	14	Arial Black	3	0	1
+LABEL	0	65535	1	-1	0	0	Daru: 5-ös pozíció (Címke)	1242	582	14	Arial Black	5	0	1
+SEPARATOR	255	16777215	1	-1	0	0	[ Vezérlõgombok ]
 LABEL	0	16777215	1	-1	0	0	Tárgy 1: Behelyezés (Címke)	45	669	12	Arial Black	Tárgy 1:	0	1
 BUTTON	0	12632256	1	-1	0	0	Tárgy 1: Behelyezés (Cella 1)	Cella 1	130	670	60	25	5.0	1	0	2	0	8	1
 BUTTON	0	12632256	2	-1	0	0	Tárgy 1: Behelyezés (Cella 2)	Cella 2	205	670	60	25	5.0	2	0	2	0	8	1
