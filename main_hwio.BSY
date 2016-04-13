@@ -2,7 +2,7 @@
 7.1.1.313
 [File Access]
 0   
-42471
+42473
 ! 
 ! 
 ! 
@@ -122,10 +122,10 @@ UPDOWN	0	12632256	10	-1	0	0	Operátor: Mozgás	513	744	40	62	0	2	10	0	1	0	1
 BUTTON	0	12632256	11	-1	0	0	Operátor: Nyugtázás	Nyugtázás	568	707	100	25	5.0	11	0	18	0	8	1
 SWITCH	0	12632256	12	-1	0	0	Operátor: Vész-stop	Vész-Stop	568	744	100	25	5.0	12	0	20	0	8	-1		1
 BITMAP	0	16777215	1	-1	0	0	Operátor: Jelzõtábla	740 - (20 * O10)	635 - (75 * O10)	54	79	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\operator.bmp
-286
-127
-1302
-807
+342
+61
+1296
+829
 1
 2
 20
@@ -1390,265 +1390,265 @@ Arial
 [Connection #31]
 16   3   1   4   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Connection #32]
-113   1   114   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #33]
 115   1   113   1   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #34]
+[Connection #33]
 116   1   73   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #35]
+[Connection #34]
 4   10   12   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #36]
+[Connection #35]
 4   11   12   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #37]
+[Connection #36]
 4   12   12   3   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #38]
+[Connection #37]
 6   1   13   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #39]
+[Connection #38]
 117   1   76   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #40]
+[Connection #39]
 26   1   17   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #41]
+[Connection #40]
 117   9   84   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #42]
+[Connection #41]
 112   1   118   16   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #43]
+[Connection #42]
 99   1   118   8   49152   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #44]
+[Connection #43]
 69   2   116   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #45]
+[Connection #44]
 17   1   1   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #46]
+[Connection #45]
 4   7   22   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #47]
+[Connection #46]
 4   8   23   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #48]
+[Connection #47]
 4   9   24   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #49]
+[Connection #48]
 44   1   4   7   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #50]
+[Connection #49]
 0   1   6   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #51]
+[Connection #50]
 9   1   33   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #52]
+[Connection #51]
 0   2   6   2   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #53]
+[Connection #52]
 18   1   21   1   16711680   -1   -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 
-[Connection #54]
+[Connection #53]
 0   3   6   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #55]
+[Connection #54]
 40   1   4   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #56]
+[Connection #55]
 43   1   4   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #57]
+[Connection #56]
 38   1   4   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #58]
+[Connection #57]
 41   1   4   4   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #59]
+[Connection #58]
 42   1   4   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #60]
+[Connection #59]
 39   1   4   2   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #61]
+[Connection #60]
 21   1   1   5   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #62]
+[Connection #61]
 25   1   1   6   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #63]
+[Connection #62]
 0   11   75   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #64]
+[Connection #63]
 47   2   51   1   49152   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #65]
+[Connection #64]
 33   1   34   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #66]
+[Connection #65]
 117   2   77   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #67]
+[Connection #66]
 27   1   17   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #68]
+[Connection #67]
 117   10   85   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #69]
+[Connection #68]
 111   1   118   15   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #70]
+[Connection #69]
 98   1   118   7   49152   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #71]
+[Connection #70]
 59   1   0   9   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #72]
+[Connection #71]
 58   1   0   8   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #73]
+[Connection #72]
 0   12   69   3   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #74]
+[Connection #73]
 0   10   69   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #75]
+[Connection #74]
 1   5   63   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #76]
+[Connection #75]
 66   1   0   16   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #77]
+[Connection #76]
 1   4   62   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #78]
+[Connection #77]
 67   1   0   17   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #79]
+[Connection #78]
 7   1   9   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #80]
+[Connection #79]
 29   1   70   4   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #81]
+[Connection #80]
 29   2   70   5   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #82]
+[Connection #81]
 29   3   70   6   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #83]
+[Connection #82]
 47   3   49   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #84]
+[Connection #83]
 7   1   13   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #85]
+[Connection #84]
 36   3   69   6   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #86]
+[Connection #85]
 36   1   69   4   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #87]
+[Connection #86]
 36   2   69   5   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #88]
+[Connection #87]
 10   1   60   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #89]
+[Connection #88]
 1   15   71   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #90]
+[Connection #89]
 28   1   17   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #91]
+[Connection #90]
 117   3   78   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #92]
+[Connection #91]
 117   11   86   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #93]
+[Connection #92]
 19   1   21   2   16711680   -1   -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 
-[Connection #94]
+[Connection #93]
 110   1   118   14   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #95]
+[Connection #94]
 97   1   118   6   49152   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #96]
+[Connection #95]
 0   4   7   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #97]
+[Connection #96]
 0   5   7   2   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #98]
+[Connection #97]
 0   6   7   3   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #99]
+[Connection #98]
 4   1   54   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #100]
+[Connection #99]
 4   2   55   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #101]
+[Connection #100]
 47   4   52   1   49152   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #102]
+[Connection #101]
 57   1   0   7   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #103]
+[Connection #102]
 56   1   0   6   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #104]
+[Connection #103]
 117   4   79   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #105]
+[Connection #104]
 117   12   87   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #106]
+[Connection #105]
 109   1   118   13   16711935   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #107]
+[Connection #106]
 96   1   118   5   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #108]
+[Connection #107]
 1   7   65   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #109]
+[Connection #108]
 64   1   0   14   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #110]
+[Connection #109]
 1   6   64   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #111]
+[Connection #110]
 65   1   0   15   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #112]
+[Connection #111]
 6   1   9   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #113]
+[Connection #112]
 8   1   13   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #114]
+[Connection #113]
 47   5   50   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #115]
+[Connection #114]
 20   1   21   3   16711680   -1   -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 -150 -625 
-[Connection #116]
+[Connection #115]
 4   3   56   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #117]
+[Connection #116]
 4   4   57   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #118]
+[Connection #117]
 0   7   8   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #119]
+[Connection #118]
 0   8   8   2   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #120]
+[Connection #119]
 0   9   8   3   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #121]
+[Connection #120]
 117   13   88   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #122]
+[Connection #121]
 117   5   80   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #123]
+[Connection #122]
 95   1   118   4   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #124]
+[Connection #123]
 103   1   118   12   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #125]
+[Connection #124]
 55   1   0   5   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #126]
+[Connection #125]
 54   1   0   4   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #127]
+[Connection #126]
 47   6   53   1   49152   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #128]
+[Connection #127]
 61   1   0   10   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #129]
+[Connection #128]
 1   9   67   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #130]
+[Connection #129]
 62   1   0   12   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #131]
+[Connection #130]
 1   8   66   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #132]
+[Connection #131]
 63   1   0   13   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #133]
+[Connection #132]
 117   14   89   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #134]
+[Connection #133]
 117   6   81   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #135]
+[Connection #134]
 94   1   118   3   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #136]
+[Connection #135]
 102   1   118   11   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #137]
+[Connection #136]
 15   1   0   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #138]
+[Connection #137]
 15   2   0   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #139]
+[Connection #138]
 15   3   0   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #140]
+[Connection #139]
 1   13   47   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #141]
+[Connection #140]
 4   5   58   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #142]
+[Connection #141]
 4   6   59   1   255   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #143]
+[Connection #142]
 117   15   90   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #144]
+[Connection #143]
 117   7   82   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #145]
+[Connection #144]
 93   1   118   2   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #146]
+[Connection #145]
 101   1   118   10   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #147]
+[Connection #146]
 13   1   16   1   12583104   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #148]
+[Connection #147]
 4   16   0   11   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #149]
+[Connection #148]
 117   16   91   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #150]
+[Connection #149]
 117   8   83   1   16711680   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #151]
+[Connection #150]
 92   1   118   1   0   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #152]
+[Connection #151]
 100   1   118   9   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #153]
+[Connection #152]
 11   1   36   1   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #154]
+[Connection #153]
 2   1   3   1   49344   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #155]
+[Connection #154]
 1   13   70   1   33023   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #156]
+[Connection #155]
 1   14   70   2   12632064   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #157]
+[Connection #156]
 12   1   29   1   4210752   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #158]
+[Connection #157]
 17   1   68   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #159]
+[Connection #158]
 1   10   14   1   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #160]
+[Connection #159]
 1   11   14   2   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-[Connection #161]
+[Connection #160]
 1   12   14   3   8421504   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[Connection #161]
+113   1   114   1   32768   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 [Simulation Parameters]
  1.00000000000000E+0001    2.50000000000000E-0002   0   2   1  2   1   1   2   0   4   0
 [Logical Levels]
