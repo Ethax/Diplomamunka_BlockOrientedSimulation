@@ -62,7 +62,7 @@ ALU
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_8bit.SBL
 0
 [Block #6]
 430   BLOCKBUTTON
@@ -259,7 +259,7 @@ ALU
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_8bit.SBL
 0
 [Block #28]
 430   BLOCKBUTTON
@@ -410,7 +410,7 @@ OR
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_or_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\bitwise_or_8bit.SBL
 0
 [Block #46]
 428   BLOCKSPINEDIT
@@ -444,7 +444,7 @@ AND
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\bitwise_and_8bit.SBL
 0
 [Block #50]
 383   SUPERBLOCK
@@ -453,7 +453,7 @@ SUPERBLOCK
 3
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\latch_8bit.SBL
 0
 [Block #51]
 430   BLOCKBUTTON

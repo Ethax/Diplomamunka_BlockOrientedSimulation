@@ -43,7 +43,7 @@ NEW && 0x07
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\bitwise_and_8bit.SBL
 0
 [Block #2]
 383   SUPERBLOCK
@@ -52,7 +52,7 @@ OLD && 0x07
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\bitwise_and_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\bitwise_and_8bit.SBL
 0
 [Block #3]
 0   Text
@@ -131,7 +131,7 @@ GET_BIT(NEW, 0)
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\get_bit_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\get_bit_8bit.SBL
 0
 [Block #12]
 306   CONST
@@ -156,7 +156,7 @@ GET_BIT(OLD, 0)
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\get_bit_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\get_bit_8bit.SBL
 0
 [Block #15]
 306   CONST
@@ -303,7 +303,7 @@ GET_BIT(OLD, 0)
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\get_bit_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\get_bit_8bit.SBL
 0
 [Block #34]
 306   CONST

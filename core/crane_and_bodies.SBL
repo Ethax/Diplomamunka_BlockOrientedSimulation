@@ -85,7 +85,7 @@ B1_INSERTER
 3
 5
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_insertion_validator.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\core\body_insertion_validator.SBL
 0
 [Block #3]
 383   SUPERBLOCK
@@ -148,7 +148,7 @@ B2_INSERTER
 3
 5
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_insertion_validator.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\core\body_insertion_validator.SBL
 0
 [Block #11]
 383   SUPERBLOCK
@@ -211,7 +211,7 @@ CRANE
 2
 4
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\crane\crane.SBL
 0
 [Block #19]
 376   DRAIN
@@ -249,7 +249,7 @@ B3_INSERTER
 3
 5
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_insertion_validator.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\core\body_insertion_validator.SBL
 0
 [Block #24]
 383   SUPERBLOCK
@@ -354,7 +354,7 @@ INFO_SUMMARY
 9
 5
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\core\body_info_summary.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\core\body_info_summary.SBL
 0
 [Block #38]
 384   LABEL
@@ -540,7 +540,7 @@ BELT_1_CTRL
 1
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\belt_controller.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\belt_controller.SBL
 0
 [Block #64]
 447   DECODER
@@ -579,7 +579,7 @@ BELT_2_CTRL
 1
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\belt_controller.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\belt_controller.SBL
 0
 [Block #69]
 383   SUPERBLOCK
@@ -588,7 +588,7 @@ BELT_3_CTRL
 1
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\belt_controller.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\belt_controller.SBL
 0
 [Connection Count]
 101

@@ -69,7 +69,7 @@ CURRENT_POS
 3
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\latch_8bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\latch_8bit.SBL
 0
 [Block #5]
 383   SUPERBLOCK
@@ -78,7 +78,7 @@ IS_VALID
 5
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_validator.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\crane\crane_position_validator.SBL
 0
 [Block #6]
 354   LOGIC1
@@ -111,7 +111,7 @@ TO_XY_COORD
 1
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_position_to_xy.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\crane\crane_position_to_xy.SBL
 0
 [Block #10]
 383   SUPERBLOCK
@@ -120,7 +120,7 @@ ANIMATE_X
 3
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\counter_16bit.SBL
 0
 [Block #11]
 355   LOGIC2
@@ -149,7 +149,7 @@ ANIMATE_Y
 3
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\counter_16bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\counter_16bit.SBL
 0
 [Block #14]
 354   LOGIC1
@@ -189,7 +189,7 @@ GRIP_ANIM
 2
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\crane\crane_gripper_controller.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\crane\crane_gripper_controller.SBL
 0
 [Block #19]
 396   LOGIC

@@ -162,7 +162,7 @@ SEQ_PARSER
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_sequence_parser.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\robot\robot_sequence_parser.SBL
 0
 [Block #18]
 306   CONST
@@ -290,7 +290,7 @@ SEQ_PARSER
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_sequence_parser.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\robot\robot_sequence_parser.SBL
 0
 [Block #34]
 306   CONST
@@ -378,7 +378,7 @@ SEQ_PARSER
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\robot\robot_sequence_parser.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\robot\robot_sequence_parser.SBL
 0
 [Block #45]
 343   JUNCTION

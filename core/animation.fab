@@ -3,11 +3,11 @@ Karosszéria gyártósor
 96
 LABEL	0	16777215	1	-1	0	0	Cím	26	55	16	Arial Black	Karosszéria gyártósor	0	1
 LABEL	0	16777215	1	-1	0	0	Készítõ	26	74	10	Arial	Készítette: Miklós Árpád	0	1
-BITMAP	0	16777215	1	-1	0	0	Kerítés: Felsõ	45	304	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_top.bmp
-BITMAP	0	16777215	1	-1	0	0	Kerítés: Alsó	45	638	993	243	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\fence_bottom.bmp
+BITMAP	0	16777215	1	-1	0	0	Kerítés: Felsõ	45	304	993	243	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\fence_top.bmp
+BITMAP	0	16777215	1	-1	0	0	Kerítés: Alsó	45	638	993	243	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\fence_bottom.bmp
 RECT	0	6316128	1	-1	0	0	Platform: Kezdõ	0	390	50	80	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 1 ]
-BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
+BMPSEQ	0	16777215	1	-1	0	0	Cella 1: Futószalag	50	390	375	80	1	5	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 LED	0	65535	1	-1	0	0	Cella 1: Érkezés (Felsõ)	91	306	1	I10 - (2 * INT(I10 / 2))
 LED	0	65535	1	-1	0	0	Cella 1: Érkezés (Alsó)	91	411	1	I10 - (2 * INT(I10 / 2))
 LED	0	65280	1	-1	0	0	Cella 1: Szenzor (Felsõ)	306	306	1	(I10 / 2) - (2 * INT((I10 / 2) / 2))
@@ -19,7 +19,7 @@ HSCALE	0	16777215	1	-1	0	0	Cella 1: Robot 2 (Pozíció)	120	570	180	6	0	3	4	4	8	0
 RECT	0	0	1	-1	0	0	Cella 1: Robot 2 (Test)	115	550	190	40	0
 HYDCYL	0	65535	1	-1	0	0	Cella 1: Robot 2 (Kar)	120 + (I6 * 2)	540	30	80	I7 * 2	6985109	0	0	0
 SEPARATOR	255	16777215	1	-1	0	0	[ Cella 2 ]
-BMPSEQ	0	16777215	2	-1	0	0	Cella 2: Futószalag	425	390	375	80	2	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
+BMPSEQ	0	16777215	2	-1	0	0	Cella 2: Futószalag	425	390	375	80	2	5	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 LED	0	65535	1	-1	0	0	Cella 2: Érkezés (Felsõ)	466	306	1	(I10 / 4) - (2 * INT((I10 / 4) / 2))
 LED	0	65535	1	-1	0	0	Cella 2: Érkezés (Alsó)	466	411	1	(I10 / 4) - (2 * INT((I10 / 4) / 2))
 LED	0	65280	1	-1	0	0	Cella 2: Szenzor (Felsõ)	681	306	1	(I10 / 8) - (2 * INT((I10 / 8) / 2))
@@ -37,21 +37,21 @@ RECT	0	6316128	1	-1	0	0	Célállomás 2: Platform	852	500	200	80	0
 LABEL	16777215	65535	1	-1	0	0	Célállomás 2: Címke	931	480	22	Arial Black	C2	0	1
 RECT	0	6316128	1	-1	0	0	Célállomás 1: Platform	852	610	200	80	0
 LABEL	16777215	65535	1	-1	0	0	Célállomás 1: Címke	931	590	22	Arial Black	C1	0	1
-BMPSEQ	0	16777215	3	-1	0	0	Cella 3: Futószalag	800	390	375	80	3	5	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
+BMPSEQ	0	16777215	3	-1	0	0	Cella 3: Futószalag	800	390	375	80	3	5	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_01.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_02.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_03.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_04.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\belt_05.bmp	*.bmp	*.bmp	*.bmp	*.bmp	*.bmp	0	0	5	0
 LED	0	65535	1	-1	0	0	Cella 3: Érkezés (Felsõ)	841	306	1	(I10 / 16) - (2 * INT((I10 / 16) / 2))
 LED	0	65535	1	-1	0	0	Cella 3: Érkezés (Alsó)	841	411	1	(I10 / 16) - (2 * INT((I10 / 16) / 2))
 LED	0	65280	1	-1	0	0	Cella 3: Szenzor (Felsõ)	1006	306	1	(I10 / 32) - (2 * INT((I10 / 32) / 2))
 LED	0	65280	1	-1	0	0	Cella 3: Szenzor (Alsó)	1006	411	1	(I10 / 32) - (2 * INT((I10 / 32) / 2))
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	189	190	40	0
 RECT	0	0	1	-1	0	0	Cella 3: Daru (Emelvény-alsó)	1072	660	190	40	0
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	654	64	500	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_bridge.bmp
-BMPSEQ	0	16777215	20	-1	0	0	Cella 3: Daru (Megfogó-villa)	I18 * 5 + 933	I19 * 5 + 407	60	117	20	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_08.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_bottom_01.bmp	*.BMP	*.BMP	1	0	8	0
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	I12	I13	164	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_01.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	I14	I15	161	76	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_02.bmp
-BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	I16	I17	160	65	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\type_03.bmp
-BMPSEQ	0	16777215	20	-1	0	0	Cella 3: Daru (Megfogó-kar)	I18 * 5 + 933	I19 * 5 + 407	60	117	20	8	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_08.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper_top_01.bmp	*.BMP	*.BMP	1	0	8	0
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I19 * 5 + 375	285	52	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_hoist.bmp
-BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I18 * 5 + 940	I19 * 5 + 369	45	41	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\crane_gripper.bmp
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Híd)	1135	654	64	500	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_bridge.bmp
+BMPSEQ	0	16777215	20	-1	0	0	Cella 3: Daru (Megfogó-villa)	I18 * 5 + 933	I19 * 5 + 407	60	117	20	8	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_08.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_07.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_06.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_05.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_04.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_03.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_02.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_bottom_01.bmp	*.BMP	*.BMP	1	0	8	0
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 1. Típus	I12	I13	164	65	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\type_01.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 2. Típus	I14	I15	161	76	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\type_02.bmp
+BITMAP	0	16777215	1	-1	0	0	Karosszéria: 3. Típus	I16	I17	160	65	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\type_03.bmp
+BMPSEQ	0	16777215	20	-1	0	0	Cella 3: Daru (Megfogó-kar)	I18 * 5 + 933	I19 * 5 + 407	60	117	20	8	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_08.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_07.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_06.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_05.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_04.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_03.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_02.bmp	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper_top_01.bmp	*.BMP	*.BMP	1	0	8	0
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Emelõ)	936	I19 * 5 + 375	285	52	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_hoist.bmp
+BITMAP	0	16777215	1	-1	0	0	Cella 3: Daru (Megfogó-test)	I18 * 5 + 940	I19 * 5 + 369	45	41	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\crane_gripper.bmp
 SEPARATOR	255	16777215	1	-1	0	0	[ Feliratok és jelzések ]
 LABEL	0	65535	1	-1	0	0	Robot 1: Címke	60	190	22	Arial Black	R1	0	1
 RECTLED	0	65280	1	-1	0	0	Robot 1: Kiválasztva (LED)	320	165	1	I11 - (2 * INT(I11 / 2))
@@ -96,7 +96,7 @@ LABEL	0	16777215	1	-1	0	0	Operátor: Címke	417	724	12	Arial Black	Operátor:	0	1
 UPDOWN	0	12632256	10	-1	0	0	Operátor: Mozgás	513	744	40	62	0	2	10	0	1	0	1
 BUTTON	0	12632256	11	-1	0	0	Operátor: Nyugtázás	Nyugtázás	568	707	100	25	5.0	11	0	18	0	8	1
 SWITCH	0	12632256	12	-1	0	0	Operátor: Vész-stop	Vész-Stop	568	744	100	25	5.0	12	0	20	0	8	-1		1
-BITMAP	0	16777215	1	-1	0	0	Operátor: Jelzõtábla	740 - (20 * O10)	635 - (75 * O10)	54	79	0	D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\images\operator.bmp
+BITMAP	0	16777215	1	-1	0	0	Operátor: Jelzõtábla	740 - (20 * O10)	635 - (75 * O10)	54	79	0	D:\Current Studies\Diplomamunka\Emulated System\Emulation\images\operator.bmp
 0
 20
 BELT_1

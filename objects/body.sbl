@@ -51,7 +51,7 @@ CONTROLLER
 8
 8
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_animation_controller.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\body_animation_controller.SBL
 0
 [Block #1]
 384   LABEL
@@ -74,7 +74,7 @@ ANIMATE_XY
 7
 3
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_xy_position.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\body_xy_position.SBL
 0
 [Block #4]
 384   LABEL
@@ -350,7 +350,7 @@ BELT_ENC
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_location_encoder.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\body_location_encoder.SBL
 0
 [Block #41]
 383   SUPERBLOCK
@@ -359,7 +359,7 @@ PLATFORM_ENC
 2
 1
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\objects\body_location_encoder.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\objects\body_location_encoder.SBL
 0
 [Connection Count]
 52

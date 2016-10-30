@@ -35,7 +35,7 @@ ALU_B0
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #1]
 383   SUPERBLOCK
@@ -44,7 +44,7 @@ ALU_B1
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #2]
 383   SUPERBLOCK
@@ -53,7 +53,7 @@ ALU_B2
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #3]
 383   SUPERBLOCK
@@ -62,7 +62,7 @@ ALU_B3
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #4]
 383   SUPERBLOCK
@@ -71,7 +71,7 @@ ALU_B4
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #5]
 383   SUPERBLOCK
@@ -80,7 +80,7 @@ ALU_B5
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #6]
 383   SUPERBLOCK
@@ -89,7 +89,7 @@ ALU_B6
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #7]
 383   SUPERBLOCK
@@ -98,7 +98,7 @@ ALU_B7
 4
 2
 0 0 0   0
-D:\Current Studies\Diplomamunka\Karosszéria gyártósor - Szimuláció\common\alu_1bit.SBL
+D:\Current Studies\Diplomamunka\Emulated System\Emulation\common\alu_1bit.SBL
 0
 [Block #8]
 384   LABEL
