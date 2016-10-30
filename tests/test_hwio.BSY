@@ -2,15 +2,15 @@
 7.1.1.313
 [File Access]
 0   
-42472
+42498
 ! 
 ! 
 ! 
 ! 
 ! 
-! 
-! 
-! 
+! Szimuláció teszt
+! Miklós Árpád
+! SZTE
 [Block Count]
 34
 [Block #0]
@@ -90,7 +90,7 @@ OUT_B2
 0
 1
 0 0 0   0
-1
+0
 0
 [Block #5]
 430   BLOCKBUTTON
